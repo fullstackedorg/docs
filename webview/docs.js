@@ -2,7 +2,7 @@ new Docute({
   target: '#docs',
   highlight: ['typescript', 'html'],
   logo: `<div class="logo-icon"><img src="images/icon.png" />FullStacked</div>`,
-  editLinkBase: "https://github.com/fullstackedorg/editor-docs/blob/main/docs",
+  editLinkBase: "https://github.com/fullstackedorg/editor-docs/blob/main",
   nav: [ 
     {
       title: 'Feedback',
