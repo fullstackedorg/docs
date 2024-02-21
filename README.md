@@ -36,7 +36,7 @@ There are 4 key components in FullStacked
 
 Here's an example of how these components interact
 
-![Sequence](/images/sequence.png)
+![Sequence](images/sequence.png)
 
 This architecture is thought to make it as easy as possible to implement it onto any kind of device.
 
@@ -79,7 +79,7 @@ Learn more about how to build the API JS and use the RPC object in the Guides se
 To prevent opening ports, while keeping the same frontend-backend concept web apps introduced,
 the communication between the webviews and the instances of javascript engine is done in different ways.
 
-![Instances](/images/multiple-instances.png)
+![Instances](images/multiple-instances.png)
 
 * **a**: The webviews requests are untangled
   * Swift: A class that extends `WKURLSchemeHandler` is set for the `fs` scheme protocol. Then each webview uses this scheme instead of `http` and has its own instance of this class.
