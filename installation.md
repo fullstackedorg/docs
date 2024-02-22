@@ -38,6 +38,20 @@ Once you have [Test Flight](https://apps.apple.com/ca/app/testflight/id899247664
    ```shell
     sudo dpkg --install ./fullstacked-deb-x64
     ```
+If you are getting an error like
+```
+dpkg-deb: error: archive './fullstacked-0.1.0-linux-arm64.deb' uses unknown compression for member 'control.tar.zst', giving up
+```
+Repack the `.deb` and retry installing. Go ahead with these commands
+```shell
+sudo apt install binutils
+ar x fullstacked-0.1.0-linux-arm64.deb
+zstd -d < control.tar.zst | xz > control.tar.xz
+zstd -d < data.tar.zst | xz > data.tar.xz
+ar -m -c -a sdsd fullstacked-0.1.0-linux-arm64_repacked.deb debian-binary control.tar.xz data.tar.xz
+rm debian-binary control.tar.xz data.tar.xz control.tar.zst data.tar.zst
+sudo apt install fullstacked-0.1.0-linux-arm64_repacked.deb
+```
 3. Launch FullStacked from terminal or from your Activity view
 ```shell
 fullstacked
