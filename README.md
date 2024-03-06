@@ -32,7 +32,7 @@ There are 4 key components in FullStacked
   * An incredibly fast bundler to merge into one file (to bundle) all of your messy JS files.
   * It also transforms JSX and TypeScript into JS
 * Adapter
-  * A piece of code that translates the API JavaScript OS-level calls.
+  * A piece of code that translates the JavaScript OS-level calls to the platform behind.
 
 Here's an example of how these components interact
 

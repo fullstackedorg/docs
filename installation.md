@@ -18,7 +18,7 @@ Once you have [Test Flight](https://apps.apple.com/ca/app/testflight/id899247664
 ## Windows
 
 1. Download the windows installer from github
-2. Run the installer and then FullStacked will launch
+2. Run the Setup and then FullStacked will launch
 3. You will have a Desktop shortcut for the next times you want to start FullStacked
 
 ## Linux
@@ -74,7 +74,7 @@ fullstacked
 
 ## NPM
 
-> Running using NPM opens up ports to communicate between the WebView and the OS.  
+> Running using NPM opens up ports to communicate between the WebView and the API.  
 > **Not recommended on public networks.**
 
 Install globally and start from the command line
