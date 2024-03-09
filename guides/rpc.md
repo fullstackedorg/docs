@@ -25,7 +25,7 @@ export default {
       fs.writeFile(cacheFile, rawData);
     }
 
-    data = JSON.parse(rawDate);
+    data = JSON.parse(rawData);
     return data.slice(0, 25);
   },
   search(str) {
