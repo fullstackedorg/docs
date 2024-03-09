@@ -2,6 +2,8 @@
 
 Build and run full-stack JavaScript web apps on any platform.
 
+![FullStacked Editor Mockup](images/fullstacked-editor-mockup.jpeg)
+
 ## Motivation
 
 Building applications is so much fun. But deployment and distribution is way less.
