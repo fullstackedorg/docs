@@ -98,6 +98,10 @@
           link: "/guides/packages"
         },
         {
+          title: "Using GIT",
+          link: "/guides/git"
+        },
+        {
           title: "Import/Export a Project",
           link: "/guides/import-export"
         },
