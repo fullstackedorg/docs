@@ -1,9 +1,9 @@
  # Import/Export a Project
 
-Once you've built an app inside FullStacked, you can now export it from your device and import it on any other device.
-This way, your web app really runs on anywhere.
+Once you've built an app inside FullStacked, you can export it from your device and import it onto any other device.
+This way, your web app really runs everywhere.
 
-To export, click the export button in the top-right corner of the Project view.
+To export, click the export button in the top right corner of the Project view.
 ![Export](images/export.jpeg)
 
 This will generate a `.zip` of your project. Transfer this to your other device.
