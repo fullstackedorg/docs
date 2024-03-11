@@ -1,10 +1,10 @@
- # Using GIT
+# Using GIT
 
- [GIT](https://git-scm.com) is a powerful versionning tool.
+[GIT](https://git-scm.com) is a powerful versionning tool.
 
- ## Cloning a Repository
+## Cloning a Repository
 
- ## Pushing Code
+## Pushing Code
 
- ## Using Branches
+## Using Branches
  
