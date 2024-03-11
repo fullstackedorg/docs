@@ -64,6 +64,7 @@ For this purpose, simply delete the authentication and re-run an auth process.
 ![git Authentications](images/git/authentications.png)
 
 The username and email is used for your git global user similarly to 
+
 ```shell
 git config --global user.name "you"
 git config --global user.email "you@example.com"
