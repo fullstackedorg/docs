@@ -24,11 +24,11 @@ When ready, whether commit and/or push to your remote (the push button commits b
 
 ![git Committing](images/git/committing.png)
 
-When code is being push to your remote, you can notice it by the red arrow on the git button.
+You can notice code being pushed to your remote by the red arrow on the git button.
 
 ![git Pushing](images/git/pushing.png)
 
-If your remote repository is unreachable like if you do not have internet access,
+If your remote repository is unreachable (like if you don't have internet access),
 only the commit action will be available. 
 You can then `Push` later when your remote is reachable.
 
