@@ -1,4 +1,4 @@
- # Using the RPC object
+ # Using the rpc object
 
 The `rpc` is a function available on the `window` only when you load the WebView JS entrypoint.
 It's meant to call your API methods or the ones built-in. 

@@ -95,15 +95,15 @@
           link: "/guides/files"
         },
         {
-          title: "Using the RPC object",
+          title: "Using the rpc object",
           link: "/guides/rpc"
         },
         {
-          title: "Using NPM packages",
+          title: "Using npm packages",
           link: "/guides/packages"
         },
         {
-          title: "Using GIT",
+          title: "Using git",
           link: "/guides/git"
         },
         {

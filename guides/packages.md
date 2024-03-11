@@ -1,4 +1,4 @@
-# Using NPM Packages
+# Using npm Packages
 
 The editor supports the use of packages hosted on [npmjs.com](https://www.npmjs.com).
 Note that since the API runs in a JS Engine with minimal features, most NodeJS oriented packages aren't working.
