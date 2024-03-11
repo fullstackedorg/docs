@@ -5,12 +5,21 @@ The FullStacked Editor provides a few simplified functionalities to develop and 
 
 ## Cloning a Repository
 
+![GIT Cloning](images/git/cloning.png)
 
-
+![GIT Pulling](images/git/pulling.png)
 
 ## Pushing Code
 
+![GIT Committing](images/git/committing.png)
 
+![GIT Pushing](images/git/pushing.png)
+
+![GIT Unreachable Error](images/git/remote-unreachable.png)
 
 ## Using Branches
+
+![GIT Branches Button](images/git/branches-button.png)
+
+![GIT Branches](images/git/branches.png)
 
