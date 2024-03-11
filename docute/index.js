@@ -3,6 +3,11 @@
   highlight: ['typescript', 'html', 'javascript'],
   logo: `<div class="logo-icon"><img src="images/icon.png" />FullStacked</div>`,
   editLinkBase: "https://github.com/fullstackedorg/editor-docs/blob/main",
+  footer: `<div><small>
+  © 2024 Developed by <a href="https://github.com/cplepage">cplepage</a>. 
+  Released under GPL-3.0 license. 
+  <a href="/#/privacy-policy">Privacy Policy</a> | <a href="/#/terms-of-use">Terms of Use</a>
+  </small></div>`,
   nav: [ 
     {
       title: 'Feedback',

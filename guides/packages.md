@@ -9,7 +9,13 @@ The packages are installed on premise and at the same place for all your project
 This means that if you run a project that uses React, the next project you'll run that also needs react will already have it installed.
 To view, edit and delete some packages, click on the packages button in top right of your Projects view.
 
-![Packages Button](images/packages-button.jpg)
+![Settings Button](images/settings-button.png)
+
+![Packages Button](images/packages/settings.png)
+
+![Packages View](images/packages/npm-packages.png)
+
+
 
 ## Tested packages
 
