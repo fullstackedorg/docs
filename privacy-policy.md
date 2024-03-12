@@ -6,8 +6,8 @@ This Privacy Policy describes Our policies and procedures on the collection, use
 
 ## Data collection, use and disclosure
 
-FullStacked and FullStacked Editor do not collect, use or disclose any personal or user data
-to his own advantage. Our Policy disclaims all responsibilities for the collection, use and disclosure of
+FullStacked and the FullStacked Editor do not collect, use or disclose any personal or user data
+to its own advantage. Our Policy disclaims all responsibilities for the collection, use and disclosure of
 data directed by the execution of code not included in the FullStacked Editor source files available
 in the [public repository hosted on GitHub](https://github.com/fullstackedorg/editor).
 
@@ -16,7 +16,7 @@ or code from sources not related to the FullStacked organization.
 
 ## Security about your personal data
 
-Since we cannot control all of the outgoing data from FullStacked Editor,
+Since we cannot control all the outgoing data from the FullStacked Editor,
 FullStacked is committed to promote the protection of the Privacy of FullStacked Editor users.
 We also commit to address urgently and as quickly as possible any issues related to personal data.
 
