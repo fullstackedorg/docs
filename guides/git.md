@@ -23,7 +23,8 @@ Click the git button in the top bar of the Project view.
 ![git Button](images/git/button.png)
 
 Changes are calculated and displayed there with a text input for your commit message.
-When ready, whether commit and/or push to your remote (the push button commits beforehand). 
+You can revert any unwanted changes and when ready, 
+whether commit and/or push to your remote (the push button commits beforehand). 
 
 ![git Committing](images/git/committing.png)
 
@@ -53,6 +54,8 @@ From here, you can see on which branch your are, create a new one and checkout o
 ![git Branches](images/git/branches.png)
 
 ### Remote-only, local-only and deleting branches
+
+![git Branches remote/local-only](images/git/remote-local-branches.png)
 
 * Branches that has never been checked out are labeled `remote-only`
 * Branches that has never been pushed to remote are labeled `local-only`
