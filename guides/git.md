@@ -52,6 +52,16 @@ From here, you can see on which branch your are, create a new one and checkout o
 
 ![git Branches](images/git/branches.png)
 
+### Remote-only, local-only and deleting branches
+
+* Branches that has never been checked out are labeled `remote-only`
+* Branches that has never been pushed to remote are labeled `local-only`
+* No label means the branch exists both locally and on remote.
+
+Deleting a branch only deletes the local version of it. 
+While you will lose any local changes, if stuck in some merging mayhem,
+deleting the branch and re-checking it out can help since it resets the branch to the remote version.
+
 ## Managing your authentications
 
 For any private and auth required git, you will be prompt to input your username/password
