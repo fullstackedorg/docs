@@ -7,7 +7,7 @@ Note that since the API runs in a JS Engine with minimal features, most NodeJS o
 
 The packages are installed on premise and at the same place for all your projects.
 This means that if you run a project that uses React, the next project you'll run that also needs react will already have it installed.
-To view, edit and delete some packages, click on the packages button in top right of your Projects view.
+To view, edit and delete some packages, access your packages directory from the button in the settings view.
 
 ![Settings Button](images/settings-button.png)
 

@@ -86,3 +86,5 @@ export default {
 
 This directory is particular because it will not be zipped when you export your app.
 It is really intended to just keep your persistent runtime app data which does not need to be shared.
+It will also always be ignored by git.
+

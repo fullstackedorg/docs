@@ -19,6 +19,9 @@ You can notice it by the green arrow on the git button.
 
 Pushing code is pretty straight-forward. 
 Click the git button in the top bar of the Project view.
+
+![git Button](images/git/button.png)
+
 Changes are calculated and displayed there with a text input for your commit message.
 When ready, whether commit and/or push to your remote (the push button commits beforehand). 
 
@@ -26,7 +29,7 @@ When ready, whether commit and/or push to your remote (the push button commits b
 
 You can notice code being pushed to your remote by the red arrow on the git button.
 
-![git Pushing](images/git/pushing.png)
+-![git Pushing](images/git/pushing.png)
 
 If your remote repository is unreachable (like if you don't have internet access),
 only the commit action will be available. 
@@ -51,9 +54,9 @@ From here, you can see on which branch your are, create a new one and checkout o
 
 ## Managing your authentications
 
-For any private and auth required git, you will be prompted to input your username/password
-(note that the [gitHub Device Flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) has be implemented.)
-If you ever need to edit, delete or create new one, you can all manage them in the settings view accessible from the Projects view.
+For any private and auth required git, you will be prompt to input your username/password
+(note that the [gitHub Device Flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) has be implemented).
+If you ever need to edit, delete or create authentications, you can all manage them in the settings view accessible from the Projects view.
 
 ![Settings Button](images/settings-button.png)
 
