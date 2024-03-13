@@ -21,7 +21,7 @@ Here's a example of a typical FullStacked project
 
 You can always load script files with a simple `<script src="my-script.js">` tag.
 Those won't be bundle or transformed. 
-If you use the `index.js` of `index.jsx`, this file will be bundled before running your app. 
+If you use the `index.js` or `index.jsx`, this file will be bundled before running your app. 
 Meaning you can import modules and libraries.
 Sort of like your frontend/client JS part of any single page app (SPA).
 
@@ -57,7 +57,7 @@ listed in the references setion. They are then accessible by the `rpc` object in
 
 ### Returning different types of data
 
-Here how each types of JS value will associated with a mime-type
+Here how each types of JS value will associated with a mime-type when sent to the WebView.
 
 | JS value type | mime-type |
 | -------- | ------- |

@@ -5,7 +5,7 @@ The FullStacked Editor provides a few `git` simplified functionalities to improv
 
 ## Cloning a Repository
 
-To clone a project, simply add the `Clone` URL of your git repository in the right field.
+To clone a project, simply add the `Clone` `http` URL of your git repository.
 You can notice the `Create` button changing its text to `Clone`. 
 
 ![git Cloning](images/git/cloning.png)
@@ -17,8 +17,8 @@ You can notice it by the green arrow on the git button.
 
 ## Pushing Code
 
-Pushing code is pretty straight-forward. 
-Click the git button in the top bar of the Project view.
+After you've made some changes and updates to your codebase,
+click the git button in the top bar of the Project view.
 
 ![git Button](images/git/button.png)
 
@@ -68,7 +68,7 @@ deleting the branch and re-checking it out can help since it resets the branch t
 ## Managing your authentications
 
 For any private and auth required git, you will be prompt to input your username/password
-(note that the [gitHub Device Flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) has be implemented).
+(note that the [GitHub Device Flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) has be added to the editor, you don't need to manually create a token).
 If you ever need to edit, delete or create authentications, you can all manage them in the settings view accessible from the Projects view.
 
 ![Settings Button](images/settings-button.png)
@@ -79,7 +79,7 @@ For this purpose, simply delete the authentication and re-run an auth process.
 
 ![git Authentications](images/git/authentications.png)
 
-The username and email is used for your git global user similarly to 
+The username and email in git authentications are also used for your git global user similarly to 
 
 ```shell
 git config --global user.name "you"
