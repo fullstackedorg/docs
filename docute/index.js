@@ -4,7 +4,7 @@
   logo: `<div class="logo-icon"><img src="images/icon.png" />FullStacked</div>`,
   editLinkBase: "https://github.com/fullstackedorg/editor-docs/blob/main",
   footer: `<div><small>
-  © 2024 Developed by <a href="https://github.com/cplepage">cplepage</a>. 
+  © 2024 Developed by <a href="https://cplepage.com">cplepage</a>. 
   Released under GPL-3.0 license. 
   <a href="/#/privacy-policy">Privacy Policy</a>
   </small></div>`,
