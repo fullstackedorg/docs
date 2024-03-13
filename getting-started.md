@@ -30,7 +30,7 @@ container.innerText = await rpc().greeting("World");
 
 ![index.js](images/hello-world/webview-js.png)
 
-Notice that `rpc` call. You'll have to create a `greeting(to: string): string` in our API JS.
+Notice that `rpc` call. You'll have to create a `greeting(to: string): string` in your API JS.
 
 ## Editing the API
 

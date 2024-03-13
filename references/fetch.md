@@ -1,7 +1,7 @@
  # fetch
 
 You can use `fetch` on the API side to get some data and play with it before rendering it in the WebView.
-It's very useful to go around CORS and cache some data.
+It's very useful to go around CORS and to cache some data.
 The `fetch` method is inspired from the [Browser](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and [NodeJS](https://nodejs.org/dist/latest/docs/api/globals.html) ones. 
 
 ## Method

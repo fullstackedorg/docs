@@ -1,9 +1,9 @@
- # Using the RPC object
+ # Using the rpc object
 
 The `rpc` is a function available on the `window` only when you load the WebView JS entrypoint.
 It's meant to call your API methods or the ones built-in. 
 Once you call the method, a recursive JS proxy will convert your properties getters into a request.
-That way you don't have to bother with the fetch syntax and can access OS-level stuff quickly.
+That way, you don't have to bother with the fetch syntax and you can access OS-level stuff quickly.
 Always `await` the function calls on the webview side.
 
 ## Example

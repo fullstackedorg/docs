@@ -3,6 +3,11 @@
   highlight: ['typescript', 'html', 'javascript'],
   logo: `<div class="logo-icon"><img src="images/icon.png" />FullStacked</div>`,
   editLinkBase: "https://github.com/fullstackedorg/editor-docs/blob/main",
+  footer: `<div><small>
+  © 2024 Developed by <a href="https://github.com/cplepage">cplepage</a>. 
+  Released under GPL-3.0 license. 
+  <a href="/#/privacy-policy">Privacy Policy</a>
+  </small></div>`,
   nav: [ 
     {
       title: 'Feedback',
@@ -90,12 +95,16 @@
           link: "/guides/files"
         },
         {
-          title: "Using the RPC object",
+          title: "Using the rpc object",
           link: "/guides/rpc"
         },
         {
-          title: "Using NPM packages",
+          title: "Using npm packages",
           link: "/guides/packages"
+        },
+        {
+          title: "Using git",
+          link: "/guides/git"
         },
         {
           title: "Import/Export a Project",

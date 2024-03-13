@@ -2,10 +2,12 @@
 
 ## iOS/iPadOS
 
-> Not yet available on the Apple App Store  
-> You will need to use [Test Flight](https://apps.apple.com/ca/app/testflight/id899247664)
+Stable releases are available on the
+[Apple App Store](https://apps.apple.com/ca/app/fullstacked/id6477835950)
 
-Once you have [Test Flight](https://apps.apple.com/ca/app/testflight/id899247664) installed, get [FullStacked from here](https://testflight.apple.com/join/f1gnTHVm)
+### or
+
+Pre-releases and Beta are available on [Test Flight](https://apps.apple.com/ca/app/testflight/id899247664), with [this public link](https://testflight.apple.com/join/f1gnTHVm)
 
 ## MacOS
 
