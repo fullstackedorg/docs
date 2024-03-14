@@ -7,15 +7,15 @@ Follow along to create a `Hello World` project.
 
 Start by creating a new project by clicking on the plus `+` tile.
 
-![Projects View](images/hello-world/projects-view.png)
+![Projects View](/images/hello-world/projects-view.png)
 
 Make sure to add a title to your project and if you'd like, select a location where to store your project directory.
 
-![New Project View](images/hello-world/new-project-view.png)
+![New Project View](/images/hello-world/new-project-view.png)
 
 There you go. Your first project is created!
 
-![Project View](images/hello-world/project-view.png)
+![Project View](/images/hello-world/project-view.png)
 
 ## Editing the WebView
 
@@ -28,7 +28,7 @@ document.body.append(container);
 container.innerText = await rpc().greeting("World");
 ```
 
-![index.js](images/hello-world/webview-js.png)
+![index.js](/images/hello-world/webview-js.png)
 
 Notice that `rpc` call. You'll have to create a `greeting(to: string): string` in your API JS.
 
@@ -45,7 +45,7 @@ export default {
 }
 ```
 
-![api/index.js](images/hello-world/api-js.png)
+![api/index.js](/images/hello-world/api-js.png)
 
 ## Running your project
 
@@ -58,11 +58,11 @@ Let's create it and then add your WebView JS script.
 <script type="module" src="index.js"></script>
 ```
 
-![api/index.js](images/hello-world/index-html.png)
+![api/index.js](/images/hello-world/index-html.png)
 
 Now we're ready. Run your project.
 
-![Running App](images/hello-world/running-app.png)
+![Running App](/images/hello-world/running-app.png)
 
 ## Adding some styling
 
@@ -83,7 +83,7 @@ html, body {
 }
 ```
 
-![index.css](images/hello-world/index-css.png)
+![index.css](/images/hello-world/index-css.png)
 
 Then make sure to add it to your `index.html`.
 
@@ -93,8 +93,8 @@ Then make sure to add it to your `index.html`.
 <script type="module" src="index.js"></script>
 ```
 
-![index.html](images/hello-world/index-html-with-css.png)
+![index.html](/images/hello-world/index-html-with-css.png)
 
 Rerun your project and voilà!
 
-![Running App with Style](images/hello-world/running-app-with-css.png)
+![Running App with Style](/images/hello-world/running-app-with-css.png)

@@ -10,11 +10,11 @@ The packages are installed on premise and at the same place for all your project
 This means that if you run a project that uses React, the next project you'll run that also needs react will already have it installed.
 To view, edit and delete some packages, access your packages directory from the button in the settings view.
 
-![Settings Button](images/settings-button.png)
+![Settings Button](/images/settings-button.png)
 
-![Packages Button](images/packages/settings.png)
+![Packages Button](/images/packages/settings.png)
 
-![Packages View](images/packages/npm-packages.png)
+![Packages View](/images/packages/npm-packages.png)
 
 
 
@@ -23,4 +23,5 @@ To view, edit and delete some packages, access your packages directory from the 
 - [react](https://www.npmjs.com/package/react)
 - [react-dom](https://www.npmjs.com/package/react-dom)
 - [@mui/material](https://www.npmjs.com/package/@mui/material)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 - [three](https://www.npmjs.com/package/three)
