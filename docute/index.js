@@ -105,6 +105,10 @@
         {
           title: "Using git",
           link: "/guides/git"
+        }, 
+        {
+          title: "Open in FullStacked",
+          link: "/guides/open-in-fullstacked"
         },
         {
           title: "Import/Export a Project",
