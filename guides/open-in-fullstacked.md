@@ -33,7 +33,7 @@ npx @fullstacked/editor -- [git/repo/url.git]
 ## Share page
 
 If your recipient doesn't have the FullStacked Editor installed beforehand, the `fullstacked://` url will bring them into a dead end.
-To share your project in a more fashionably, use the https://fullstacked.org/share page send your link.
+To share your project in a more fashionably, use the https://fullstacked.org/share page to send your project deep link.
 Simply add your git url in the query parameters.
 
 ```
