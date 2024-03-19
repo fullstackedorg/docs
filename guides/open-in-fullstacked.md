@@ -19,7 +19,7 @@ fullstacked://https://github.com/fullstackedorg/editor-sample-demo.git
 
 ### Using the npm CLI
 
-If you are using the FullStacked Editor through the npm install, 
+If you are using the FullStacked Editor through the npm CLI installation, 
 you can do the same by launching fullstacked with the git repository url as argument.
 
 ```shell
