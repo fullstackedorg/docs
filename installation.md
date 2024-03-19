@@ -74,7 +74,7 @@ sudo rpm --install ./fullstacked-rpm-x64
 fullstacked
 ```
 
-## NPM
+## npm CLI
 
 > Running using NPM opens up ports to communicate between the WebView and the API.  
 > **Not recommended on public networks.**
