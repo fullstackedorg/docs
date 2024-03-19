@@ -4,7 +4,7 @@
 
 ## Share page
 
-## Mardown Button
+## Markdown Button
 
 ![Open in FullStacked](https://raw.githubusercontent.com/fullstackedorg/website/main/open-in-fullstacked.svg)
 
