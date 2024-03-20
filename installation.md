@@ -71,7 +71,7 @@ sudo rpm --install ./fullstacked-rpm-x64
 ```
 3. Launch FullStacked from terminal or from your Activity view
 ```shell
-fullstacked
+FullStacked
 ```
 
 ## npm CLI
