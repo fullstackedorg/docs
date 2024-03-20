@@ -71,10 +71,10 @@ sudo rpm --install ./fullstacked-rpm-x64
 ```
 3. Launch FullStacked from terminal or from your Activity view
 ```shell
-fullstacked
+FullStacked
 ```
 
-## NPM
+## npm CLI
 
 > Running using NPM opens up ports to communicate between the WebView and the API.  
 > **Not recommended on public networks.**
