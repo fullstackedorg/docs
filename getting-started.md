@@ -32,19 +32,6 @@ container.innerText = await rpc().greeting("World");
 
 Notice that `rpc` call. You'll have to create a `greeting(to: string): string` in your API JS.
 
-## Editing the API
-
-Now let's create your API JS. That's the context interacting with the adapter which access OS-level features.
-
-```js
-// api/index.js
-export default {
-    greeting(to){
-        return "Hello " + to;
-    }
-}
-```
-
 ![api/index.js](/images/hello-world/api-js.png)
 
 ## Running your project
