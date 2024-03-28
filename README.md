@@ -51,7 +51,7 @@ This architecture is thought to make it as easy as possible to implement it onto
 #### iOS
 
 WebView: WKWebView  
-esbuild: Built to c-archives  
+esbuild: GO library built to c-archive
 Adapter: Swift
 
 #### electron
@@ -71,17 +71,17 @@ Adapter: NodeJS
 Progressive Web Apps are very close to what you'll build in FullStacked.
 Although, adding a project to FullStacked is through git or offline processes, 
 meaning your projects are not exposed to the public internet.
-Also, FullStacked provided an easy access to native functionalities like the file system and native fetch.
+Also, FullStacked provides an easy access to native functionalities like the file system and a native fetch (no CORS).
 
 
 ## FullStacked vs React-Native/Flutter
 
 The goal of those frameworks is to translate to OS-specific native features. 
-FullStacked is an environment that provides those features and gives a universal way to access them from a web view.
-In other words, RN/Flutter is a project translated when built/compiled vs FullStacked is a prebuilt environment ready to run any web app.
+FullStacked is more of an environment that provides those features and gives an universal way to access them from a webview.
+In other words, RN/Flutter translates your codebase when built/compiled vs FullStacked is a prebuilt environment ready to run any web apps.
 
 ## FullStacked vs Electron/Tauri/Neutralinojs
 
 Those frameworks are designed to pack your JavaScript with a webview and a runtime. 
-FullStacked exists to provide everyone with those in a stable way. 
-Meaning all you have left to is build.
+FullStacked exists to provide everyone with those two same components in a stable way. 
+Meaning, all you have left to do is build and run projects, no need to pack anything else.

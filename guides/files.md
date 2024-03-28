@@ -15,17 +15,23 @@ Here's a example of a typical FullStacked project
   
 ```
 
-## JS Build Entrypoint
+## index.html Web App Entrypoint
+
+Like any web-like project, everything starts with `index.html`. 
+Start here to create a page with some HTML markup. 
+When ready, you can add some style with `link` tags and some javascript with `script` tags.
+
+## index.js(x) JavaScript Entrypoint
 
 You can always load script files with a simple `<script src="my-script.js">` tag.
 Those won't be bundle or transformed. 
 If you use the `index.js` or `index.jsx`, this file will be bundled before running your app. 
 Meaning you can import modules and libraries.
-Sort of like your frontend/client JS part of any single page app (SPA).
 
-
-Take note that this file MUST be added as `type="module"`
+Take note that this file **MUST** be added as `type="module"` in your `index.html` file.  
+If you use `index.jsx`, you **MUST** still use `index.js` as `src`
 ```html
+<!-- index.html -->
 <script type="module" src="index.js"></script>
 ```
 
@@ -33,5 +39,5 @@ Take note that this file MUST be added as `type="module"`
 
 This directory is particular because it will not be zipped when you export your app.
 It is really intended to just keep your persistent runtime app data which does not need to be shared.
-It will also always be ignored by git.
+It will also be ignored by git.
 
