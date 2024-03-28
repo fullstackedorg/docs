@@ -38,7 +38,7 @@ There are 3 key components in FullStacked
   * An incredibly fast bundler to merge into one file (to bundle) all of your messy JS files.
   * It also transforms JSX and TypeScript into JS
 * Adapter
-  * A piece of code that translates the JavaScript OS-level calls to the platform behind.
+  * A platform specific piece of code that exposes some OS-level functionalities to your JavaScript.
 
 Here's an example of how these components interact
 
@@ -46,8 +46,42 @@ Here's an example of how these components interact
 
 This architecture is thought to make it as easy as possible to implement it onto any kind of device.
 
+### Implementations
+
+#### iOS
+
+WebView: WKWebView  
+esbuild: Built to c-archives  
+Adapter: Swift
+
+#### electron
+
+WebView: Chrome (Packed with electron)  
+esbuild: Prebuilt binary downloaded on first run  
+Adapter: NodeJS (Packed with electron)
+
+#### npm
+
+WebView: Your default web browser  
+esbuild: Install through npm dependencies  
+Adapter: NodeJS
+
 ## FullStacked vs PWA
+
+Progressive Web Apps are very close to what you'll build in FullStacked.
+Although, adding a project to FullStacked is through git or offline processes, 
+meaning your projects are not exposed to the public internet.
+Also, FullStacked provided an easy access to native functionalities like the file system and native fetch.
+
 
 ## FullStacked vs React-Native/Flutter
 
+The goal of those frameworks is to translate to OS-specific native features. 
+FullStacked is an environment that provides those features and gives a universal way to access them from a web view.
+In other words, RN/Flutter is a project translated when built/compiled vs FullStacked is a prebuilt environment ready to run any web app.
+
 ## FullStacked vs Electron/Tauri/Neutralinojs
+
+Those frameworks are designed to pack your JavaScript with a webview and a runtime. 
+FullStacked exists to provide everyone with those in a stable way. 
+Meaning all you have left to is build.

@@ -1,6 +1,6 @@
 # Getting Started
 
-Once installed, you can now create full-stack web apps within FullStacked.
+Once installed, you can now create projects within FullStacked.
 Follow along to create a `Hello World` project.
 
 ## Creating a new project
