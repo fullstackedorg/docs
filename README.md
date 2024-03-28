@@ -51,7 +51,7 @@ This architecture is thought to make it as easy as possible to implement it onto
 #### iOS
 
 WebView: WKWebView  
-esbuild: GO library built to c-archive
+esbuild: GO library built to c-archive  
 Adapter: Swift
 
 #### electron

@@ -24,7 +24,7 @@ async function loadData() {
       rawData = await rpc().fs.readFile(cacheFile, { encoding: "utf8" });
     } else {
       rawData = await rpc().fetch("https://some.api", { encoding: "utf8" });
-      fs.writeFile(cacheFile, rawData);
+      await rpc().fs.writeFile(cacheFile, rawData);
     }
 
     return JSON.parse(rawData);
