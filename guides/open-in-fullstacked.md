@@ -33,17 +33,17 @@ npx @fullstacked/editor -- [git/repo/url.git]
 ## Share page
 
 If your recipient doesn't have the FullStacked Editor installed beforehand, the `fullstacked://` url will bring them into a dead end.
-To share your project in a more fashionably, use the https://fullstacked.org/share page to send your project deep link.
+To share your project in a more fashionably, use the https://share.fullstacked.org page to send your project deep link.
 Simply add your git url in the query parameters.
 
 ```
-https://fullstacked.org/share?git=[git/repo/url.git]
+https://share.fullstacked.org?git=[git/repo/url.git]
 
 Example:
-https://fullstacked.org/share?git=https://github.com/fullstackedorg/editor-sample-demo.git
+https://share.fullstacked.org?git=https://github.com/fullstackedorg/editor-sample-demo.git
 ```
 Try it out  
-https://fullstacked.org/share?git=https://github.com/fullstackedorg/editor-sample-demo.git
+https://share.fullstacked.org?git=https://github.com/fullstackedorg/editor-sample-demo.git
 
 ## Markdown Button
 
@@ -51,14 +51,14 @@ You can even add an "Open in FullStacked" button to your `README` page to allow 
 To do so, create an image link with the share page url.
 
 ```
-[![Open in FullStacked]([image/url])](share/page?git=[git/repo/url.git])
+[![Open in FullStacked]([image/url])](share?git=[git/repo/url.git])
 
 Example:
-[![Open in FullStacked](https://raw.githubusercontent.com/fullstackedorg/website/main/open-in-fullstacked.svg)](https://fullstacked.org/share?git=https://github.com/fullstackedorg/editor-sample-demo.git)
+[![Open in FullStacked](https://share.fullstacked.org/open-in-fullstacked.svg)](https://share.fullstacked.org?git=https://github.com/fullstackedorg/editor-sample-demo.git)
 ```
 
 Try it out  
-[![Open in FullStacked](https://raw.githubusercontent.com/fullstackedorg/website/main/open-in-fullstacked.svg)](https://fullstacked.org/share?git=https://github.com/fullstackedorg/editor-sample-demo.git)
+[![Open in FullStacked](https://share.fullstacked.org/open-in-fullstacked.svg)](https://share.fullstacked.org?git=https://github.com/fullstackedorg/editor-sample-demo.git)
 
 ## Extra parameters
 
@@ -70,7 +70,7 @@ Deep Link
 fullstacked://[git/repo/url.git]?title=Demo
 
 Share Page
-https://fullstacked.org/share?git=[git/repo/url.git]?title=Demo
+https://share.fullstacked.org?git=[git/repo/url.git]?title=Demo
 ```
 
 ### Available parameters

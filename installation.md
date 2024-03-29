@@ -5,7 +5,7 @@
 Stable releases are available on the
 [Apple App Store](https://apps.apple.com/ca/app/fullstacked/id6477835950)
 
-### or
+or
 
 Pre-releases and Beta are available on [Test Flight](https://apps.apple.com/ca/app/testflight/id899247664), with [this public link](https://testflight.apple.com/join/f1gnTHVm)
 

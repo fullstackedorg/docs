@@ -1,25 +1,22 @@
 # Getting Started
 
-Once installed, you can now create full-stack web apps within FullStacked.
-Follow along to create a `Hello World` project.
+Once installed, you can now create projects within FullStacked.
+Follow along to create a `Hello World` sample project.
 
 ## Creating a new project
 
 Start by creating a new project by clicking on the plus `+` tile.
 
-![Projects View](/images/hello-world/projects-view.png)
+![Projects View](/images/sample-project/projects.png)
 
 Make sure to add a title to your project and if you'd like, select a location where to store your project directory.
 
-![New Project View](/images/hello-world/new-project-view.png)
+![New Project View](/images/sample-project/new-project.png)
 
-There you go. Your first project is created!
+## Editing the JavaScript entrypoint
 
-![Project View](/images/hello-world/project-view.png)
-
-## Editing the WebView
-
-Let's start by creating the WebView JS. That's the context interacting with the DOM.
+This is file FullStacked will build and bundle expecting to be run in the web view later on.
+Let's start by creating a little something.
 
 ```js
 // index.js
@@ -28,41 +25,28 @@ document.body.append(container);
 container.innerText = await rpc().greeting("World");
 ```
 
-![index.js](/images/hello-world/webview-js.png)
+![index.js](/images/sample-project/index-js.png)
 
-Notice that `rpc` call. You'll have to create a `greeting(to: string): string` in your API JS.
-
-## Editing the API
-
-Now let's create your API JS. That's the context interacting with the adapter which access OS-level features.
-
-```js
-// api/index.js
-export default {
-    greeting(to){
-        return "Hello " + to;
-    }
-}
-```
-
-![api/index.js](/images/hello-world/api-js.png)
-
-## Running your project
+## Editing the Web App entrypoint
 
 We're almost ready to launch your project. 
-Just like any other website or web app, you'll need an `index.html` as main starting point.
-Let's create it and then add your WebView JS script.
+Like any web-like project, everything starts with an `index.html`.
+Let's create it and then add your JS script.
 
 ```html
 <!-- index.html -->
 <script type="module" src="index.js"></script>
 ```
 
-![api/index.js](/images/hello-world/index-html.png)
+![index.html](/images/sample-project/index-html.png)
+
+## Running your project
 
 Now we're ready. Run your project.
 
-![Running App](/images/hello-world/running-app.png)
+![Run](/images/sample-project/run.png)
+
+![Sample Project](/images/sample-project/sample-project.png)
 
 ## Adding some styling
 
@@ -73,7 +57,7 @@ Create a `css` file and add any kind of style attributes you'd like.
 /* index.css */
 html, body {
     font-family: sans-serif;
-    background-color: darkcyan;
+    background-color: midnightblue;
     color: whitesmoke;
     height: 100%;
     width: 100%;
@@ -83,7 +67,7 @@ html, body {
 }
 ```
 
-![index.css](/images/hello-world/index-css.png)
+![index.css](/images/sample-project/index-css.png)
 
 Then make sure to add it to your `index.html`.
 
@@ -93,8 +77,8 @@ Then make sure to add it to your `index.html`.
 <script type="module" src="index.js"></script>
 ```
 
-![index.html](/images/hello-world/index-html-with-css.png)
+![index.html with css](/images/sample-project/index-html-with-css.png)
 
 Rerun your project and voilà!
 
-![Running App with Style](/images/hello-world/running-app-with-css.png)
+![Sample Project with css](/images/sample-project/sample-project-with-css.png)
