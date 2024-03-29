@@ -58,7 +58,7 @@ Example:
 ```
 
 Try it out  
-[![Open in FullStacked](https://raw.githubusercontent.com/fullstackedorg/website/main/open-in-fullstacked.svg)](https://fullstacked.org/share?git=https://github.com/fullstackedorg/editor-sample-demo.git)
+[![Open in FullStacked](https://share.fullstacked.org/open-in-fullstacked.svg)](https://share.fullstacked.org?git=https://github.com/fullstackedorg/editor-sample-demo.git)
 
 ## Extra parameters
 
