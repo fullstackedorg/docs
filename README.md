@@ -1,6 +1,6 @@
 # FullStacked Editor
 
-Build and run JavaScript web apps on any platform.
+Build and run JavaScript apps on any platform.
 
 ![FullStacked Editor Mockup](images/fullstacked-editor-mockup.jpeg)
 
