@@ -1,13 +1,13 @@
  # fetch
 
-You can use `fetch` on the API side to get some data and play with it before rendering it in the WebView.
-It's very useful to go around CORS and to cache some data.
+You can use a native `fetch` to get some data.
+It's very useful to go around CORS.
 The `fetch` method is inspired from the [Browser](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and [NodeJS](https://nodejs.org/dist/latest/docs/api/globals.html) ones. 
 
 ## Method
 
 ```ts
-fetch: (
+rpc().fetch: (
   url: string,
   options?: {
     headers?: Record<string, string>;
@@ -23,7 +23,7 @@ fetch: (
     body: Uint8Array;
   }>;
 
-fetch: (
+rpc().fetch: (
   url: string,
   options?: {
     headers?: Record<string, string>;
@@ -48,17 +48,17 @@ fetch: (
 const cacheFile = "data/cache.json";
 
 // if the file exists return it directly
-if(await fs.exists(cacheFile))
-  return fs.readFile(cacheFile, { encoding: "utf8" });
+if(await rpc().fs.exists(cacheFile))
+  return rpc().fs.readFile(cacheFile, { encoding: "utf8" });
 
 // fetch an api that block CORS request
-const data = await fetch("https://api.com", { encoding: "utf8" });
+const data = await rpc().fetch("https://api.com", { encoding: "utf8" });
 
 // make it a JS object
 const json = JSON.parse(data);
 
 // cache it for later and/or offline use
-await fs.writeFile(cacheFile, json);
+await rpc().fs.writeFile(cacheFile, json);
 
 return json;
 ```
