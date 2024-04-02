@@ -85,3 +85,10 @@ In other words, RN/Flutter translates your codebase when built/compiled vs FullS
 Those frameworks are designed to pack your JavaScript with a webview and a runtime. 
 FullStacked exists to provide everyone with those two same components in a stable way. 
 Meaning, all you have left to do is build and run projects, no need to pack anything else.
+
+## FullStacked vs Replit/StackBlitz/Codespaces/CodeSandbox
+
+Those development tools are IDEs intended to essentially make coding more accessible. 
+This is also part of FullStacked goals, but FullStacked has also the goal to provide a place to run your projects.
+While some of those tools provides offline features, they are still for the most part working with a remote server.
+FullStacked has and will always have an offline-first/local-first approach.
