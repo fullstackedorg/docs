@@ -1,6 +1,6 @@
 # FullStacked Editor
 
-Build and run JavaScript apps on any platform.
+Build and run JavaScript and TypeScript apps on any platform.
 
 ![FullStacked Editor Mockup](images/fullstacked-editor-mockup.jpeg)
 
@@ -18,14 +18,14 @@ or
     * Using a hosting service (CloudFlare, Vercel, Netlify, etc.)
 
 Both cases brings tedious tasks like apps reviews or needing to build out of scope functionalities like logins, rate limiters, cache busters, etc.
-What if we just want to use our quick and small JavaScript app throughout all of our devices without the need to go through any of that?
+What if we just want to use our quick and small web app safely and with all of our devices without the need to go through any of that?
 
-This project aims to provide a way to build at a very high pace and run full-stack web applications on any device.
+This project aims to provide a way to build at a very high pace and run local-first web-like apps on any device.
 
 
 ## How it works
 
-> This section explains in-depth how FullStacked is able to easily run full-stack JS web apps anywhere.  
+> This section explains in-depth how FullStacked is able to easily run local-first web-like apps anywhere.  
 > If you are looking for help on how to build an app inside FullStacked, go over the Guides section.
 
 There are 3 key components in FullStacked
@@ -78,13 +78,13 @@ Also, FullStacked provides an easy access to native functionalities like the fil
 
 The goal of those frameworks is to translate to OS-specific native features. 
 FullStacked is more of an environment that provides those features and gives an universal way to access them from a webview.
-In other words, RN/Flutter translates your codebase when built/compiled vs FullStacked is a prebuilt environment ready to run any web apps.
+In other words, RN/Flutter translates your codebase when built/compiled vs FullStacked is a prebuilt environment ready to run web-like apps.
 
 ## FullStacked vs Electron/Tauri/Neutralinojs
 
-Those frameworks are designed to pack your JavaScript with a webview and a runtime. 
-FullStacked exists to provide everyone with those two same components in a stable way. 
-Meaning, all you have left to do is build and run projects, no need to pack anything else.
+Those frameworks are designed to pack your JavaScript code with a webview and a JS engine. 
+FullStacked provides those two exact components with a code editor and a code bundler. 
+Meaning, all you have left to do is build and run projects inside FullStacked, no need to pack anything else.
 
 ## FullStacked vs Replit/StackBlitz/Codespaces/CodeSandbox
 

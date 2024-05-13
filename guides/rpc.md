@@ -1,4 +1,6 @@
- # Using the rpc object
+# Using the rpc object
+
+> Since v0.5.0, TypeScript support helps a lot with autocompletions of the rpc object.
 
 The `rpc` is a function available on the `window` only when you load the built/bundled JavaScript entrypoint.
 It's meant to call some native functions. 
