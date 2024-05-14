@@ -77,7 +77,7 @@ Also, FullStacked provides an easy access to native functionalities like the fil
 ## FullStacked vs React-Native/Flutter
 
 The goal of those frameworks is to translate to OS-specific native features. 
-FullStacked is more of an environment that provides those features and gives an universal way to access them from a webview.
+FullStacked is more of an environment that provides those features and gives a universal way to access them from a webview.
 In other words, RN/Flutter translates your codebase when built/compiled vs FullStacked is a prebuilt environment ready to run web-like apps.
 
 ## FullStacked vs Electron/Tauri/Neutralinojs
