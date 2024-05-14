@@ -12,11 +12,13 @@ to grow a projet at scale.
 To start using the TypeScript language service, simply create a `.ts` or `.tsx` file and open it.
 Once open, the TS Worker will start and you'll the TS logo will light up and start to flash.
 
-[ image ]
+![TS Icon Anim](/images/typescript/ts-icon-anim.gif)
 
 As you code, you'll see autocompletions and type errors appear.
 
-[ image ]
+![TS Icon Anim](/images/typescript/completion.png)
+![TS Icon Anim](/images/typescript/error.png)
+![TS Icon Anim](/images/typescript/property.png)
 
 ### IMPORTANT
 
