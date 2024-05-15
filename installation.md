@@ -121,7 +121,7 @@ For this reason, you will need to point DNS records and have SSL certificates fo
 
 Requirements
 * Git
-* NodeJS `>=18` with NPM
+* NodeJS `>=18.17.0` with NPM
 
 ```shell
 git clone https://github.com/fullstackedorg/editor.git
