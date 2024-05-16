@@ -1,7 +1,7 @@
 # Open in FullStacked
 
 If you use git to version your project,
-you can easily share your project with a link that will open directly try to open your repository in FullStacked!
+you can easily share your project with a link that will open directly in FullStacked!
 
 ## Deep Link
 
@@ -78,5 +78,4 @@ https://share.fullstacked.org?git=[git/repo/url.git]?title=Demo
 | Param Name | default |
 | -------- | ------- |
 | `title` | username/repo-name |
-
-
+| `branch` | *repository default branch* |

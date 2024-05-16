@@ -95,6 +95,10 @@
           link: "/guides/files"
         },
         {
+          title: "Using TypeScript",
+          link: "/guides/typescript"
+        },
+        {
           title: "Using the rpc object",
           link: "/guides/rpc"
         },
