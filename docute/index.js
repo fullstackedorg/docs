@@ -139,6 +139,10 @@ new Docute({
                 {
                     title: "Fetch (fetch)",
                     link: "/references/fetch"
+                },
+                {
+                    title: "Broadcast (broadcast)",
+                    link: "/references/broadcast"
                 }
             ]
         }
