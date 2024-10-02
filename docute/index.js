@@ -1,6 +1,6 @@
 new Docute({
     target: "#docs",
-    highlight: ["typescript", "html", "javascript"],
+    highlight: ["typescript", "jsx", "html", "javascript"],
     logo: `<div class="logo-icon"><img src="images/icon.png" />FullStacked</div>`,
     editLinkBase: "https://github.com/fullstackedorg/editor-docs/blob/main",
     footer: `<div><small>
@@ -85,6 +85,10 @@ new Docute({
                 {
                     title: "Getting Started",
                     link: "/getting-started"
+                },
+                {
+                    title: "Compared to Other Tools",
+                    link: "/fullstacked-vs"
                 }
             ]
         },
@@ -94,6 +98,10 @@ new Docute({
                 {
                     title: "Files Structure",
                     link: "/guides/files"
+                },
+                {
+                    title: "Using Sass/SCSS",
+                    link: "/guides/sass"
                 },
                 {
                     title: "Using TypeScript",

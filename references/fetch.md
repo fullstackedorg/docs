@@ -11,13 +11,13 @@ rpc().fetch: (
   url: string,
   options?: {
     headers?: Record<string, string>;
-    method?: "GET" | "POST" | "PUT" | "DELTE";
+    method?: "GET" | "POST" | "PUT" | "DELETE";
     body?: string | Uint8Array;
   }
 ) => Promise<{
     url: string;
     headers: Record<string, string>;
-    method: "GET" | "POST" | "PUT" | "DELTE";
+    method: "GET" | "POST" | "PUT" | "DELETE";
     statusCode: number;
     statusMessage: string;
     body: Uint8Array;
@@ -27,14 +27,14 @@ rpc().fetch: (
   url: string,
   options?: {
     headers?: Record<string, string>;
-    method?: "GET" | "POST" | "PUT" | "DELTE";
+    method?: "GET" | "POST" | "PUT" | "DELETE";
     body?: string | Uint8Array;
     encoding: "utf8";
   }
 ) => Promise<{
     url: string;
     headers: Record<string, string>;
-    method: "GET" | "POST" | "PUT" | "DELTE";
+    method: "GET" | "POST" | "PUT" | "DELETE";
     statusCode: number;
     statusMessage: string;
     body: string;
