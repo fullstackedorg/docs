@@ -9,6 +9,9 @@ or
 
 Pre-releases and Beta are available on [Test Flight](https://apps.apple.com/ca/app/testflight/id899247664), with [this public link](https://testflight.apple.com/join/f1gnTHVm)
 
+## Android
+
+
 ## MacOS
 
 1. Download the right app package from github
@@ -74,7 +77,7 @@ sudo rpm --install ./fullstacked-rpm-x64
 FullStacked
 ```
 
-## npm CLI
+## npm
 
 > Running using NPM opens up ports to communicate between the WebView and the API.  
 > **Not recommended on public networks.**
