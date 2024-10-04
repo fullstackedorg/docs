@@ -1,9 +1,9 @@
 # Using TypeScript
 
-"[TypeScript](https://www.typescriptlang.org) is a strongly typed programming language that builds on JavaScript,
-giving you better tooling at any scale." *-TypeScript Website*
+*> [TypeScript](https://www.typescriptlang.org) is a strongly typed programming language that builds on JavaScript,
+giving you better tooling at any scale. -TypeScript Website*
 
-At FullStacked, we believe there is very few reasons not to use TypeScript (TS).
+At FullStacked, we believe there are very few reasons **not** to use TypeScript (TS).
 It allows to work as fast as with JavaScript and offers the needed structure
 to grow a projet at scale.
 
@@ -16,9 +16,9 @@ Once open, the TS Worker will start and you'll see the TS logo light up and star
 
 As you code, autocompletions and type errors will appear to help you out.
 
-![TS Icon Anim](/images/typescript/completion.png)
-![TS Icon Anim](/images/typescript/error.png)
-![TS Icon Anim](/images/typescript/property.png)
+![TS Completion](/images/typescript/completion.png)
+![TS Error](/images/typescript/error.png)
+![TS Property](/images/typescript/property.png)
 
 ### IMPORTANT
 

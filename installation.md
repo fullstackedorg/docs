@@ -11,6 +11,16 @@ Pre-releases and Beta are available on [Test Flight](https://apps.apple.com/ca/a
 
 ## Android
 
+Stable releases are available on the
+[Google Play Store](https://play.google.com/store/apps/details?id=org.fullstacked.editor)
+
+or
+
+To install the pre-releases,
+1. Join the Google Group **Fullstacked Testers**  
+   [https://groups.google.com/g/fullstacked](https://groups.google.com/g/fullstacked)
+3. Go back to the [Google Play Store](https://play.google.com/store/apps/details?id=org.fullstacked.editor) to update
+
 
 ## MacOS
 
@@ -94,28 +104,56 @@ npx @fullstacked/editor@latest
 
 ## Docker
 
-> WIP  
-> Not yet available
+> **Note**  
+> Using Docker is still an experimental way to keep persistent peers online at all time.  
+> **Not recommended for the basic usage of FullStacked.**
 
-> Running using Docker opens up a port to communicate between the WebView and the OS.  
-> **Not recommended on public networks.**
+The main goal of FullStacked with Docker, is 
+to launch an instance of FullStacked Editor on a machine that will persistently stay alive.
+Meaning he can relay and store peer data at all time.
 
+In the Docker setup, FullStacked is running just like any other platform,
+but it also run a [puppeteer](https://github.com/cplepage/puppeteer-stream) remote that allows to simulate leaving a browser open.
+
+### To simply run FullStacked in Docker
+
+FullStacked runs on the default ports:
+* `9000` for the Editor interface
+* `14000` for the Peer-to-Peer connectivity
+
+So to only use it for basic usage, run:
 ```shell
-docker run fullstackedorg/editor
+docker run -p 9000:9000 -p 14000:14000 -v fullstacked-data:/home fullstackedorg/editor
 ```
 
-### Domain Setup for Cloud Use
+FullStacked will be available at `http://localhost:9000` and projects will run at `http://{SLUGFIED_TITLE}.localhost:9000`.
 
-FullStacked for docker has a clever subdomain to port reverse-proxy to allow the use of
-your FullStacked instance from a single domain and sub-domains.
+> Safari won't work because the DNS resolving does not like `[subdomain].localhost`  
+> **Please use Chrome or Firefox**
 
-#### Example
+### To remote control FullStacked, Linux Only
 
-* **example.com** is the main entrypoint
-* **\*.example.com** will be for ports subdomains
-  * **9001.example.com** reaches localhost:9001 inside the docker container
+Now, to mimic an always open browser navigator and to have an always alive peer,
+FullStacked in Docker also have a remote controller running at port `12000`.
 
-For this reason, you will need to point DNS records and have SSL certificates for both your domain and the wildcard subdomain.
+This runs a stream of the browser window running headless inside the container.
+To make the discovery and the WebRTC stream connect, 
+the simplest way is to run the container directly on the host network with privileged.
+
+```shell
+docker run --network host --privileged -v fullstacked-data:/home fullstackedorg/editor
+```
+
+From any other device, open a web page at `http://{YOUR_MACHINE_IP}:12000`.
+You will see a video stream with forwarding click and keyboard events running.
+
+![Docker Remote Control](/images/docker/docker-remote-control.png)
+
+From there, connect to other peers and run any amount of projects. 
+You will see that even if you close the stream (the web page), your other devices stays connected
+to this instance.
+
+![Docker Remote Control Peer Alive](/images/docker/docker-remote-control-peer-alive.png)
 
 ## Build from source
 

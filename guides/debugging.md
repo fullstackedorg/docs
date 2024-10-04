@@ -17,13 +17,13 @@ To do so, connect by usb your device to a Mac computer and debug with the Safari
 
 1. Connect your Android device to a computer that has Google Chrome web browser installed.
 
-2. Run your project on your Android device.
-
-3. Open Google Chrome at [chrome://inspect](chrome://inspect).
-
+2. Run your project on your Android device.  
+![Debug Android](/images/debugging/debug-android-phone.png)
+3. On the computer, open Google Chrome at [chrome://inspect](chrome://inspect).
 4. Select the webview of your running project.
-
+![Debug Android Chrome](/images/debugging/debug-android-chrome.png)
 5. Debug
+![Debug Android Inspector](/images/debugging/debug-android-chrome-inspector.png)
 
 
 ## Eruda

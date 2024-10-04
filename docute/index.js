@@ -1,6 +1,6 @@
 new Docute({
     target: "#docs",
-    highlight: ["typescript", "jsx", "html", "javascript"],
+    highlight: ["typescript", "jsx", "html", "javascript", "sass"],
     logo: `<div class="logo-icon"><img src="images/icon.png" />FullStacked</div>`,
     editLinkBase: "https://github.com/fullstackedorg/editor-docs/blob/main",
     footer: `<div><small>
