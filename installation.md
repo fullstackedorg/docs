@@ -167,6 +167,7 @@ Requirements
 ```shell
 git clone https://github.com/fullstackedorg/editor.git
 cd editor
+git submodule update --init --recursive --progress
 npm i
 npm start
 ```
