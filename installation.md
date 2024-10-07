@@ -11,15 +11,17 @@ Pre-releases and Beta are available on [Test Flight](https://apps.apple.com/ca/a
 
 ## Android
 
-Stable releases are available on the
+> Currently in Closed Testing.
+
+<!-- Stable releases are available on the
 [Google Play Store](https://play.google.com/store/apps/details?id=org.fullstacked.editor)
 
-or
+or -->
 
 To install the pre-releases,
 1. Join the Google Group **Fullstacked Testers**  
    [https://groups.google.com/g/fullstacked](https://groups.google.com/g/fullstacked)
-3. Go back to the [Google Play Store](https://play.google.com/store/apps/details?id=org.fullstacked.editor) to update
+2. Go to the [Google Play Store](https://play.google.com/store/apps/details?id=org.fullstacked.editor) to update
 
 
 ## MacOS
