@@ -57,7 +57,7 @@ Adapter: Swift
 #### Android
 
 WebView: Android System WebView  
-esbuild: GO library built to a shared library
+esbuild: GO library built to a shared library  
 Adapter: Kotlin
 
 #### electron
