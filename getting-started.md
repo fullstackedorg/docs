@@ -27,7 +27,7 @@ container.innerText = await rpc().greeting("World");
 
 ![index.js](/images/sample-project/index-js.png)
 
-## Editing the App entrypoint
+## Editing the Project entrypoint
 
 We're almost ready to launch your project. 
 Like any web-like project, everything starts with an `index.html`.
