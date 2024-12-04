@@ -11,16 +11,14 @@ Pre-releases and Beta are available on [Test Flight](https://apps.apple.com/ca/a
 
 ## Android
 
-> Currently in Closed Testing.
-
-<!-- Stable releases are available on the
+Stable releases are available on the
 [Google Play Store](https://play.google.com/store/apps/details?id=org.fullstacked.editor)
 
-or -->
+or
 
 To install the pre-releases,
-1. Join the Google Group **Fullstacked Testers**  
-   [https://groups.google.com/g/fullstacked](https://groups.google.com/g/fullstacked)
+1. Join the Testing Group 
+   [https://play.google.com/apps/testing/org.fullstacked.editor](https://play.google.com/apps/testing/org.fullstacked.editor)
 2. Go to the [Google Play Store](https://play.google.com/store/apps/details?id=org.fullstacked.editor) to update
 
 
@@ -34,9 +32,14 @@ To install the pre-releases,
 
 ## Windows
 
-1. Download the windows installer from github
-2. Run the Setup and then FullStacked will launch
-3. You will have a Desktop shortcut for the next times you want to start FullStacked
+FullStacked is now available on the [Microsoft Store](https://apps.microsoft.com/detail/9p987qm508vc)
+
+> For versions prior to `0.10.0`
+> 1. Download FullStacked from the download page  
+   [https://fullstacked.org/download](https://fullstacked.org/download)
+> 2. Run the Setup and then FullStacked will launch
+> 3. You will have a Desktop shortcut for the next times you want to start FullStacked
+
 
 ## Linux
 
