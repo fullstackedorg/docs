@@ -17,10 +17,10 @@ new Docute({
             title: "Roadmap",
             link: "https://fullstacked.notion.site/FullStacked-Roadmap-ebfcb685b77446c7a7898c05b219215e"
         },
-        {
-            title: "Download",
-            link: "https://github.com/fullstackedorg/editor/releases"
-        },
+        // {
+        //     title: "Download",
+        //     link: "https://github.com/fullstackedorg/editor/releases"
+        // },
         {
             title: "GitHub",
             link: "https://github.com/fullstackedorg/editor"
@@ -78,10 +78,10 @@ new Docute({
                     title: "Introduction",
                     link: "/"
                 },
-                {
-                    title: "Installation",
-                    link: "/installation"
-                },
+                // {
+                //     title: "Installation",
+                //     link: "/installation"
+                // },
                 {
                     title: "Getting Started",
                     link: "/getting-started"
