@@ -2,11 +2,11 @@
 
 ## vs PWA
 
-Progressive Web Apps are very close to what you'll build in FullStacked. Although, adding a project to FullStacked is through git or offline processes, meaning your projects are not exposed to the public internet. Also, FullStacked provides an easy access to native functionalities like the file system and a native fetch (no CORS).
+Progressive Web Apps are very close to what you'll build in FullStacked. Although, adding a project to FullStacked is through git or offline processes, meaning your projects are not exposed to the public internet. Also, FullStacked provides an easy access to native functionalities like the file system and a native fetch (allows to work around CORS).
 
 ## vs React-Native, Flutter
 
-The goal of those frameworks is to translate to OS-specific native features. FullStacked is more of an environment that provides those features and gives a universal way to access them from a webview. In other words, RN/Flutter translates your codebase when built/compiled vs FullStacked is a prebuilt environment ready to run web-like apps.
+The goal of those frameworks is to translate and compile web-like languages to OS-specific native features. FullStacked is more of an environment that provides a simple access to native features from your web-like code running in a WebView. In other words, your RN/Flutter projects needs to be built and compiled before running it vs FullStacked is prebuilt to provide an environment ready to run your projects.
 
 ## vs Electron, Tauri, Neutralinojs
 

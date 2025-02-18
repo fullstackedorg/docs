@@ -4,7 +4,7 @@ FullStacked is solely accesible from major app marketplaces to ensure secured an
 
 ## MacOS, iOS and IPadOS
 
-Apple App Store
+[App Store](https://apps.apple.com/ca/app/fullstacked/id6477835950)
 
 ### Beta
 
