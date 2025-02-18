@@ -28,9 +28,42 @@ While these solutions are great to make your app accessible to the general publi
 There are 4 key components in FullStacked
 
 *   Core
+
+    *   Built with GO and compiled to C library.
+
+    *   Access to native functionalities.
+
+    *   Very fast and performant.
+
+    *   Handles features like
+
+        *   File System
+        *   Git (go-git)
+        *   JavaScript Packages management (similar to npm)
+        *   JavaScript Code Bundling (esbuild)
+        *   ZIP Archiving
+
 *   WebView
+
+    *   Instead of trying to use os-specific native UI systems. FullStacked leverages the use of what has been rendering user interfaces for year: the web browser.
+
+    *   Every major Operating System has a built-in WebView
+
+        *   WKWebView (WebKit) for Apple
+        *   WebView (Chromium) for Android
+        *   WebView2 (Edge/Chromium) for Windows
+
+    *   Some even argue it's better than native rendering: <https://javascript.plainenglish.io/i-replaced-my-native-ios-app-with-a-cross-platform-web-app-and-no-one-noticed-1653901ce244?gi=e8cbda006b4b>
+
 *   Adapter
+
+    *   Piece of OS-specific code that will bind the communication between the WebView and the Core.
+    *   Manages the windows spawned for the different running projects.
+
 *   Bridge
+
+    *   A piece of JavaScript code always include in every WebView spawned.
+    *   It allows projects code and the Core to interact.
 
 ### Implementations on different platforms
 
