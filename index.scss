@@ -39,3 +39,10 @@ main {
         }
     }
 }
+
+blockquote {
+    border-left: 1px solid var(--bn-colors-side-menu);
+    margin-left: 4px;
+    padding-left: 20px;
+    color: var(--mantine-color-dark-2);
+}

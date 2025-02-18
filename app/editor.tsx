@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useCreateBlockNote } from "@blocknote/react";
+import {
+    getDefaultReactSlashMenuItems,
+    SuggestionMenuController,
+    useCreateBlockNote,
+} from "@blocknote/react";
 import fs from "fs";
 import { BlockNoteView } from "@blocknote/mantine";
 import "@blocknote/mantine/style.css";
-import { Block } from "@blocknote/core";
+import { Block, filterSuggestionItems } from "@blocknote/core";
+import { insertQuote, schema } from "./blockquote/quote";
 
 export function Editor(props: {
     file: string;
@@ -12,7 +17,7 @@ export function Editor(props: {
 }) {
     const [order, setOrder] = useState(props.order);
 
-    const editor = useCreateBlockNote();
+    const editor = useCreateBlockNote({ schema });
 
     useEffect(() => {
         if (!props.file) {
@@ -47,7 +52,21 @@ export function Editor(props: {
                         editor.blocksToMarkdownLossy(b),
                     );
                 }}
-            />
+                slashMenu={false}
+            >
+                <SuggestionMenuController
+                    triggerCharacter={"/"}
+                    getItems={async (query) =>
+                        filterSuggestionItems(
+                            [
+                                ...getDefaultReactSlashMenuItems(editor),
+                                insertQuote(editor),
+                            ],
+                            query,
+                        )
+                    }
+                />
+            </BlockNoteView>
         </div>
     );
 }
