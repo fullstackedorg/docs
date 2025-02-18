@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+        "@blocknote/core": "^0.24.0",
+        "@blocknote/mantine": "^0.24.0",
+        "@blocknote/react": "^0.24.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.10",
+        "@types/react-dom": "^19.0.4",
+        "eruda": "^3.4.1"
+    }
+}
