@@ -1,17 +1,14 @@
 # Using the rpc object
 
-> Since v0.5.0, TypeScript support helps a lot with autocompletions of the rpc object.
+Since v0.5.0, TypeScript support helps a lot with autocompletions of the rpc object.
 
-The `rpc` is a function available on the `window` only when you load the built/bundled JS/TS entrypoint.
-It's meant to call some native functions. 
-The available functions are listed in the References section of those docs.
-The returned value is always a `promise`.
+The `rpc` is a function available on the `window` only when you load the built/bundled JS/TS entrypoint. It's meant to call some native functions. The available functions are listed in the References section of those docs. The returned value is always a `promise`.
 
 ## Example
 
-Fetching data and caching it in a local file. 
-Then searching in the whole dataset.
-```ts
+Fetching data and caching it in a local file. Then searching in the whole dataset.
+
+```typescript
 // index.js
 import renderTable from "./table.js"
 

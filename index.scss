@@ -1,0 +1,41 @@
+@use "./node_modules/@fullstacked/ui/ui.scss";
+@use "./node_modules/@fullstacked/ui/values/colors.scss";
+@use "./node_modules/@fullstacked/ui/values/spacing.scss";
+
+html,
+body {
+    background-color: colors.$blue-dark;
+    width: 100%;
+}
+
+$file-list-width: 300px;
+
+main {
+    display: flex;
+    width: 100%;
+
+    > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: $file-list-width;
+        padding: spacing.$small;
+
+        > li {
+            padding: spacing.$small;
+            border-radius: 5px;
+
+            &.active {
+                background-color: colors.$blue;
+            }
+        }
+    }
+
+    > div {
+        width: calc(100% - $file-list-width);
+
+        > .bn-container {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+[
+    "docs/introduction.md",
+    "docs/installation.md",
+    "docs/getting-started.md",
+    "docs/fullstacked-vs.md",
+    "docs/guides/files.md",
+    "docs/guides/sass.md",
+    "docs/guides/typescript.md",
+    "docs/guides/rpc.md",
+    "docs/guides/packages.md",
+    "docs/guides/git.md",
+    "docs/guides/p2p-connectivity.md",
+    "docs/guides/open-in-fullstacked.md",
+    "docs/guides/import-export.md",
+    "docs/guides/debugging.md",
+    "docs/references/fs.md",
+    "docs/references/fetch.md",
+    "docs/references/broadcast.md",
+    "docs/privacy-policy.md"
+]

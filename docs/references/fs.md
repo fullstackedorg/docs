@@ -1,11 +1,10 @@
- # File System (fs)
+# File System (fs)
 
-The `fs` methods are very similar to the ones in [NodeJS fsPromises module](https://nodejs.org/api/fs.html).
-The paths are always relative to the root of your project files.
+The `fs` methods are very similar to the ones in [NodeJS fsPromises module](https://nodejs.org/api/fs.html). The paths are always relative to the root of your project files.
 
 ## Methods
 
-```ts
+```typescript
 rpc().fs.readFile(path: string): Promise<Uint8Array>
 
 rpc().fs.readFile(
@@ -47,11 +46,12 @@ rpc().fs.lstat(path: string): Promise<object>;
 
 ## Example
 
-```
+```javascript
 └ data
   └ file.json
 ```
-```js
+
+```javascript
 await rpc().fs.exists("data/file.json") => true
 await rpc().fs.exists("file.json") => false
 await rpc().fs.exists("data/some/random/path/file.json") => false

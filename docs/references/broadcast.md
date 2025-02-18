@@ -4,13 +4,13 @@ Share data to every connected peers.
 
 ## Method
 
-```ts
+```typescript
 rpc().broadcast(data: string): void;
 ```
 
 ## Example
 
-```ts
+```typescript
 // broadcast `Hello World` to other peers
 rpc().broadcast("Hello World");
 
