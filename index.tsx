@@ -6,6 +6,7 @@ import { Editor } from "./app/editor";
 import { Images } from "./app/images";
 import * as UI from "@fullstacked/ui";
 import fs from "fs";
+import { DeployButton } from "./app/deploy";
 
 const docsDirectory = "docs";
 
@@ -70,6 +71,6 @@ async function getDocsFiles(): Promise<string[]> {
 }
 
 const container = document.createElement("div");
-document.body.append(Images());
+document.body.append(Images(), DeployButton());
 document.body.append(container);
 createRoot(container).render(<App />);

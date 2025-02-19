@@ -4,6 +4,7 @@
         "@blocknote/mantine": "^0.24.0",
         "@blocknote/react": "^0.24.0",
         "@fullstacked/ui": "^0.0.1",
+        "marked": "^15.0.7",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "slugify": "^1.6.6"
