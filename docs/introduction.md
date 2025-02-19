@@ -45,7 +45,7 @@ There are 4 key components in FullStacked
 
 *   WebView
 
-    *   Instead of trying to use os-specific native UI systems. FullStacked leverages the use of what has been rendering user interfaces for year: the web browser.
+    *   Instead of trying to use os-specific native UI systems. FullStacked leverages the use of what has been rendering user interfaces for years: the web browser.
 
     *   Every major Operating System has a built-in WebView
 
@@ -57,18 +57,55 @@ There are 4 key components in FullStacked
 
 *   Adapter
 
-    *   Piece of OS-specific code that will bind the communication between the WebView and the Core.
-    *   Manages the windows spawned for the different running projects.
+    *   Piece of OS-specific code that will bind the WebView and the Core.
+    *   Manages the instances of WebView spawned for the different running projects.
 
 *   Bridge
 
-    *   A piece of JavaScript code always include in every WebView spawned.
+    *   A piece of JavaScript code included in every WebView spawned.
     *   It allows projects code and the Core to interact.
 
-### Implementations on different platforms
+Here’s a little schema of how the components are nested in one another.
+
+![fullstacked-key-components.png](https://img.fullstacked.org/fullstacked-key-components.png)
+
+The adapter is implemented for every platform supported. It implements a few key elements:
+
+*   Loading the Core C library and the foreign function interface with it
+
+    *   Implementing the “call” which returns a value
+    *   Implementing the “callback” which is a function the Core can call at any given moment
+
+*   Handles the WebViews spawning and management
+
+### Implementations specifics for different platforms
 
 *   Apple
+
+    *   Adapter: [Swift](https://developer.apple.com/swift/)
+    *   WebView: [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview)
+    *   Bridge: [WKScriptMessageHandler](https://developer.apple.com/documentation/webkit/wkscriptmessagehandler)
+
 *   Android
+
+    *   Adapter: [Kotlin](https://kotlinlang.org)
+    *   WebView: [WebView](https://developer.android.com/reference/android/webkit/WebView)
+    *   Bridge: [JavascriptInterface](https://developer.android.com/reference/android/webkit/JavascriptInterface)
+
 *   Windows
+
+    *   Adapter: [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
+    *   WebView: [WebView2](https://learn.microsoft.com/en-us/microsoft-edge/webview2/webview2-api-reference?tabs=dotnetcsharp)
+    *   Bridge: [WebMessageReceived](https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.winforms.webview2.webmessagereceived?view=webview2-dotnet-1.0.2903.40)
+
 *   WebAssembly (WASM)
+
+    *   Adapter: [JavaSript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    *   WebView: [Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+    *   Bridge: [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage)
+
 *   NodeJS
+
+    *   Adapter: [JavaScript](https://nodejs.org/en) with [node-ffi-rs](https://github.com/zhangyuang/node-ffi-rs)
+    *   WebView: Default Browser
+    *   Bridge: [WebSocket](https://www.npmjs.com/package/ws)
