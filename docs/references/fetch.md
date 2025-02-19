@@ -1,11 +1,11 @@
-# fetch
+# fetch (core_fetch)
 
 You can use a native `fetch` to get some data. It's very useful to go around CORS. The `fetch` method is inspired from the [Browser](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and [NodeJS](https://nodejs.org/dist/latest/docs/api/globals.html) ones.
 
 ## Method
 
 ```typescript
-rpc().fetch: (
+core_fetch: (
   url: string,
   options?: {
     headers?: Record<string, string>;
@@ -21,7 +21,7 @@ rpc().fetch: (
     body: Uint8Array;
   }>;
 
-rpc().fetch: (
+core_fetch: (
   url: string,
   options?: {
     headers?: Record<string, string>;

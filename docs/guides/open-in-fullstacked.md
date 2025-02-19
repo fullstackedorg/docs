@@ -8,7 +8,7 @@ After installing the FullStacked Editor and opening it once, the FullStacked Edi
 
 Make sure to use the git repo url ending with `.git`.
 
-```javascript
+```wasm
 fullstacked://[git/repo/url.git]
 
 Example:
@@ -54,32 +54,4 @@ Example:
 
 Try it out
 
-## Extra parameters
-
-You can also add some extra parameters to make sure sharing your project goes as expected. To add extra parameters, simply add them as query parameters to the git repository url.
-
-```javascript
-Deep Link
-fullstacked://[git/repo/url.git]?title=Demo
-
-Share Page
-https://share.fullstacked.org?git=[git/repo/url.git]?title=Demo
-```
-
-### Available parameters
-
-|            |                               |
-| ---------- | ----------------------------- |
-|            |                               |
-|            |                               |
-|            |                               |
-|            |                               |
-|            |                               |
-|            |                               |
-|            |                               |
-|            |                               |
-|            |                               |
-|            |                               |
-| Param Name | default                       |
-| `title`    | username/repo-name            |
-| `branch`   | repository branch to checkout |
+![open-in-fullstacked.svg](https://share.fullstacked.org/open-in-fullstacked.svg)

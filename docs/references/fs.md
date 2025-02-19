@@ -5,25 +5,23 @@ The `fs` methods are very similar to the ones in [NodeJS fsPromises module](http
 ## Methods
 
 ```typescript
-rpc().fs.readFile(path: string): Promise<Uint8Array>
-
-rpc().fs.readFile(
+fs.readFile(path: string): Promise<Uint8Array>
+fs.readFile(
   path: string,
   options: {
     encoding: "utf8"
   }
 ): Promise<string>
 
-rpc().fs.writeFile(
+fs.writeFile(
   path: string,
   content: string | Uint8Array
 ): Promise<void>
 
-rpc().fs.unlink(path: string): Promise<void>
+fs.unlink(path: string): Promise<void>
 
-rpc().fs.readdir(path: string): Promise<string[]>
-
-rpc().fs.readdir(
+fs.readdir(path: string): Promise<string[]>
+fs.readdir(
   path: string,
   options: {
     withFileTypes
@@ -33,11 +31,11 @@ rpc().fs.readdir(
     isDirectory: boolean
   }[]>
 
-rpc().fs.mkdir(path: string): Promise<void>;
+fs.mkdir(path: string): Promise<void>;
 
-rpc().fs.rmdir(path: string): Promise<void>;
+fs.rmdir(path: string): Promise<void>;
 
-rpc().fs.exists(path: string): Promise<boolean>;
+fs.exists(path: string): Promise<{ isFile: boolean } | null>;
 
 // semi implemented
 rpc().fs.stat(path: string): Promise<object>;

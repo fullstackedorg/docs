@@ -1,6 +1,6 @@
 # Using git
 
-[Git](https://git-scm.com) is a powerful versioning tool. The FullStacked Editor provides a few `git` simplified functionalities to improve your development flow.
+[Git](https://git-scm.com) is a powerful versioning tool. FullStacked provides a few `git` simplified functionalities to improve your development flow.
 
 ## Cloning a Repository
 

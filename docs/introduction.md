@@ -4,7 +4,7 @@ Create, run and share projects built with web techologies in a fully cross-platf
 
 ## Motivation
 
-Creating and developing applications is a lot of fun, the internet is filled with libraries and components we can build with to quickly make great apps. Everything goes so smoothly when working on our machine, but the moment we want the app to run on another device—or someone else's— that’s when the fun starts to fade away.
+Creating and developing applications is a lot of fun, the internet is filled with libraries and components we can build with to quickly make great apps. Everything goes so smoothly when working on our machine, but the moment we want oour app to run on another device—or someone else's— that’s when the fun starts to fade away.
 
 The two main ways to make your app accessible beyond your own machine are:
 
@@ -45,7 +45,7 @@ There are 4 key components in FullStacked
 
 *   WebView
 
-    *   Instead of trying to use os-specific native UI systems. FullStacked leverages the use of what has been rendering user interfaces for years: the web browser.
+    *   Instead of trying to use OS-specific native UI systems. FullStacked leverages the use of what has been rendering user interfaces for years: the web browser.
 
     *   Every major Operating System has a built-in WebView
 
@@ -57,28 +57,28 @@ There are 4 key components in FullStacked
 
 *   Adapter
 
-    *   Piece of OS-specific code that will bind the WebView and the Core.
-    *   Manages the instances of WebView spawned for the different running projects.
+    *   OS-specific code that will bind the WebView and the Core.
+    *   Manages the instances of WebViews spawned for the different running projects.
 
 *   Bridge
 
-    *   A piece of JavaScript code included in every WebView spawned.
+    *   A piece of JavaScript code included in every JavaScript bundle ran by a spawned WebView.
     *   It allows projects code and the Core to interact.
 
 Here’s a little schema of how the components are nested in one another.
 
-![fullstacked-key-components.png](https://img.fullstacked.org/fullstacked-key-components.png)
+![BlockNote image](https://img.fullstacked.org/fullstacked-key-components.png)
 
 The adapter is implemented for every platform supported. It implements a few key elements:
 
-*   Loading the Core C library and the foreign function interface with it
+*   Loading the Core C library binary and implementing the foreign function interface with it
 
     *   Implementing the “call” which returns a value
     *   Implementing the “callback” which is a function the Core can call at any given moment
 
 *   Handles the WebViews spawning and management
 
-### Implementations specifics for different platforms
+### Implementation specifics for different platforms
 
 *   Apple
 
