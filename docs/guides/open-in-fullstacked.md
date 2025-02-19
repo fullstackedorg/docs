@@ -54,4 +54,4 @@ Example:
 
 Try it out
 
-![open-in-fullstacked.svg](https://share.fullstacked.org/open-in-fullstacked.svg)
+![BlockNote image](https://share.fullstacked.org/open-in-fullstacked.svg)

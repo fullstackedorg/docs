@@ -4,7 +4,7 @@ Create, run and share projects built with web techologies in a fully cross-platf
 
 ## Motivation
 
-Creating and developing applications is a lot of fun, the internet is filled with libraries and components we can build with to quickly make great apps. Everything goes so smoothly when working on our machine, but the moment we want oour app to run on another device—or someone else's— that’s when the fun starts to fade away.
+Creating and developing applications is a lot of fun, the internet is filled with libraries and components we can build with to quickly make great apps. Everything goes so smoothly when working on our machine, but the moment we want our app to run on another device that’s when the fun starts to fade away...
 
 The two main ways to make your app accessible beyond your own machine are:
 
@@ -17,19 +17,20 @@ The two main ways to make your app accessible beyond your own machine are:
     *   With a server (AWS, Azure, Google Cloud, Self-Hosted, etc.)
     *   Using a web hosting service (CloudFlare, Vercel, Netlify, etc.)
 
-While these solutions are great to make your app accessible to the general public, they can become insecure and costly for projects you intend to use solely or with a distinct group of people. Developer program fees, days-long app reviews, complexe user management, data transfer fees can all feel counterproductive when your goal is simply to build and run your projects on your own and known people devices. So why can’t we just run our app the same way we do on our local machine? What if we could let peple run `npm start` anywhere? That’s why I created FullStacked.
+While these solutions are great to make your app accessible to the general public, they can become insecure and costly for projects you intend to use solely or with a distinct group of people. Developer program fees, days-long app reviews, complexe user management, data transfer fees can all feel counterproductive when your goal is simply to build and run your projects on your own and known people devices. So why can’t we just run our app the same way we do on our local machine? What we could `npm start` anywhere? That’s why I created FullStacked.
 
 — cplepage
 
 ## How it works
 
-> This section explains in-depth how FullStacked runs local-first web-like projects anywhere. If you are looking for help on how to build a project inside FullStacked, go to the Getting Started page or the Guides section.
+> This section explains in-depth how FullStacked runs local-first web-like projects anywhere.\
+> If you are looking for help on how to build a project inside FullStacked, go to the Getting Started page or the Guides section.
 
 There are 4 key components in FullStacked
 
 *   Core
 
-    *   Built with GO and compiled to C library.
+    *   Built with GO and compiled to a C library.
 
     *   Access to native functionalities.
 
@@ -53,16 +54,17 @@ There are 4 key components in FullStacked
         *   WebView (Chromium) for Android
         *   WebView2 (Edge/Chromium) for Windows
 
-    *   Some even argue it's better than native rendering: <https://javascript.plainenglish.io/i-replaced-my-native-ios-app-with-a-cross-platform-web-app-and-no-one-noticed-1653901ce244?gi=e8cbda006b4b>
+    *   Some even argue it's better than native rendering.\
+        <https://javascript.plainenglish.io/i-replaced-my-native-ios-app-with-a-cross-platform-web-app-and-no-one-noticed-1653901ce244?gi=e8cbda006b4b>
 
 *   Adapter
 
-    *   OS-specific code that will bind the WebView and the Core.
-    *   Manages the instances of WebViews spawned for the different running projects.
+    *   OS-specific code that binds the WebView and the Core.
+    *   Manages the instances of WebViews spawned for the different projects running.
 
 *   Bridge
 
-    *   A piece of JavaScript code included in every JavaScript bundle ran by a spawned WebView.
+    *   A piece of JavaScript code included in every JavaScript bundle ran by spawned WebViews.
     *   It allows projects code and the Core to interact.
 
 Here’s a little schema of how the components are nested in one another.
@@ -73,8 +75,8 @@ The adapter is implemented for every platform supported. It implements a few key
 
 *   Loading the Core C library binary and implementing the foreign function interface with it
 
-    *   Implementing the “call” which returns a value
-    *   Implementing the “callback” which is a function the Core can call at any given moment
+    *   Implementing the “call”: a function that returns a value
+    *   Implementing the “callback”: a function passed to the Core allowing it to communicate with the WebView at any given moment.
 
 *   Handles the WebViews spawning and management
 

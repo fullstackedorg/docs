@@ -3,7 +3,7 @@
 > *[TypeScript](https://www.typescriptlang.org) is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.*\
 > — *TypeScript Website*
 
-At FullStacked, we believe there are very few reasons **not** to use TypeScript (TS). It allows to work as fast as with JavaScript and offers the needed structure to grow a projet at scale.
+Nowadays, there are very few reasons **not** to use TypeScript (TS). It allows to work as fast as with JavaScript and offers the needed structure to grow a projet at scale.
 
 ## Getting Started with TS
 

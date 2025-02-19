@@ -1,6 +1,6 @@
 # Installation
 
-FullStacked is solely accesible from major app marketplaces to ensure secure and reliable binary download and installation.
+FullStacked is only accesible from major app marketplaces to ensure secure and reliable binary download and installation.
 
 ## MacOS, iOS and IPadOS
 

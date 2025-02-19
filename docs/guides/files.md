@@ -6,14 +6,14 @@ Here’s an example of a typical FullStacked project file tree
 
 ```wasm
 ├ assets
-│ ├ image.png
-│ └ index.css
+│ ├ font.woff2
+│ └ image.png
 ├ data <= Data directory
 │ └ file.json
 ├ app
 ├ └ view.jsx
 ├ index.html <= HTML Entrypoint
-├ index.js(x) <= JS Entrypoint
+├ index.js(x) <= JavaScript Entrypoint
 └ index.sa(c)ss <= Sass Entrypoint
 ```
 
@@ -21,11 +21,11 @@ Here’s an example of a typical FullStacked project file tree
 
 > FullStacked supports TypeScript. You can use `index.ts(x)` as entrypoint.
 
-You can always load script files with a simple `<script src="my-script.js">` tag. Those won't be bundle or transformed.
-
 If your project contains an `index.js(x)` (or `index.ts(x)`), FullStacked will make sure to bundle this entrypoint before running your project. Meaning you can import modules and libraries from there.
 
 ## Sass entrypoint
+
+> Both Sass and SCSS syntax are supported.
 
 When your project grows, basic `css` can feel like not enough. [Sass](https://sass-lang.com) brings a set of features that can really help organize and optimize the styling of your views.
 
@@ -33,6 +33,8 @@ If your project contains an `index.sass` or `index.scss`, FullStacked will make 
 
 ## HTML entrypoint
 
+The `index.html` file is still the real WebView entrypoint for your project. If you don’t have any, FullStacked will generate on the fly minimal functional `html` content for your project. If you need some extra tags or what to go full raw `html`, you can definitely. Create an `index.html` file and FullStacked will use this, while still making sure everything needed is in there.
+
 ## Data directory
 
-This directory is particular because it will not be zipped when you export your project and will always be ignored by git. It is intended to keep persistent project data does not need to be shared.
+This directory is particular because it will not be zipped when you export your project and will always be ignored by git. It is intended to keep persistent data related to the project, but that does not need to be shared.
