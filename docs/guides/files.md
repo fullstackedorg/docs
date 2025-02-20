@@ -4,7 +4,7 @@ You can manage code, assets and files the way you want. But there are few specif
 
 Here’s an example of a typical FullStacked project file tree
 
-```wasm
+```latex
 ├ assets
 │ ├ font.woff2
 │ └ image.png

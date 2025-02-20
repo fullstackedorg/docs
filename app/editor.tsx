@@ -12,10 +12,13 @@ import { insertQuote, schema } from "./blockquote/quote";
 
 export function Editor(props: {
     file: string;
+    title: string;
     order: number;
     changeOrderTo: (order: number) => void;
+    updateTitleTo: (title: string) => void;
 }) {
     const [order, setOrder] = useState(props.order);
+    const [title, setTitle] = useState(props.title);
 
     const editor = useCreateBlockNote({ schema });
 
@@ -24,6 +27,7 @@ export function Editor(props: {
             setOrder(null);
             editor.replaceBlocks(editor.document, []);
         } else {
+            setTitle(props.title);
             setOrder(props.order);
             fs.readFile(props.file, { encoding: "utf8" }).then(async (c) => {
                 editor.replaceBlocks(
@@ -36,14 +40,33 @@ export function Editor(props: {
 
     return (
         <div>
-            <div className="input-text">
-                <label>Order</label>
-                <input
-                    value={order === null ? "" : order}
-                    onChange={(e) => setOrder(parseInt(e.currentTarget.value))}
-                />
+            <div>
+                <div className="input-text">
+                    <label>Order</label>
+                    <input
+                        value={order === null ? "" : order}
+                        onChange={(e) =>
+                            setOrder(parseInt(e.currentTarget.value))
+                        }
+                    />
+                </div>
+                <button onClick={() => props.changeOrderTo(order)}>
+                    Change
+                </button>
             </div>
-            <button onClick={() => props.changeOrderTo(order)}>Change</button>
+
+            <div>
+                <div className="input-text">
+                    <label>Title</label>
+                    <input
+                        value={title || ""}
+                        onChange={(e) => setTitle(e.currentTarget.value)}
+                    />
+                </div>
+                <button onClick={() => props.updateTitleTo(title)}>
+                    Update
+                </button>
+            </div>
 
             <BlockNoteView
                 editor={editor}

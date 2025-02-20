@@ -4,10 +4,62 @@
 @use "../node_modules/@fullstacked/ui/values/spacing.scss" as s;
 @use "../node_modules/@fullstacked/ui/values/typography.scss" as t;
 
-html, body {
+html,
+body {
     margin: 0;
     background-color: c.$blue-dark;
     font-family: t.$fonts;
+}
+$max-width: 1280px;
+$header-height: 70px;
+$nav-width: 250px;
+$aside-width: 250px;
+
+#fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+
+    > .inner {
+        width: 100%;
+        max-width: $max-width;
+        height: 100%;
+
+        > div {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            padding-top: s.$medium;
+        }
+    }
+}
+
+#scrollable {
+    width: 100%;
+    max-width: $max-width;
+    padding-top: $header-height;
+    margin: 0 auto;
+    > .inner {
+        width: 100%;
+        padding-left: $nav-width + s.$large;
+        padding-right: $aside-width + s.$large;
+        padding-top: s.$medium;
+    }
+}
+
+h2 {
+    padding-top: $header-height + s.$medium !important;
+    margin-top: 0 - $header-height !important;
+}
+
+h3 {
+    padding-top: $header-height + s.$small !important;
+    margin-top: 0 - $header-height !important;
 }
 
 header {
@@ -15,6 +67,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: s.$medium;
+    background-color: c.$blue-dark;
+    height: $header-height;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    pointer-events: all;
 
     #logo {
         display: flex;
@@ -27,7 +87,7 @@ header {
         }
 
         svg {
-            height: 30px;
+            height: 25px;
             width: auto;
         }
     }
@@ -43,10 +103,69 @@ header {
     }
 }
 
+nav {
+    pointer-events: all;
+    height: calc(100% - $header-height);
+    overflow: auto;
+    width: $nav-width;
+    padding-top: s.$small;
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        padding-left: s.$medium;
+
+        li {
+            a {
+                display: block;
+                padding: s.$small s.$medium;
+                border-left: 1px solid c.opacity(c.$blue, 50);
+                color: c.opacity(c.$light, 80);
+                &:hover {
+                    border-color: c.$blue;
+                }
+            }
+            &.active {
+                a {
+                    border-color: c.$blue;
+                }
+            }
+        }
+    }
+    div {
+        font-weight: bold;
+        padding: s.$small s.$medium;
+    }
+}
+
+aside {
+    pointer-events: all;
+    width: $aside-width;
+    padding-left: s.$small;
+
+    ul {
+        list-style-type: none;
+        padding: s.$x-small 0;
+        margin: 0;
+
+        a {
+            display: block;
+            text-decoration: none;
+            padding: s.$x-small 0;
+            color: c.opacity(c.$light, 80);
+        }
+    }
+}
+
 main {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto!important;
+    > .markdown-body {
+        min-height: calc(90vh - $header-height);
+    }
 }
 
 footer {

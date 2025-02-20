@@ -4,6 +4,8 @@ import { Marked } from "marked";
 import { markedHighlight } from "marked-highlight";
 import hljs from "highlight.js";
 import * as sass from "sass";
+import { getOrder, getTitles } from "..";
+import { gfmHeadingId } from "marked-gfm-heading-id";
 
 export function DeployButton() {
     const button = Button({
@@ -47,52 +49,13 @@ async function Deploy() {
     });
     await fs.writeFile(outDir + "/index.css", css);
 
+    const titles = await getTitles();
+
     const docTemplate = await fs.readFile("/assets/doc-template.html", {
         encoding: "utf8",
     });
 
-    const order: string[] = JSON.parse(
-        await fs.readFile("order.json", { encoding: "utf8" }),
-    );
-
-    const nav = document.createElement("nav");
-    let sectionName: string;
-    let list = document.createElement("ul");
-    nav.append(list);
-    for (let i = 0; i < order.length; i++) {
-        const section = order[i]
-            .slice(docsDir.length + 1)
-            .split("/")
-            .slice(0, -1)
-            .pop();
-
-        if (section !== sectionName) {
-            list = document.createElement("ul");
-            if (section) {
-                const title = document.createElement("div");
-                title.innerText = section;
-                nav.append(title);
-            }
-            nav.append(list);
-            sectionName = section;
-        }
-
-        const path =
-            i === 0
-                ? "/"
-                : order[i]
-                      .slice(docsDir.length)
-                      .split(".")
-                      .slice(0, -1)
-                      .join(".");
-
-        const name = i === 0 ? "introduction" : path.split("/").pop();
-
-        const li = document.createElement("li");
-
-        li.innerHTML = `<a href="${path}">${name}</a>`;
-        list.append(li);
-    }
+    const order = await getOrder();
 
     order.forEach(async (f, i) => {
         const contents = await fs.readFile(f, { encoding: "utf8" });
@@ -105,10 +68,20 @@ async function Deploy() {
         const dir = path.split("/").slice(0, -1).join("/");
         await fs.mkdir(dir);
 
+        const links = document.createElement("ul");
+        contents.match(/#{2,3}.*/g)?.forEach((item) => {
+            const title = item.replace(/#/g, "").trim();
+            const id = title.toLowerCase().replace(/ /g, "-");
+            const li = document.createElement("li");
+            li.innerHTML = `<a href="#${id}">${title}</a>`;
+            links.append(li);
+        });
+
         const rendered = await marked.parse(contents);
         const html = docTemplate
             .replace("{{ MD }}", rendered)
-            .replace("{{ NAV }}", nav.outerHTML);
+            .replace("{{ LINKS }}", links.outerHTML)
+            .replace("{{ NAV }}", generateNav(order, f, titles));
 
         fs.writeFile(path, html);
     });
@@ -125,3 +98,57 @@ const marked = new Marked(
         },
     }),
 );
+marked.use(gfmHeadingId());
+
+function generateNav(
+    files: string[],
+    active: string,
+    titles: { [path: string]: string },
+) {
+    const nav = document.createElement("nav");
+    let sectionName: string;
+    let list = document.createElement("ul");
+    nav.append(list);
+    for (let i = 0; i < files.length; i++) {
+        const section = files[i]
+            .slice(docsDir.length + 1)
+            .split("/")
+            .slice(0, -1)
+            .pop();
+
+        if (section !== sectionName) {
+            list = document.createElement("ul");
+            if (section) {
+                const title = document.createElement("div");
+                title.innerText =
+                    section.at(0).toUpperCase() + section.slice(1);
+                nav.append(title);
+            }
+            nav.append(list);
+            sectionName = section;
+        }
+
+        const path =
+            i === 0
+                ? "/"
+                : files[i]
+                      .slice(docsDir.length)
+                      .split(".")
+                      .slice(0, -1)
+                      .join(".");
+
+        const name = titles[files[i]] || path.split("/").pop();
+
+        const li = document.createElement("li");
+
+        li.innerHTML = `<a href="${path}">${name}</a>`;
+
+        if (files[i] === active) {
+            li.classList.add("active");
+        }
+
+        list.append(li);
+    }
+
+    return nav.outerHTML;
+}

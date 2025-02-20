@@ -6,6 +6,7 @@
         "@fullstacked/ui": "^0.0.1",
         "highlight.js": "^11.11.1",
         "marked": "^15.0.7",
+        "marked-gfm-heading-id": "^4.1.1",
         "marked-highlight": "^2.2.1",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",

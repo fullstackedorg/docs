@@ -1,0 +1,17 @@
+{
+    "docs/introduction.md": "Introduction",
+    "docs/installation.md": "Installation",
+    "docs/getting-started.md": "Getting Started",
+    "docs/fullstacked-vs.md": "Compared to Other Tools",
+    "docs/guides/files.md": "Files Structure",
+    "docs/guides/typescript.md": "Using TypeScript",
+    "docs/guides/sass.md": "Using Sass/SCSS",
+    "docs/guides/packages.md": "Using npm Packages",
+    "docs/guides/git.md": "Using git",
+    "docs/guides/open-in-fullstacked.md": "Open in FullStacked",
+    "docs/guides/import-export.md": "Import & Export",
+    "docs/guides/debugging.md": "Debugging",
+    "docs/references/fs.md": "Files System (fs)",
+    "docs/references/fetch.md": "Fetch (core_fetch)",
+    "docs/privacy-policy.md": "Privacy Policy"
+}
