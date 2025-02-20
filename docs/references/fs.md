@@ -38,8 +38,8 @@ fs.rmdir(path: string): Promise<void>;
 fs.exists(path: string): Promise<{ isFile: boolean } | null>;
 
 // semi implemented
-rpc().fs.stat(path: string): Promise<object>;
-rpc().fs.lstat(path: string): Promise<object>;
+fs.stat(path: string): Promise<object>;
+fs.lstat(path: string): Promise<object>;
 ```
 
 ## Example
@@ -50,7 +50,9 @@ rpc().fs.lstat(path: string): Promise<object>;
 ```
 
 ```javascript
-await rpc().fs.exists("data/file.json") => true
-await rpc().fs.exists("file.json") => false
-await rpc().fs.exists("data/some/random/path/file.json") => false
+import fs from "fs";
+
+await fs.exists("data/file.json") => true
+await fs.exists("file.json") => false
+await fs.exists("data/some/random/path/file.json") => false
 ```

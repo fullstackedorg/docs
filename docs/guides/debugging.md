@@ -22,12 +22,17 @@ To do so, connect by usb your device to a Mac computer and debug with the Safari
 
 [Eruda](https://github.com/liriliri/eruda) is a console for mobile browsers. You can load it in your app and use it to inspect and debug.
 
-Simply add the following line to your project entrypoint.
+First install eruda in your project
 
-```html
-<!-- index.html -->
-<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-<script>eruda.init();</script>
+```shellscript
+npm i eruda
+```
+
+The` import` and init eruda
+
+```javascript
+import eruda from "eruda";
+eruda.init();
 ```
 
 ![BlockNote image](/images/eruda.PNG)

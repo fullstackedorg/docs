@@ -1,0 +1,56 @@
+@use "./github-markdown-dark.scss";
+@use "../node_modules/@fullstacked/ui/ui.scss";
+@use "../node_modules/@fullstacked/ui/values/colors.scss" as c;
+@use "../node_modules/@fullstacked/ui/values/spacing.scss" as s;
+@use "../node_modules/@fullstacked/ui/values/typography.scss" as t;
+
+html, body {
+    margin: 0;
+    background-color: c.$blue-dark;
+    font-family: t.$fonts;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: s.$medium;
+
+    #logo {
+        display: flex;
+        align-items: center;
+        gap: s.$small;
+
+        img {
+            height: 50px;
+            width: auto;
+        }
+
+        svg {
+            height: 30px;
+            width: auto;
+        }
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        gap: s.$medium;
+        svg {
+            height: 40px;
+            width: auto;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto!important;
+}
+
+footer {
+    padding: s.$small;
+    text-align: center;
+    font-size: t.$small;
+}

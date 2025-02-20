@@ -32,7 +32,7 @@ If your remote repository is unreachable (like if you don't have internet access
 
 ## Using Branches
 
-FullStacked Editor has very minimal features for merging and resolving conflicts. Be warned to play it safe with your branching strategies. More feature will be implemented in future developments.
+> FullStacked has very minimal features for merging and resolving conflicts. Be warned to play it safe with your branching strategies. More feature will be implemented in future developments.
 
 A branches button is available in the git dialog. Click it to access the list of available branches in your repository.
 
