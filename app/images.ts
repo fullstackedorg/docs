@@ -1,6 +1,9 @@
 import { InputFile, InputText } from "@fullstacked/ui";
 import core_fetch from "fetch";
 import slugify from "slugify";
+import { loadValue, saveValue } from "./utils";
+
+const authValueFile = "img-auth.txt";
 
 export function Images() {
     const form = document.createElement("form");
@@ -8,6 +11,7 @@ export function Images() {
     const inputAuth = InputText({
         label: "Auth",
     });
+    loadValue(authValueFile).then((v) => (inputAuth.input.value = v));
 
     const inputFile = InputFile({
         label: "Image",
@@ -31,6 +35,8 @@ export function Images() {
 
         inputFile.input.value = "";
         inputText.input.value = url;
+
+        saveValue(authValueFile, inputAuth.input.value);
     };
 
     const inputText = InputText({ label: "Image URL" });
