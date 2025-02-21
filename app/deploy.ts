@@ -58,7 +58,7 @@ async function Deploy() {
 
     const order = await getOrder();
 
-    order.forEach(async (f, i) => {
+    const renderPromises = order.map(async (f, i) => {
         const contents = await fs.readFile(f, { encoding: "utf8" });
         const path =
             i === 0
@@ -96,6 +96,7 @@ async function Deploy() {
             isDir: false,
         };
     });
+    await Promise.all(renderPromises);
 
     archive.zip(files, "data/site.zip");
 }
