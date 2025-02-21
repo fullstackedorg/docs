@@ -33,7 +33,7 @@ If your project contains an `index.sass` or `index.scss`, FullStacked will make 
 
 ## HTML entrypoint
 
-The `index.html` file is still the real WebView entrypoint for your project. If you don’t have any, FullStacked will generate on the fly minimal functional `html` content for your project. If you need some extra tags or what to go full raw `html`, you can definitely. Create an `index.html` file and FullStacked will use this, while still making sure everything needed is in there.
+The `index.html` file is still the real WebView entrypoint for your project. If you don’t have any, FullStacked will generate on the fly minimal functional `html` content for your project. If you need some extra tags or want to go full raw `html`, you can definitely. Create an `index.html` file and FullStacked will use this as entrypoint. FullStacked will still make sure everything needed is in there, so don’t worry.
 
 ## Data directory
 

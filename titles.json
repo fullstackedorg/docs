@@ -13,5 +13,7 @@
     "docs/guides/debugging.md": "Debugging",
     "docs/references/fs.md": "Files System (fs)",
     "docs/references/fetch.md": "Fetch (core_fetch)",
-    "docs/privacy-policy.md": "Privacy Policy"
+    "docs/privacy-policy.md": "Privacy Policy",
+    "docs/references/platform.md": "Platform",
+    "docs/references/archive.md": "Archive"
 }

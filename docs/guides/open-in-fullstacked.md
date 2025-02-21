@@ -1,10 +1,10 @@
 # Open in FullStacked
 
-If you use git to version your project, you can easily share your project with a link that will open directly in FullStacked!
+If you use git to version your project, you can easily share your project with a link that will opens directly in FullStacked!
 
 ## Deep Link
 
-After installing the FullStacked Editor and opening it once, the FullStacked Editor will associate the `fullstacked://` scheme to open in the FullStacked Editor. To open your git repository project, add your git url after this scheme and open it through any browser.
+FullStacked associates the `fullstacked://` scheme to open projects directly in FullStacked. Simply add your git url after this scheme and open it through any browser.
 
 Make sure to use the git repo url ending with `.git`.
 
@@ -15,21 +15,9 @@ Example:
 fullstacked://https://github.com/fullstackedorg/editor-sample-demo.git
 ```
 
-### Using the npm CLI
-
-If you are using the FullStacked Editor through the npm CLI installation, you can do the same by launching fullstacked with the git repository url as argument.
-
-```shellscript
-fullstacked [git/repo/url.git]
-
-or
-
-npx @fullstacked/editor -- [git/repo/url.git]
-```
-
 ## Share page
 
-If your recipient doesn't have the FullStacked Editor installed beforehand, the `fullstacked://` url will bring them into a dead end. To share your project in a more fashionably, use the <https://share.fullstacked.org> page to send your project deep link. Simply add your git url in the query parameters.
+If your recipient doesn't have the FullStacked installed beforehand, the `fullstacked://` url will bring them into a dead end. To share your project in a more fashionably way, use the <https://share.fullstacked.org> page to send your project deep link. Simply add your git url in the query parameters.
 
 ```javascript
 https://share.fullstacked.org?git=[git/repo/url.git]
@@ -39,17 +27,17 @@ https://share.fullstacked.org?git=https://github.com/fullstackedorg/editor-sampl
 ```
 
 Try it out\
-<https://share.fullstacked.org?git=https://github.com/fullstackedorg/editor-sample-demo.git>
+[https://share.fullstacked.org?git=https://github.com/fullstackedorg/demo.git](https://share.fullstacked.org?git=https://github.com/fullstackedorg/editor-sample-demo.git)
 
 ## Markdown Button
 
-You can even add an "Open in FullStacked" button to your `README` page to allow people to directly open your project in the FullStacked Editor. To do so, create an image link with the share page url.
+You can even add an "Open in FullStacked" button to your `README` page to allow people to directly open your project in FullStacked. To do so, create an image link with the share page url.
 
 ```javascript
 [![Open in FullStacked]([image/url])](share?git=[git/repo/url.git])
 
 Example:
-[![Open in FullStacked](https://share.fullstacked.org/open-in-fullstacked.svg)](https://share.fullstacked.org?git=https://github.com/fullstackedorg/editor-sample-demo.git)
+[![Open in FullStacked](https://share.fullstacked.org/open-in-fullstacked.svg)](https://share.fullstacked.org?git=https://github.com/fullstackedorg/demo.git)
 ```
 
 Try it out

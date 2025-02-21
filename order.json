@@ -11,7 +11,9 @@
     "docs/guides/open-in-fullstacked.md",
     "docs/guides/import-export.md",
     "docs/guides/debugging.md",
+    "docs/references/platform.md",
     "docs/references/fs.md",
     "docs/references/fetch.md",
+    "docs/references/archive.md",
     "docs/privacy-policy.md"
 ]
