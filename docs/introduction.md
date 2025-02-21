@@ -17,9 +17,7 @@ The two main ways to make your app accessible beyond your own machine are:
     *   With a server (AWS, Azure, Google Cloud, Self-Hosted, etc.)
     *   Using a web hosting service (CloudFlare, Vercel, Netlify, etc.)
 
-While these solutions are great to make your app accessible to the general public, they can become insecure and costly for projects you intend to use solely or with a distinct group of people. Developer program fees, days-long app reviews, complexe user management, data transfer fees can all feel counterproductive when your goal is simply to build and run your projects on your own and known people devices. So why can’t we just run our app the same way we do on our local machine? What we could `npm start` anywhere? That’s why I created FullStacked.
-
-— cplepage
+While these solutions are great to make your app accessible to the general public, they can become insecure and costly for projects you intend to use solely or with a distinct group of people. Developer program fees, days-long app reviews, complexe user management, data transfer fees can all feel counterproductive when your goal is simply to build and run your projects on your own and known people devices. So why can’t we just run our app the same way we do on our local machine? What if we could `npm start` anywhere? FullStacked exists to fulfill this use case.
 
 ## How it works
 
