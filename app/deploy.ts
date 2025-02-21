@@ -6,6 +6,7 @@ import hljs from "highlight.js";
 import * as sass from "sass";
 import { getOrder, getTitles } from "..";
 import { gfmHeadingId } from "marked-gfm-heading-id";
+import archive from "archive";
 
 export function DeployButton() {
     const button = Button({
@@ -21,10 +22,7 @@ const docsDir = "docs";
 const outDir = "data/out";
 
 async function Deploy() {
-    if (await fs.exists(outDir)) {
-        await fs.rmdir(outDir);
-    }
-    await fs.mkdir(outDir);
+    const files: Parameters<typeof archive.zip>[0] = {};
 
     const scss = await fs.readFile("/assets/index.scss", { encoding: "utf8" });
     const { css } = await sass.compileStringAsync(scss, {
@@ -47,7 +45,10 @@ async function Deploy() {
             },
         },
     });
-    await fs.writeFile(outDir + "/index.css", css);
+    files["index.css"] = {
+        isDir: false,
+        contents: css,
+    };
 
     const titles = await getTitles();
 
@@ -61,12 +62,19 @@ async function Deploy() {
         const contents = await fs.readFile(f, { encoding: "utf8" });
         const path =
             i === 0
-                ? outDir + "/index.html"
-                : outDir +
-                  f.slice(docsDir.length).split(".").slice(0, -1).join(".") +
-                  "/index.html";
+                ? "index.html"
+                : f
+                      .slice(docsDir.length + 1)
+                      .split(".")
+                      .slice(0, -1)
+                      .join(".") + "/index.html";
         const dir = path.split("/").slice(0, -1).join("/");
-        await fs.mkdir(dir);
+        if (dir) {
+            files[dir] = {
+                contents: null,
+                isDir: true,
+            };
+        }
 
         const links = document.createElement("ul");
         contents.match(/#{2,3}.*/g)?.forEach((item) => {
@@ -83,8 +91,13 @@ async function Deploy() {
             .replace("{{ LINKS }}", links.outerHTML)
             .replace("{{ NAV }}", generateNav(order, f, titles));
 
-        fs.writeFile(path, html);
+        files[path] = {
+            contents: html,
+            isDir: false,
+        };
     });
+
+    archive.zip(files, "data/site.zip");
 }
 
 const marked = new Marked(
