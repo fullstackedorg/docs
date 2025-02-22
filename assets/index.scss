@@ -165,10 +165,11 @@ aside {
 main {
     > .markdown-body {
         min-height: calc(90vh - $header-height);
+        padding-bottom: s.$small;
     }
 
     > hr {
-        margin-top: s.$large;
+        margin: s.$medium 0;
         border-color: c.opacity(c.$gray-dark, 50);;
     }
 
@@ -176,7 +177,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: s.$small;
+        padding-top: s.$large;
 
         > a {
            &:last-child {
@@ -190,7 +191,7 @@ main {
 
 
 footer {
-    padding: s.$large s.$small s.$small;
+    padding: s.$large s.$small s.$medium;
     text-align: center;
     font-size: t.$small;
 }
