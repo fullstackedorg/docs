@@ -17,4 +17,4 @@ npm i react@18 react-dom@18
 
 After every installation of new package, your `package.json` will be updated with this newly added package plus it’s version. You can always edit this file to add, remove packages or modify the versions.
 
-On the other side, the `lock.json` file is generated from a successful installation process. **DO NOT MODIFY THIS FILE**. It assures the versions dependencies of all the direct and indirect packages needed for your project to run. It also allows much faster installs of a clean packages installation.
+On the other side, the `lock.json` file is generated from a successful installation process. **DO NOT MODIFY THIS FILE**. It makes sure all the dependencies your project needs, both direct and indirect, work together smoothly. Plus, it speeds up fresh installations significantly.
