@@ -124,7 +124,7 @@ nav {
             a {
                 display: block;
                 padding: s.$small s.$medium;
-                border-left: 1px solid c.opacity(c.$blue, 50);
+                border-left: 1px solid c.opacity(c.$blue, 40);
                 color: c.opacity(c.$light, 80);
                 &:hover {
                     border-color: c.$blue;
@@ -146,11 +146,11 @@ nav {
 aside {
     pointer-events: all;
     width: $aside-width;
-    padding-left: s.$small;
+    padding: 0 s.$small;
 
     ul {
         list-style-type: none;
-        padding: s.$x-small 0;
+        padding: s.$x-small 0 s.$small;
         margin: 0;
 
         a {
@@ -166,10 +166,31 @@ main {
     > .markdown-body {
         min-height: calc(90vh - $header-height);
     }
+
+    > hr {
+        margin-top: s.$large;
+        border-color: c.opacity(c.$gray-dark, 50);;
+    }
+
+    .next-prev {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: s.$small;
+
+        > a {
+           &:last-child {
+               .icon {
+                   transform: rotate(180deg)
+               }
+           } 
+        }
+    }
 }
 
+
 footer {
-    padding: s.$small;
+    padding: s.$large s.$small s.$small;
     text-align: center;
     font-size: t.$small;
 }

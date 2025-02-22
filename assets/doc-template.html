@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8" />
         <title>FullStacked Docs</title>
-        <link rel="stylesheet" href="/index.css" />
+        {{ STYLE }}
     </head>
     <body>
         <div id="fixed">
@@ -92,6 +92,12 @@
                     <aside>
                         <small>On this page</small>
                         {{ LINKS }}
+
+                        <a
+                            href="https://github.com/fullstackedorg/docs/blob/blocknote/{{ PAGE }}"
+                        >
+                            <button>Edit this page</button>
+                        </a>
                     </aside>
                 </div>
             </div>
@@ -101,11 +107,10 @@
             <div class="inner">
                 <main>
                     <div class="markdown-body">{{ MD }}</div>
-                    <button>Edit this page</button>
                     <hr />
-                    <div>
-                        <button>Previous</button>
-                        <button>Next</button>
+                    <div class="next-prev">
+                        {{ PREV }}
+                        {{ NEXT }}
                     </div>
                 </main>
 

@@ -7,6 +7,7 @@ import { Images } from "./app/images";
 import * as UI from "@fullstacked/ui";
 import fs from "fs";
 import { DeployButton } from "./app/deploy";
+import { Preview } from "./app/preview";
 
 const docsDirectory = "docs";
 

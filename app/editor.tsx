@@ -9,6 +9,7 @@ import { BlockNoteView } from "@blocknote/mantine";
 import "@blocknote/mantine/style.css";
 import { Block, filterSuggestionItems } from "@blocknote/core";
 import { insertQuote, schema } from "./blockquote/quote";
+import { Preview } from "./preview";
 
 export function Editor(props: {
     file: string;
@@ -66,6 +67,10 @@ export function Editor(props: {
                 <button onClick={() => props.updateTitleTo(title)}>
                     Update
                 </button>
+            </div>
+
+            <div>
+                <button onClick={() => Preview(props.file)}>Preview</button>
             </div>
 
             <BlockNoteView

@@ -15,5 +15,6 @@
     "docs/references/fetch.md": "Fetch (core_fetch)",
     "docs/privacy-policy.md": "Privacy Policy",
     "docs/references/platform.md": "Platform",
-    "docs/references/archive.md": "Archive"
+    "docs/references/archive.md": "Archive",
+    "docs/references/zip.md": "ZIP (archive)"
 }

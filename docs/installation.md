@@ -1,6 +1,6 @@
 # Installation
 
-FullStacked is only accesible from major app marketplaces to ensure secure and reliable binary download and installation.
+FullStacked is only accesible from major app marketplaces to ensure secure and reliable download and installation.
 
 ## MacOS, iOS and IPadOS
 
@@ -22,7 +22,7 @@ After joining the testing program, update directly on [Google Play](https://play
 
 ## Windows 10 and 11
 
-> Make sure to launch FullStacked with **Run as administrator** at least once. It will register FullStacked's deeplink and allow to open projects directly in the app.
+> Make sure to launch FullStacked with **Run as administrator** at least once. It will register FullStacked's deep link and allow to open projects directly in the app.
 
 [Microsoft Store](https://apps.microsoft.com/detail/9p987qm508vc)
 
