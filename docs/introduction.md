@@ -2,7 +2,7 @@
 
 Create, run and share projects built with web techologies in a fully cross-platform, portable environment.
 
-![IMG\_0521.jpeg](https://img.fullstacked.org/IMG_0521.jpeg)
+![BlockNote image](https://img.fullstacked.org/IMG_0521.jpeg)
 
 ## Motivation
 
