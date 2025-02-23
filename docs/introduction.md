@@ -2,6 +2,8 @@
 
 Create, run and share projects built with web techologies in a fully cross-platform, portable environment.
 
+![IMG\_0521.jpeg](https://img.fullstacked.org/IMG_0521.jpeg)
+
 ## Motivation
 
 Creating and developing applications is a lot of fun, the internet is filled with libraries and components we can build with to quickly make great apps. Everything goes so smoothly when working on our machine, but the moment we want our app to run on another device that’s when the fun starts to fade away...

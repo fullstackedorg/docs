@@ -24,7 +24,7 @@ unzip(in: string | FileEntries, out: string) : Promise<Boolean>;
 ## Example
 
 ```typescript
-import archive from "archive";
+import archive, { FileEntries } from "archive";
 import core_fetch from "core_fetch";
 
 const files: FileEntries = {
