@@ -80,7 +80,7 @@ Creating and editing an `index.html` file is totally **optional**. If you'd like
 
 ![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.06.14-AM.png)
 
-```javascript
+```html
 <html>
   <head></head>
   <body>

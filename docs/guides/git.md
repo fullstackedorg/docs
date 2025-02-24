@@ -20,11 +20,9 @@ After you've made some changes and updates to your codebase, click the git butto
 
 Changes are calculated and displayed there with a text input for your commit message. You can revert any unwanted changes and when ready, whether commit and/or push to your remote (the push button commits beforehand).
 
-![BlockNote image](/images/git/committing.png)
-
 You can notice code being pushed to your remote by the red arrow on the git button.
 
-![BlockNote image](/images/git/pushing.png)
+![Screenshot-2025-02-23-at-10.16.36-AM.png](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.16.36-AM.png)
 
 If your remote repository is unreachable (like if you don't have internet access), only the commit action will be available. You can then `Push` later when your remote is reachable.
 
@@ -40,11 +38,9 @@ A branches button is available in the git dialog. Click it to access the list of
 
 From here, you can see on which branch your are, create a new one and checkout other branches.
 
-![BlockNote image](/images/git/branches.png)
+![Screenshot-2025-02-23-at-10.17.42-AM.png](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.17.42-AM.png)
 
-### Remote-only, local-only and deleting branches
-
-![BlockNote image](/images/git/remote-local-branches.png)
+Remote-only, local-only and deleting branches
 
 *   Branches that has never been checked out are labeled `remote-only`
 *   Branches that has never been pushed to remote are labeled `local-only`

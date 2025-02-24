@@ -10,4 +10,4 @@ To import, create a new project and select the `Import zip` option.
 
 Give some time to FullStacked to unzip and once ready you'll be back in the Project view, ready to run your project!
 
-![IMG\_0542.png](https://img.fullstacked.org/IMG_0542.png)![IMG\_0543.png](https://img.fullstacked.org/IMG_0543.png)
+![BlockNote image](https://img.fullstacked.org/IMG_0542.png)![BlockNote image](https://img.fullstacked.org/IMG_0543.png)

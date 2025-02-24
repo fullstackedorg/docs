@@ -19,6 +19,6 @@ npm i react@18 react-dom@18
 
 After every installation of new package, your `package.json` will be updated with this newly added package plus it’s version. You can always edit this file to add, remove packages or modify the versions.
 
-On the other side, the `lock.json` file is generated from a successful installation process. **DO NOT MODIFY THIS FILE**. It makes sure all the dependencies your project needs, both direct and indirect, work together smoothly. Plus, it speeds up fresh installations significantly.
+On the other side, the `lock.json` file is generated from a successful installation process. **DO NOT MODIFY THIS FILE**. It makes sure all the dependencies your project needs, both direct and indirect, work together smoothly. Plus, it speeds up fresh installations significantly. When your project is runs before having run `npm install` in the terminal beforehand. FullStacked will check with the `lock.json` if all dependencies are there before trying to bundle and launch the project.
 
 ![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.26.46-AM.png)
