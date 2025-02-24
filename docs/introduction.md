@@ -1,6 +1,6 @@
 # FullStacked - Code, Run, Share. Anywhere.
 
-Create, run and share projects built with web techologies in a fully cross-platform, local-first environment.
+Create, run and share projects built with web technologies in a fully cross-platform, local-first environment.
 
 ![BlockNote image](https://img.fullstacked.org/IMG_0521.jpeg)
 
