@@ -38,9 +38,9 @@ There are 4 key components in FullStacked
     *   Handles features like
 
         *   File System
-        *   Git (go-git)
+        *   Git ([go-git](https://github.com/go-git/go-git))
         *   JavaScript Packages management (similar to npm)
-        *   JavaScript Code Bundling (esbuild)
+        *   JavaScript Code Bundling ([esbuild](https://github.com/evanw/esbuild))
         *   ZIP Archiving
 
 *   WebView
