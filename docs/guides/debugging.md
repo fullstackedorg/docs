@@ -2,15 +2,19 @@
 
 ## MacOS, iOS and iPadOS
 
-In FullStacked Editor for iOS/iPadOS, there is a small console for logs, but no way of inspecting the rendered HTML.
+> Make sure you have `Show features for web developers` checked in Safari on your Apple computer. <https://developer.apple.com/documentation/safari-developer-tools/enabling-developer-features>
 
-To do so, connect by usb your device to a Mac computer and debug with the Safari debugger tool.
+1.  Connect your iOS or iPadOS device by USB to your Apple computer.
+2.  Run your project in FullStacked on your Apple device.
+3.  On the computer, open Safari and locate the `Develop` menu item tab. You should see all the device running web views.
+4.  Find your projects within all the running web view and click on it.
+5.  Debug
 
 ## Android
 
-1.  Connect your Android device to a computer that has Google Chrome web browser installed.
-2.  Run your project on your Android device.
-3.  On the computer, open Google Chrome at chrome://inspect.
+1.  Connect your Android device by USB to a computer that has Google Chrome web browser installed.
+2.  Run your project in FullStacked on your Android device.
+3.  On the computer, open Google Chrome at `chrome://inspect`.
 4.  Select the webview of your running project.
 5.  Debug
 
@@ -25,14 +29,14 @@ Right-click > inspect
 First install eruda in your project
 
 ```shellscript
-npm i eruda
+npm i eruda --save-dev
 ```
 
-The` import` and init eruda
+Then` import` and init eruda
 
 ```javascript
 import eruda from "eruda";
 eruda.init();
 ```
 
-![BlockNote image](/images/eruda.PNG)
+![Screenshot-2025-02-24-at-8.59.29-AM.png](https://img.fullstacked.org/Screenshot-2025-02-24-at-8.59.29-AM.png)

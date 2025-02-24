@@ -4,11 +4,15 @@
 
 ## Cloning a Repository
 
-![BlockNote image](https://img.fullstacked.org/IMG_0537.png)![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.15.19-AM.png)![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.15.58-AM.png)
+Start in the add project view using the `+` button on the projects list view. Then select `Clone git repository`.
 
-To clone a project, simply add the `Clone` `http` URL of your git repository. You can notice the `Create` button changing its text to `Clone`.
+![BlockNote image](https://img.fullstacked.org/IMG_0537.png)
 
-From there, everytime you open this project, it will try to `Pull` the latest changes. You can notice it by the green arrow on the git button.
+Enter your repository `.git` url and hit `Clone`. Always use the `http` url (not `ssh`).
+
+![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.15.19-AM.png)
+
+Open your newly added porject. From there, everytime you open this project, it will try to `Pull` the latest changes. You can notice it by the green arrow on the git button.
 
 ![BlockNote image](https://img.fullstacked.org/IMG_0538.png)
 
@@ -16,15 +20,13 @@ From there, everytime you open this project, it will try to `Pull` the latest ch
 
 After you've made some changes and updates to your codebase, click the git button in the top bar of the Project view.
 
-![BlockNote image](https://img.fullstacked.org/IMG_0541.png)![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.16.31-AM.png)
+![BlockNote image](https://img.fullstacked.org/IMG_0541.png)
 
 Changes are calculated and displayed there with a text input for your commit message. You can revert any unwanted changes and when ready, whether commit and/or push to your remote (the push button commits beforehand).
 
+![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.16.31-AM.png)![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.16.36-AM.png)
+
 You can notice code being pushed to your remote by the red arrow on the git button.
-
-![Screenshot-2025-02-23-at-10.16.36-AM.png](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.16.36-AM.png)
-
-If your remote repository is unreachable (like if you don't have internet access), only the commit action will be available. You can then `Push` later when your remote is reachable.
 
 ![BlockNote image](https://img.fullstacked.org/IMG_0539.png)
 
@@ -38,9 +40,9 @@ A branches button is available in the git dialog. Click it to access the list of
 
 From here, you can see on which branch your are, create a new one and checkout other branches.
 
-![Screenshot-2025-02-23-at-10.17.42-AM.png](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.17.42-AM.png)
+![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.17.42-AM.png)
 
-Remote-only, local-only and deleting branches
+### Remote-only, local-only and deleting branches
 
 *   Branches that has never been checked out are labeled `remote-only`
 *   Branches that has never been pushed to remote are labeled `local-only`
@@ -50,17 +52,19 @@ Deleting a branch only deletes the local version of it. While you will lose any 
 
 ## Managing your authentications
 
-For any private and auth required git, you will be prompt to input your username/password (note that the [GitHub Device Flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) has be added to the editor, you don't need to manually create a token). If you ever need to edit, delete or create authentications, you can all manage them in the settings view accessible from the Projects view.
+For any private and auth required git, you will be prompt to input your username/password (note that the [GitHub Device Flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) has be added to FullStacked so you don't need to manually create a token). If you ever need to edit, delete or create authentications, you can all manage them in the settings view.
 
-![BlockNote image](/images/settings-button.png)
+![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.21.00-AM.png)
 
-Edit, delete and create new git authentications here. Note that you cannot change passwords. For this purpose, simply delete the authentication and re-run an auth process.
+Edit, delete and create new git authentications here. Note that you cannot change passwords. For this purpose, simply delete the authentication and on the next auth required git event, it will ask you to authenticate again.
 
-![BlockNote image](/images/git/authentications.png)
+## Git author
 
-The username and email in git authentications are also used for your git global user similarly to
+The username and email in git authentications are also used for your git commit author similarly to
 
 ```shellscript
-git config --global user.name "you"
-git config --global user.email "you@example.com"
+git config user.name "you"
+git config user.email "you@example.com"
 ```
+
+![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.16.17-AM.png)

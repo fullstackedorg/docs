@@ -1,13 +1,15 @@
-# Import/Export a Project
+# Import & Export a Project
 
-You can always export a project from your device and import it onto another device.
+## Export
 
-To export, click the export button in the top right corner of the Project view.
+You can always export a project to a `.zip` file and import it onto another device. To export, click the share button accessible from the projects list view.
 
-This will generate a `.zip` of your project. Transfer this to the other device.
+![BlockNote image](https://img.fullstacked.org/IMG_0542.png)
 
-To import, create a new project and select the `Import zip` option.
+## Import
 
-Give some time to FullStacked to unzip and once ready you'll be back in the Project view, ready to run your project!
+Go to the add project view and select the `Import zip` option.
 
-![BlockNote image](https://img.fullstacked.org/IMG_0542.png)![BlockNote image](https://img.fullstacked.org/IMG_0543.png)
+![BlockNote image](https://img.fullstacked.org/IMG_0543.png)
+
+Add the received `zip` file and FullStacked will load the project.

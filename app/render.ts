@@ -87,7 +87,9 @@ export async function renderSite(page: string = null): Promise<{
         const links = document.createElement("ul");
         contents.match(/#{2,3}.*/g)?.forEach((item) => {
             const title = item.replace(/#/g, "").trim();
-            const id = title.toLowerCase().replace(/ /g, "-");
+            const id = title.toLowerCase()
+                .replace(/ /g, "-")
+                .replace(/,/g, "");
             const li = document.createElement("li");
             li.innerHTML = `<a href="#${id}">${title}</a>`;
             links.append(li);
@@ -169,6 +171,8 @@ function generateNav(
     active: string,
     titles: { [path: string]: string },
 ) {
+    // remove last element (privacy-policy)
+    files = files.slice(0, -1)
     const nav = document.createElement("nav");
     let sectionName: string;
     let list = document.createElement("ul");

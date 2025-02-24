@@ -18,5 +18,6 @@
     "docs/references/archive.md": "Archive",
     "docs/references/zip.md": "ZIP (archive)",
     "docs/guides/terminal.md": "Using the terminal",
-    "docs/guides/user-mode.md": "User Mode"
+    "docs/guides/user-mode.md": "User Mode",
+    "docs/guides/build.md": "Build from source"
 }

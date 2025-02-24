@@ -1,6 +1,6 @@
 # FullStacked - Code, Run, Share. Anywhere.
 
-Create, run and share projects built with web techologies in a fully cross-platform environment.
+Create, run and share projects built with web techologies in a fully cross-platform, local-first environment.
 
 ![BlockNote image](https://img.fullstacked.org/IMG_0521.jpeg)
 
@@ -23,8 +23,7 @@ While these solutions are great to make your app accessible to the general publi
 
 ## How it works
 
-> This section explains in-depth how FullStacked runs local-first web-like projects anywhere.\
-> If you are looking for help on how to build a project inside FullStacked, go to the Getting Started page or the Guides section.
+> This section explains in-depth how FullStacked runs local-first web-like projects anywhere. If you are looking for help on how to build a project inside FullStacked, go to the Getting Started page or the Guides section.
 
 There are 4 key components in FullStacked
 

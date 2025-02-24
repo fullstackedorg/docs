@@ -6,7 +6,7 @@ Progressive Web Apps are very close to what you'll build in FullStacked. Althoug
 
 ## vs React-Native, Flutter
 
-The goal of those frameworks is to translate and compile web-like languages to OS-specific native features. FullStacked is more of an environment that provides a simple access to native features from your web-like code running in a WebView. In other words, your RN/Flutter projects needs to be built and compiled before running it vs FullStacked is prebuilt to provide an environment ready to run your projects.
+The goal of those frameworks is to translate and compile web-like languages to OS-specific native features. FullStacked is more of an environment that provides a simple access to native features from your web code running in a WebView. In other words, your RN/Flutter projects needs to be built and compiled before running it vs FullStacked is prebuilt to provide an environment ready to run your projects.
 
 ## vs Electron, Tauri, Neutralinojs
 

@@ -129,7 +129,7 @@ header {
                 border-radius: 2px;
                 background-color: c.$light;
                 transition: 0.3s all;
-                transform-origin: left center;
+                transform-origin: right center;
             }
 
             @media (max-width: b.$medium) {
@@ -142,10 +142,10 @@ header {
                 }
 
                 > div:first-child {
-                    transform: rotate(45deg);
+                    transform: rotate(-45deg);
                 }
                 > div:last-child {
-                    transform: rotate(-45deg);
+                    transform: rotate(45deg);
                 }
             }
         }
@@ -157,7 +157,7 @@ nav {
     height: calc(100% - $header-height);
     overflow: auto;
     width: $nav-width;
-    padding-top: s.$large;
+    padding: s.$large 0;
 
     @media (max-width: b.$medium) {
         transform: translateX(-100%);

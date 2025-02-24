@@ -1,5 +1,7 @@
 # Getting Started
 
+Once you have install FullStacked, it is now time to create your first project. Let get it started!
+
 ## Creating your first project
 
 Locate the `+` icon to create add a new project.
@@ -30,7 +32,7 @@ Create a new `index.js` file.
 
 ![BlockNote image](https://img.fullstacked.org/IMG_0528.png)![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.02.42-AM.png)
 
-Create an element, add some text and append it to the body. Then re-run your project.
+Create an element, add some text and append it to the `body`. Then re-run your project.
 
 ![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.03.44-AM.png)
 
@@ -47,7 +49,7 @@ Cool! We got some text displayed. Now let's give it some style in the next secti
 
 ## Editing the Sass entrypoint
 
-This time create an `index.scss` file and add some styling to your elements. Then re-run your project.
+This time, create an `index.scss` file and add some styling to your elements. Then re-run your project.
 
 ![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.05.33-AM.png)
 
@@ -72,7 +74,7 @@ html, body {
 
 ![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.05.38-AM.png)
 
-Great! That's looks pretty nice. From there, you can build entire interfaces. To learn about other cool features, continue in the guides section.
+Great! That looks pretty nice. From there, you can now build views and component to create entire interfaces. To learn about more cool features, continue in the guides section.
 
 ## Editing the HTML entrypoint
 

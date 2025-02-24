@@ -23,7 +23,7 @@ If your recipient doesn't have the FullStacked installed beforehand, the `fullst
 https://share.fullstacked.org?git=[git/repo/url.git]
 
 Example:
-https://share.fullstacked.org?git=https://github.com/fullstackedorg/editor-sample-demo.git
+https://share.fullstacked.org?git=https://github.com/fullstackedorg/demo.git
 ```
 
 Try it out\

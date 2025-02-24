@@ -13,6 +13,7 @@
     "docs/guides/open-in-fullstacked.md",
     "docs/guides/import-export.md",
     "docs/guides/debugging.md",
+    "docs/guides/build.md",
     "docs/references/platform.md",
     "docs/references/fs.md",
     "docs/references/fetch.md",
