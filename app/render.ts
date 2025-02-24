@@ -44,9 +44,16 @@ export async function renderSite(page: string = null): Promise<{
 }> {
     const files: Awaited<ReturnType<typeof renderSite>> = {};
 
+    const script = await fs.readFile("/assets/script.js", { encoding: "utf8" });
+    files["script.js"] = {
+        isDir: false,
+        contents: script,
+    };
+
+    const css = await renderStyle(page ? false : true);
     files["index.css"] = {
         isDir: false,
-        contents: await renderStyle(page ? false : true),
+        contents: css,
     };
 
     const titles = await getTitles();
@@ -102,9 +109,24 @@ export async function renderSite(page: string = null): Promise<{
                 next ? createButton(next[0], next[1], true) : "<div></div>",
             )
             .replace("{{ PAGE }}", f)
+            .replace("{{ PAGE }}", f)
+            .replace(
+                "{{ ANALYTICS }}",
+                page
+                    ? ""
+                    : `<script defer data-domain="docs.fullstacked.org" src="https://plausible.cplepage.com/js/script.js"></script>`,
+            )
             .replace(
                 "{{ STYLE }}",
-                page ? "" : `<link rel="stylesheet" href="/index.css" />`,
+                page
+                    ? `<style>${css}</style>`
+                    : `<link rel="stylesheet" href="/index.css" />`,
+            )
+            .replace(
+                "{{ SCRIPT }}",
+                page
+                    ? `<script>${script}</script`
+                    : `<script src="/script.js"></script>`,
             );
 
         if (prev) {

@@ -2,10 +2,29 @@
     <head>
         <meta charset="utf-8" />
         <title>FullStacked Docs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="apple-itunes-app" content="app-id=6477835950">
+
+        <meta property="og:url" content="https://docs.fullstacked.org" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FullStacked" />
+        <meta property="og:description" content="Create local-first web-like projects on any platform." />
+        <meta property="og:image" content="https://files.fullstacked.org/sharing-image.jpg" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@get_fullstacked" />
+        <meta name="twitter:title" content="FullStacked" />
+        <meta name="twitter:description" content="Create local-first web-like projects on any platform." />
+        <meta name="twitter:image" content="https://files.fullstacked.org/sharing-image.jpg" />
+
+        {{ ANALYTICS }}
+        
         {{ STYLE }}
     </head>
     <body>
         <div id="fixed">
+            <div class="nav-overlay"></div>
+            
             <div class="inner">
                 <header>
                     <div id="logo">
@@ -83,6 +102,12 @@
                                 ></path>
                             </svg>
                         </a>
+
+                        <div class="mobile-menu">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </header>
 
@@ -107,21 +132,27 @@
             <div class="inner">
                 <main>
                     <div class="markdown-body">{{ MD }}</div>
-                    
-                    <div class="next-prev">
-                        {{ PREV }}
-                        {{ NEXT }}
-                    </div>
+
+                    <a
+                        href="https://github.com/fullstackedorg/docs/blob/blocknote/{{ PAGE }}"
+                    >
+                        <button>Edit this page</button>
+                    </a>
+
+                    <div class="next-prev">{{ PREV }} {{ NEXT }}</div>
 
                     <hr />
                 </main>
 
                 <footer>
-                    © 2025 Developed by cplepage. Released under GPL-3.0
-                    license.
-                    <a href="/privacy-policy">Privacy Policy</a>
+                    <div>© 2025 Developed by cplepage.</div>
+                    <div>
+                        Released under GPL-3.0 license.
+                        <a href="/privacy-policy">Privacy Policy</a>
+                    </div>
                 </footer>
             </div>
         </div>
+        {{ SCRIPT }}
     </body>
 </html>

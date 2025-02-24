@@ -9,7 +9,4 @@ export async function Preview(page: string) {
     const iframe = document.createElement("iframe");
     new wb(page, { mount: iframe });
     iframe.contentDocument.write(renderedPage.contents);
-    const style = iframe.contentDocument.createElement("style");
-    style.innerHTML = site["index.css"].contents;
-    iframe.contentDocument.head.append(style);
 }
