@@ -1,0 +1,286 @@
+@use "./github-markdown-dark.scss";
+@use "../node_modules/@fullstacked/ui/ui.scss";
+@use "../node_modules/@fullstacked/ui/values/colors.scss" as c;
+@use "../node_modules/@fullstacked/ui/values/spacing.scss" as s;
+@use "../node_modules/@fullstacked/ui/values/typography.scss" as t;
+@use "../node_modules/@fullstacked/ui/values/breakpoints.scss" as b;
+
+html,
+body {
+    margin: 0;
+    background-color: c.$blue-dark;
+    font-family: t.$fonts;
+}
+$max-width: 1280px;
+$header-height: 70px;
+$nav-width: 250px;
+$aside-width: 250px;
+
+#fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+
+    > .inner {
+        width: 100%;
+        max-width: $max-width;
+        height: 100%;
+        position: relative;
+
+        > div {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+        }
+    }
+}
+
+#scrollable {
+    width: 100%;
+    max-width: $max-width;
+    padding-top: $header-height;
+    margin: 0 auto;
+
+    > .inner {
+        width: 100%;
+        padding-left: $nav-width + s.$large;
+        padding-right: $aside-width + s.$large;
+        padding-top: s.$medium;
+
+        @media (max-width: b.$large) {
+            padding-right: s.$medium;
+        }
+
+        @media (max-width: b.$medium) {
+            padding-left: s.$medium;
+        }
+    }
+}
+
+h2 {
+    padding-top: $header-height + s.$medium !important;
+    margin-top: 0 - $header-height !important;
+}
+
+h3 {
+    padding-top: $header-height + s.$small !important;
+    margin-top: 0 - $header-height !important;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: s.$medium;
+    background-color: c.$blue-dark;
+    height: $header-height;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    pointer-events: all;
+
+    #logo {
+        display: flex;
+        align-items: center;
+        gap: s.$small;
+
+        img {
+            height: 50px;
+            width: auto;
+        }
+
+        svg {
+            height: 20px;
+            width: auto;
+
+            @media (max-width: b.$small) {
+                display: none;
+            }
+        }
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        gap: s.$medium;
+
+        svg {
+            height: 40px;
+            width: auto;
+        }
+
+        .mobile-menu {
+            display: none;
+            height: 100%;
+            flex-direction: column;
+            gap: s.$small;
+            width: 40px;
+
+            > div {
+                height: 4px;
+                width: 100%;
+                border-radius: 2px;
+                background-color: c.$light;
+                transition: 0.3s all;
+                transform-origin: right center;
+            }
+
+            @media (max-width: b.$medium) {
+                display: flex;
+            }
+
+            &.open {
+                > div:nth-child(2) {
+                    opacity: 0;
+                }
+
+                > div:first-child {
+                    transform: rotate(-45deg);
+                }
+                > div:last-child {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+nav {
+    pointer-events: all;
+    height: calc(100% - $header-height);
+    overflow: auto;
+    width: $nav-width;
+    padding: s.$large 0;
+
+    @media (max-width: b.$medium) {
+        transform: translateX(-100%);
+        transition: 0.3s transform;
+        background-color: c.$blue-dark;
+        &.open {
+            transform: translateX(0%);
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        padding-left: s.$medium;
+
+        li {
+            a {
+                display: block;
+                padding: s.$small s.$medium;
+                border-left: 1px solid c.opacity(c.$blue, 40);
+                color: c.opacity(c.$light, 80);
+                &:hover {
+                    border-color: c.$blue;
+                }
+            }
+            &.active {
+                a {
+                    border-color: c.$blue;
+                }
+            }
+        }
+    }
+    div {
+        font-weight: bold;
+        padding: s.$small s.$medium;
+    }
+}
+
+.nav-overlay {
+    position: fixed;
+    background-color: c.$overlay;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    pointer-events: all;
+
+    @media (max-width: b.$medium) {
+        &.open {
+            display: block;
+        }
+    }
+}
+
+aside {
+    pointer-events: all;
+    width: $aside-width;
+    padding: s.$large s.$small;
+
+    @media (max-width: b.$large) {
+        display: none;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: s.$x-small 0 s.$small;
+        margin: 0;
+
+        a {
+            display: block;
+            text-decoration: none;
+            padding: s.$x-small 0;
+            color: c.opacity(c.$light, 80);
+        }
+    }
+}
+
+main {
+    > .markdown-body {
+        min-height: calc(90vh - $header-height);
+        padding-bottom: s.$small;
+    }
+
+    > hr {
+        margin: s.$medium 0;
+        border-color: c.opacity(c.$gray-dark, 50);
+    }
+
+    .next-prev {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: s.$large;
+
+        > a {
+            &:last-child {
+                .icon {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    > a {
+        display: none;
+        margin-top: s.$medium;
+        @media (max-width: b.$large) {
+            display: inline-block;
+        }
+    }
+}
+
+footer {
+    padding: s.$large s.$small s.$medium;
+    text-align: center;
+    font-size: t.$small;
+    > div {
+        display: inline-block;
+    }
+}

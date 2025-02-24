@@ -1,0 +1,22 @@
+[
+    "docs/introduction.md",
+    "docs/installation.md",
+    "docs/getting-started.md",
+    "docs/fullstacked-vs.md",
+    "docs/guides/files.md",
+    "docs/guides/terminal.md",
+    "docs/guides/typescript.md",
+    "docs/guides/sass.md",
+    "docs/guides/packages.md",
+    "docs/guides/git.md",
+    "docs/guides/user-mode.md",
+    "docs/guides/open-in-fullstacked.md",
+    "docs/guides/import-export.md",
+    "docs/guides/debugging.md",
+    "docs/guides/build.md",
+    "docs/references/platform.md",
+    "docs/references/fs.md",
+    "docs/references/fetch.md",
+    "docs/references/zip.md",
+    "docs/privacy-policy.md"
+]

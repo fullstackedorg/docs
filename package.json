@@ -1,0 +1,22 @@
+{
+    "dependencies": {
+        "@blocknote/core": "^0.24.0",
+        "@blocknote/mantine": "^0.24.0",
+        "@blocknote/react": "^0.24.0",
+        "@fullstacked/ui": "^0.0.1",
+        "highlight.js": "^11.11.1",
+        "marked": "^15.0.7",
+        "marked-gfm-heading-id": "^4.1.1",
+        "marked-highlight": "^2.2.1",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "sass": "^1.85.0",
+        "slugify": "^1.6.6",
+        "winbox": "^0.2.82"
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.10",
+        "@types/react-dom": "^19.0.4",
+        "eruda": "^3.4.1"
+    }
+}
