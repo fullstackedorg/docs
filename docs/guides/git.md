@@ -4,19 +4,19 @@
 
 ## Cloning a Repository
 
-To clone a project, simply add the `Clone` `http` URL of your git repository. You can notice the `Create` button changing its text to `Clone`.
+![BlockNote image](https://img.fullstacked.org/IMG_0537.png)![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.15.19-AM.png)![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.15.58-AM.png)
 
-![BlockNote image](/images/git/cloning.png)
+To clone a project, simply add the `Clone` `http` URL of your git repository. You can notice the `Create` button changing its text to `Clone`.
 
 From there, everytime you open this project, it will try to `Pull` the latest changes. You can notice it by the green arrow on the git button.
 
-![BlockNote image](/images/git/pulling.png)
+![BlockNote image](https://img.fullstacked.org/IMG_0538.png)
 
 ## Pushing Code
 
 After you've made some changes and updates to your codebase, click the git button in the top bar of the Project view.
 
-![BlockNote image](/images/git/button.png)
+![BlockNote image](https://img.fullstacked.org/IMG_0541.png)![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.16.31-AM.png)
 
 Changes are calculated and displayed there with a text input for your commit message. You can revert any unwanted changes and when ready, whether commit and/or push to your remote (the push button commits beforehand).
 
@@ -28,7 +28,7 @@ You can notice code being pushed to your remote by the red arrow on the git butt
 
 If your remote repository is unreachable (like if you don't have internet access), only the commit action will be available. You can then `Push` later when your remote is reachable.
 
-![BlockNote image](/images/git/remote-unreachable.png)
+![BlockNote image](https://img.fullstacked.org/IMG_0539.png)
 
 ## Using Branches
 
@@ -36,7 +36,7 @@ If your remote repository is unreachable (like if you don't have internet access
 
 A branches button is available in the git dialog. Click it to access the list of available branches in your repository.
 
-![BlockNote image](/images/git/branches-button.png)
+![BlockNote image](https://img.fullstacked.org/IMG_0540.png)
 
 From here, you can see on which branch your are, create a new one and checkout other branches.
 

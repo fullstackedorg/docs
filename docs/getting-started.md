@@ -22,7 +22,7 @@ Try the run button to see what happens.
 
 ![BlockNote image](https://img.fullstacked.org/IMG_0527.png)![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.02.24-AM.png)
 
-An empty project as expected. Now let's add some stuff in the next section.
+As you can expect, an empty page. Now let's add some stuff in the next section.
 
 ## Editing the JavaScript entrypoint
 

@@ -13,8 +13,12 @@ npm install react
 npm i react@18 react-dom@18
 ```
 
+![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.24.49-AM.png)
+
 ## package.json and lock.json
 
 After every installation of new package, your `package.json` will be updated with this newly added package plus it’s version. You can always edit this file to add, remove packages or modify the versions.
 
 On the other side, the `lock.json` file is generated from a successful installation process. **DO NOT MODIFY THIS FILE**. It makes sure all the dependencies your project needs, both direct and indirect, work together smoothly. Plus, it speeds up fresh installations significantly.
+
+![BlockNote image](https://img.fullstacked.org/Screenshot-2025-02-23-at-10.26.46-AM.png)
