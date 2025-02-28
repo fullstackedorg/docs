@@ -2,7 +2,7 @@
 
 Create, run and share projects built with web technologies in a fully cross-platform, local-first environment.
 
-![BlockNote image](https://img.fullstacked.org/IMG_0521.jpeg)
+![BlockNote image](https://files.fullstacked.org/IMG_0521.jpeg)
 
 ## Motivation
 
@@ -68,7 +68,7 @@ There are 4 key components in FullStacked
 
 Here’s a little schema of how the components are nested in one another.
 
-![BlockNote image](https://img.fullstacked.org/fullstacked-key-components.png)
+![fullstacked-key-components.png](https://files.fullstacked.org/fullstacked-key-components.png)
 
 The adapter is implemented for every platform supported. It implements a few key elements:
 

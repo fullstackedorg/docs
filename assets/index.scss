@@ -90,6 +90,7 @@ header {
         display: flex;
         align-items: center;
         gap: s.$small;
+        opacity: 1;
 
         img {
             height: 50px;
@@ -122,6 +123,7 @@ header {
             flex-direction: column;
             gap: s.$small;
             width: 40px;
+            cursor: pointer;
 
             > div {
                 height: 4px;

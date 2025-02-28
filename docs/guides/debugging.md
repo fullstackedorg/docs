@@ -39,4 +39,4 @@ import eruda from "eruda";
 eruda.init();
 ```
 
-![Screenshot-2025-02-24-at-8.59.29-AM.png](https://img.fullstacked.org/Screenshot-2025-02-24-at-8.59.29-AM.png)
+![BlockNote image](https://files.fullstacked.org/Screenshot-2025-02-24-at-8.59.29-AM.png)
