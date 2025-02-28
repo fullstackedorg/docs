@@ -70,6 +70,7 @@ async function uploadFile(
     const restoreFetch = fetchFixture();
     await S3.send(
         new PutObjectCommand({
+            ContentType: file.type,
             Bucket,
             Key,
             Body: new Uint8Array(await file.arrayBuffer()),
