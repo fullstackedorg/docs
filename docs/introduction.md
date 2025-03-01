@@ -19,7 +19,7 @@ The two main ways to make your app accessible beyond your own machine are:
     *   With a server (AWS, Azure, Google Cloud, Self-Hosted, etc.)
     *   Using a web hosting service (CloudFlare, Vercel, Netlify, etc.)
 
-While these solutions are great to make your app accessible to the general public, they can become insecure and costly for projects you intend to use solely or with a distinct group of people. Developer program fees, days-long app reviews, complexe user management, data transfer fees can all feel counterproductive when your goal is simply to build and run your projects on your own and known people devices. So why can’t we just run our app the same way we do on our local machine? What if we could `npm start` anywhere? FullStacked exists to fulfill this use case.
+While these solutions are great to make your app accessible to the general public, they can become insecure and costly for projects you intend to use solely or with a distinct group of people. Developer program fees, days-long app reviews, complexe user management, data transfer fees can all feel counterproductive when your goal is simply to build and run your projects on your own and known people devices. So why can’t we just let others run our app the same way we do on our local machine? What if we could `npm start` anywhere? FullStacked exists to fulfill this use case.
 
 ## How it works
 
@@ -68,7 +68,7 @@ There are 4 key components in FullStacked
 
 Here’s a little schema of how the components are nested in one another.
 
-![fullstacked-key-components.png](https://files.fullstacked.org/fullstacked-key-components.png)
+![BlockNote image](https://files.fullstacked.org/fullstacked-key-components.png)
 
 The adapter is implemented for every platform supported. It implements a few key elements:
 
