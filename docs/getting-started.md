@@ -1,6 +1,6 @@
 # Getting Started
 
-Once you have install FullStacked, it is now time to create your first project. Let get it started!
+Once you have install FullStacked, it is now time to create your first project. Let's get it started!
 
 ## Creating your first project
 
