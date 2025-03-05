@@ -79,7 +79,7 @@ The adapter is implemented for every platform supported. It implements a few key
 
 *   Handles the WebViews spawning and management
 
-### Implementation specifics for different platforms
+### Platform-Specific Implementations
 
 *   Apple
 
