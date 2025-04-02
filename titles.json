@@ -19,5 +19,7 @@
     "docs/references/zip.md": "ZIP (archive)",
     "docs/guides/terminal.md": "Using the terminal",
     "docs/guides/user-mode.md": "User Mode",
-    "docs/guides/build.md": "Build from source"
+    "docs/guides/build.md": "Build from source",
+    "docs/guides/prompt.md": "Prompt",
+    "docs/guides/ai-agent.md": "Using AI Agent"
 }
