@@ -10,15 +10,15 @@ type FileEntries: {
     isDir: boolean,
     contenst: string | Uint8Array
   }
-}
+};
 
-zip(in: string | FileEntries) : Promise<Uint8Array>;
-zip(in: string | FileEntries, out: string) : Promise<Boolean>;
-zip(in: string, out: null | undefined, skip: string[]) : Promise<Uint8Array>;
-zip(in: string, out: string, skip: string[]) : Promise<Boolean>;
+function zip(in: string | FileEntries) : Promise<Uint8Array>;
+function zip(in: string | FileEntries, out: string) : Promise<Boolean>;
+function zip(in: string, out: null | undefined, skip: string[]) : Promise<Uint8Array>;
+function zip(in: string, out: string, skip: string[]) : Promise<Boolean>;
 
-unzip(in: string | FileEntries) : Promise<FileEntries>;
-unzip(in: string | FileEntries, out: string) : Promise<Boolean>;
+function unzip(in: string | FileEntries) : Promise<FileEntries>;
+function unzip(in: string | FileEntries, out: string) : Promise<Boolean>;
 ```
 
 ## Example

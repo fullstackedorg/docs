@@ -1,8 +1,8 @@
 # Using npm Packages
 
-The editor supports the use of packages hosted on [npmjs.com](https://www.npmjs.com). Simply use `import` `from` and as soon as esbuild cannot resolve a package, FullStacked will try to download it.
+The editor supports the use of packages (node_modules). You can install pacakges directly from a git repository or hosted on [npmjs.com](https://www.npmjs.com). Simply use `import` `from` and as soon as esbuild cannot resolve a package, FullStacked will try to download it.
 
-## Installing packages
+## Installing packages from npmjs
 
 Use the terminal to install packages from npm. Simply use the `npm install` or `npm i` command.
 
@@ -14,6 +14,8 @@ npm i react@18 react-dom@18
 ```
 
 ![BlockNote image](https://files.fullstacked.org/Screenshot-2025-02-23-at-10.24.49-AM.png)
+
+## Installing packages from a git repository
 
 ## package.json and lock.json
 
