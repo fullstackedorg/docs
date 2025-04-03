@@ -69,8 +69,12 @@ await fs.writeFile(cacheFile, json);
 
 // stream the response
 const response = await core_fetch2("https://stream.com");
-for await (const chunk of response.body) {
-  console.log(chunk);
+const reader = response.body.getReader();
+let finished = false;
+while(!finished) {
+  const { done, value } = await reader.read();
+  console.log(value);
+  finished = done;
 }
 
 return json;
