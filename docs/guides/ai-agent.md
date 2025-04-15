@@ -30,10 +30,9 @@ Click the cog icon to select open the selection view and from there, select a pr
 
 ## Available Providers
 
-|                    |      |                 |                                 |
-| ------------------ | ---- | --------------- | ------------------------------- |
-|                    |      |                 |                                 |
+
 | Provider           | Chat | Code Completion | Console                         |
+| ------------------ | ---- | --------------- | ------------------------------- |
 | Ollama             | ✅    | ✅               |                                 |
 | OpenAI             | ✅    |                 | <https://platform.openai.com>   |
 | Claude (Anthropic) | ✅    |                 | <https://console.anthropic.com> |

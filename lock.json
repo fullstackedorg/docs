@@ -74,9 +74,10 @@
         },
         {
             "name": "@aws-sdk/client-s3",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "^3.758.0"
+                "^3.758.0",
+                "^3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -84,9 +85,9 @@
         },
         {
             "name": "@aws-sdk/client-sso",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "3.758.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -94,9 +95,9 @@
         },
         {
             "name": "@aws-sdk/core",
-            "version": "3.758.0",
+            "version": "3.775.0",
             "as": [
-                "3.758.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -104,9 +105,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-env",
-            "version": "3.758.0",
+            "version": "3.775.0",
             "as": [
-                "3.758.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -114,9 +115,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-http",
-            "version": "3.758.0",
+            "version": "3.775.0",
             "as": [
-                "3.758.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -124,9 +125,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-ini",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "3.758.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -134,9 +135,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-node",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "3.758.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -144,9 +145,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-process",
-            "version": "3.758.0",
+            "version": "3.775.0",
             "as": [
-                "3.758.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -154,9 +155,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-sso",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "3.758.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -164,9 +165,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-web-identity",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "3.758.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -174,9 +175,9 @@
         },
         {
             "name": "@aws-sdk/middleware-bucket-endpoint",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -184,9 +185,9 @@
         },
         {
             "name": "@aws-sdk/middleware-expect-continue",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -194,9 +195,9 @@
         },
         {
             "name": "@aws-sdk/middleware-flexible-checksums",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "3.758.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -204,9 +205,9 @@
         },
         {
             "name": "@aws-sdk/middleware-host-header",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -214,9 +215,9 @@
         },
         {
             "name": "@aws-sdk/middleware-location-constraint",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -224,9 +225,9 @@
         },
         {
             "name": "@aws-sdk/middleware-logger",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -234,9 +235,9 @@
         },
         {
             "name": "@aws-sdk/middleware-recursion-detection",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -244,9 +245,9 @@
         },
         {
             "name": "@aws-sdk/middleware-sdk-s3",
-            "version": "3.758.0",
+            "version": "3.775.0",
             "as": [
-                "3.758.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -254,9 +255,9 @@
         },
         {
             "name": "@aws-sdk/middleware-ssec",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -264,9 +265,9 @@
         },
         {
             "name": "@aws-sdk/middleware-user-agent",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "3.758.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -274,9 +275,9 @@
         },
         {
             "name": "@aws-sdk/nested-clients",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "3.758.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -284,9 +285,9 @@
         },
         {
             "name": "@aws-sdk/region-config-resolver",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -294,9 +295,9 @@
         },
         {
             "name": "@aws-sdk/signature-v4-multi-region",
-            "version": "3.758.0",
+            "version": "3.775.0",
             "as": [
-                "3.758.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -304,9 +305,9 @@
         },
         {
             "name": "@aws-sdk/token-providers",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "3.758.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -314,9 +315,9 @@
         },
         {
             "name": "@aws-sdk/types",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0",
+                "3.775.0",
                 "^3.222.0"
             ],
             "location": [
@@ -335,9 +336,9 @@
         },
         {
             "name": "@aws-sdk/util-endpoints",
-            "version": "3.743.0",
+            "version": "3.787.0",
             "as": [
-                "3.743.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -355,9 +356,9 @@
         },
         {
             "name": "@aws-sdk/util-user-agent-browser",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -365,9 +366,9 @@
         },
         {
             "name": "@aws-sdk/util-user-agent-node",
-            "version": "3.758.0",
+            "version": "3.787.0",
             "as": [
-                "3.758.0"
+                "3.787.0"
             ],
             "location": [
                 "node_modules"
@@ -375,9 +376,9 @@
         },
         {
             "name": "@aws-sdk/xml-builder",
-            "version": "3.734.0",
+            "version": "3.775.0",
             "as": [
-                "3.734.0"
+                "3.775.0"
             ],
             "location": [
                 "node_modules"
@@ -385,7 +386,7 @@
         },
         {
             "name": "@babel/runtime",
-            "version": "7.26.9",
+            "version": "7.27.0",
             "as": [
                 "^7.20.13"
             ],
@@ -395,9 +396,9 @@
         },
         {
             "name": "@blocknote/core",
-            "version": "0.24.0",
+            "version": "0.28.0",
             "as": [
-                "^0.24.0"
+                "^0.28.0"
             ],
             "location": [
                 "node_modules"
@@ -405,9 +406,9 @@
         },
         {
             "name": "@blocknote/mantine",
-            "version": "0.24.0",
+            "version": "0.28.0",
             "as": [
-                "^0.24.0"
+                "^0.28.0"
             ],
             "location": [
                 "node_modules"
@@ -415,9 +416,9 @@
         },
         {
             "name": "@blocknote/react",
-            "version": "0.24.0",
+            "version": "0.28.0",
             "as": [
-                "^0.24.0"
+                "^0.28.0"
             ],
             "location": [
                 "node_modules"
@@ -497,7 +498,7 @@
         },
         {
             "name": "@mantine/core",
-            "version": "7.17.0",
+            "version": "7.17.4",
             "as": [
                 "^7.10.1"
             ],
@@ -507,7 +508,7 @@
         },
         {
             "name": "@mantine/hooks",
-            "version": "7.17.0",
+            "version": "7.17.4",
             "as": [
                 "^7.10.1"
             ],
@@ -546,60 +547,10 @@
             ]
         },
         {
-            "name": "@shikijs/core",
-            "version": "1.29.2",
-            "as": [
-                "1.29.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@shikijs/engine-javascript",
-            "version": "1.29.2",
-            "as": [
-                "1.29.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@shikijs/engine-oniguruma",
-            "version": "1.29.2",
-            "as": [
-                "1.29.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@shikijs/langs",
-            "version": "1.29.2",
-            "as": [
-                "1.29.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@shikijs/themes",
-            "version": "1.29.2",
-            "as": [
-                "1.29.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
             "name": "@shikijs/types",
-            "version": "1.29.2",
+            "version": "3.2.1",
             "as": [
-                "1.29.2"
+                "3.2.1"
             ],
             "location": [
                 "node_modules"
@@ -609,7 +560,7 @@
             "name": "@shikijs/vscode-textmate",
             "version": "10.0.2",
             "as": [
-                "^10.0.1"
+                "^10.0.2"
             ],
             "location": [
                 "node_modules"
@@ -617,9 +568,9 @@
         },
         {
             "name": "@smithy/abort-controller",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -647,9 +598,9 @@
         },
         {
             "name": "@smithy/config-resolver",
-            "version": "4.0.1",
+            "version": "4.1.0",
             "as": [
-                "^4.0.1"
+                "^4.1.0"
             ],
             "location": [
                 "node_modules"
@@ -657,9 +608,9 @@
         },
         {
             "name": "@smithy/core",
-            "version": "3.1.5",
+            "version": "3.2.0",
             "as": [
-                "^3.1.5"
+                "^3.2.0"
             ],
             "location": [
                 "node_modules"
@@ -667,9 +618,9 @@
         },
         {
             "name": "@smithy/credential-provider-imds",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -677,9 +628,9 @@
         },
         {
             "name": "@smithy/eventstream-codec",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -687,9 +638,9 @@
         },
         {
             "name": "@smithy/eventstream-serde-browser",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -697,9 +648,9 @@
         },
         {
             "name": "@smithy/eventstream-serde-config-resolver",
-            "version": "4.0.1",
+            "version": "4.1.0",
             "as": [
-                "^4.0.1"
+                "^4.1.0"
             ],
             "location": [
                 "node_modules"
@@ -707,9 +658,9 @@
         },
         {
             "name": "@smithy/eventstream-serde-node",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -717,9 +668,9 @@
         },
         {
             "name": "@smithy/eventstream-serde-universal",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -727,9 +678,9 @@
         },
         {
             "name": "@smithy/fetch-http-handler",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "as": [
-                "^5.0.1"
+                "^5.0.2"
             ],
             "location": [
                 "node_modules"
@@ -737,9 +688,9 @@
         },
         {
             "name": "@smithy/hash-blob-browser",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -747,9 +698,9 @@
         },
         {
             "name": "@smithy/hash-node",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -757,9 +708,9 @@
         },
         {
             "name": "@smithy/hash-stream-node",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -767,9 +718,9 @@
         },
         {
             "name": "@smithy/invalid-dependency",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -782,9 +733,9 @@
                 "^2.2.0"
             ],
             "location": [
-                "node_modules/@aws-crypto/sha256-browser/node_modules/@smithy/util-utf8/node_modules/@smithy/util-buffer-from/node_modules",
+                "node_modules/@aws-crypto/sha1-browser/node_modules/@smithy/util-utf8/node_modules/@smithy/util-buffer-from/node_modules",
                 "node_modules/@aws-crypto/util/node_modules/@smithy/util-utf8/node_modules/@smithy/util-buffer-from/node_modules",
-                "node_modules/@aws-crypto/sha1-browser/node_modules/@smithy/util-utf8/node_modules/@smithy/util-buffer-from/node_modules"
+                "node_modules/@aws-crypto/sha256-browser/node_modules/@smithy/util-utf8/node_modules/@smithy/util-buffer-from/node_modules"
             ]
         },
         {
@@ -799,46 +750,6 @@
         },
         {
             "name": "@smithy/md5-js",
-            "version": "4.0.1",
-            "as": [
-                "^4.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/middleware-content-length",
-            "version": "4.0.1",
-            "as": [
-                "^4.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/middleware-endpoint",
-            "version": "4.0.6",
-            "as": [
-                "^4.0.6"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/middleware-retry",
-            "version": "4.0.7",
-            "as": [
-                "^4.0.7"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/middleware-serde",
             "version": "4.0.2",
             "as": [
                 "^4.0.2"
@@ -848,117 +759,17 @@
             ]
         },
         {
-            "name": "@smithy/middleware-stack",
-            "version": "4.0.1",
+            "name": "@smithy/middleware-content-length",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
             ]
         },
         {
-            "name": "@smithy/node-config-provider",
-            "version": "4.0.1",
-            "as": [
-                "^4.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/node-http-handler",
-            "version": "4.0.3",
-            "as": [
-                "^4.0.3"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/property-provider",
-            "version": "4.0.1",
-            "as": [
-                "^4.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/protocol-http",
-            "version": "5.0.1",
-            "as": [
-                "^5.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/querystring-builder",
-            "version": "4.0.1",
-            "as": [
-                "^4.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/querystring-parser",
-            "version": "4.0.1",
-            "as": [
-                "^4.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/service-error-classification",
-            "version": "4.0.1",
-            "as": [
-                "^4.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/shared-ini-file-loader",
-            "version": "4.0.1",
-            "as": [
-                "^4.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/signature-v4",
-            "version": "5.0.1",
-            "as": [
-                "^5.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/smithy-client",
-            "version": "4.1.6",
-            "as": [
-                "^4.1.6"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/types",
+            "name": "@smithy/middleware-endpoint",
             "version": "4.1.0",
             "as": [
                 "^4.1.0"
@@ -968,10 +779,150 @@
             ]
         },
         {
-            "name": "@smithy/url-parser",
-            "version": "4.0.1",
+            "name": "@smithy/middleware-retry",
+            "version": "4.1.0",
             "as": [
-                "^4.0.1"
+                "^4.1.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/middleware-serde",
+            "version": "4.0.3",
+            "as": [
+                "^4.0.3"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/middleware-stack",
+            "version": "4.0.2",
+            "as": [
+                "^4.0.2"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/node-config-provider",
+            "version": "4.0.2",
+            "as": [
+                "^4.0.2"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/node-http-handler",
+            "version": "4.0.4",
+            "as": [
+                "^4.0.4"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/property-provider",
+            "version": "4.0.2",
+            "as": [
+                "^4.0.2"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/protocol-http",
+            "version": "5.1.0",
+            "as": [
+                "^5.1.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/querystring-builder",
+            "version": "4.0.2",
+            "as": [
+                "^4.0.2"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/querystring-parser",
+            "version": "4.0.2",
+            "as": [
+                "^4.0.2"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/service-error-classification",
+            "version": "4.0.2",
+            "as": [
+                "^4.0.2"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/shared-ini-file-loader",
+            "version": "4.0.2",
+            "as": [
+                "^4.0.2"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/signature-v4",
+            "version": "5.0.2",
+            "as": [
+                "^5.0.2"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/smithy-client",
+            "version": "4.2.0",
+            "as": [
+                "^4.2.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/types",
+            "version": "4.2.0",
+            "as": [
+                "^4.2.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/url-parser",
+            "version": "4.0.2",
+            "as": [
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -1014,9 +965,9 @@
                 "^2.2.0"
             ],
             "location": [
-                "node_modules/@aws-crypto/sha256-browser/node_modules/@smithy/util-utf8/node_modules",
+                "node_modules/@aws-crypto/sha1-browser/node_modules/@smithy/util-utf8/node_modules",
                 "node_modules/@aws-crypto/util/node_modules/@smithy/util-utf8/node_modules",
-                "node_modules/@aws-crypto/sha1-browser/node_modules/@smithy/util-utf8/node_modules"
+                "node_modules/@aws-crypto/sha256-browser/node_modules/@smithy/util-utf8/node_modules"
             ]
         },
         {
@@ -1041,9 +992,9 @@
         },
         {
             "name": "@smithy/util-defaults-mode-browser",
-            "version": "4.0.7",
+            "version": "4.0.8",
             "as": [
-                "^4.0.7"
+                "^4.0.8"
             ],
             "location": [
                 "node_modules"
@@ -1051,9 +1002,9 @@
         },
         {
             "name": "@smithy/util-defaults-mode-node",
-            "version": "4.0.7",
+            "version": "4.0.8",
             "as": [
-                "^4.0.7"
+                "^4.0.8"
             ],
             "location": [
                 "node_modules"
@@ -1061,9 +1012,9 @@
         },
         {
             "name": "@smithy/util-endpoints",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "as": [
-                "^3.0.1"
+                "^3.0.2"
             ],
             "location": [
                 "node_modules"
@@ -1081,9 +1032,9 @@
         },
         {
             "name": "@smithy/util-middleware",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -1091,9 +1042,9 @@
         },
         {
             "name": "@smithy/util-retry",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "as": [
-                "^4.0.1"
+                "^4.0.2"
             ],
             "location": [
                 "node_modules"
@@ -1101,9 +1052,9 @@
         },
         {
             "name": "@smithy/util-stream",
-            "version": "4.1.2",
+            "version": "4.2.0",
             "as": [
-                "^4.1.2"
+                "^4.2.0"
             ],
             "location": [
                 "node_modules"
@@ -1126,9 +1077,9 @@
                 "^2.0.0"
             ],
             "location": [
-                "node_modules/@aws-crypto/sha256-browser/node_modules",
+                "node_modules/@aws-crypto/sha1-browser/node_modules",
                 "node_modules/@aws-crypto/util/node_modules",
-                "node_modules/@aws-crypto/sha1-browser/node_modules"
+                "node_modules/@aws-crypto/sha256-browser/node_modules"
             ]
         },
         {
@@ -1143,9 +1094,9 @@
         },
         {
             "name": "@smithy/util-waiter",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "as": [
-                "^4.0.2"
+                "^4.0.3"
             ],
             "location": [
                 "node_modules"
@@ -1153,9 +1104,10 @@
         },
         {
             "name": "@tiptap/core",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.7.1",
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1163,9 +1115,9 @@
         },
         {
             "name": "@tiptap/extension-bold",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1173,9 +1125,9 @@
         },
         {
             "name": "@tiptap/extension-bubble-menu",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.11.5"
+                "^2.11.7"
             ],
             "location": [
                 "node_modules"
@@ -1183,37 +1135,7 @@
         },
         {
             "name": "@tiptap/extension-code",
-            "version": "2.11.5",
-            "as": [
-                "^2.7.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@tiptap/extension-collaboration",
-            "version": "2.11.5",
-            "as": [
-                "^2.7.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@tiptap/extension-collaboration-cursor",
-            "version": "2.11.5",
-            "as": [
-                "^2.7.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@tiptap/extension-floating-menu",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
                 "^2.11.5"
             ],
@@ -1222,20 +1144,40 @@
             ]
         },
         {
-            "name": "@tiptap/extension-gapcursor",
-            "version": "2.11.5",
+            "name": "@tiptap/extension-collaboration",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
             ]
         },
         {
-            "name": "@tiptap/extension-hard-break",
-            "version": "2.11.5",
+            "name": "@tiptap/extension-collaboration-cursor",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@tiptap/extension-floating-menu",
+            "version": "2.11.7",
+            "as": [
+                "^2.11.7"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@tiptap/extension-gapcursor",
+            "version": "2.11.7",
+            "as": [
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1243,9 +1185,9 @@
         },
         {
             "name": "@tiptap/extension-history",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1253,9 +1195,9 @@
         },
         {
             "name": "@tiptap/extension-horizontal-rule",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1263,9 +1205,9 @@
         },
         {
             "name": "@tiptap/extension-italic",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1273,9 +1215,9 @@
         },
         {
             "name": "@tiptap/extension-link",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1283,9 +1225,9 @@
         },
         {
             "name": "@tiptap/extension-paragraph",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1293,9 +1235,9 @@
         },
         {
             "name": "@tiptap/extension-strike",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1303,9 +1245,9 @@
         },
         {
             "name": "@tiptap/extension-table-cell",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1313,9 +1255,9 @@
         },
         {
             "name": "@tiptap/extension-table-header",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1323,9 +1265,9 @@
         },
         {
             "name": "@tiptap/extension-table-row",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1333,9 +1275,9 @@
         },
         {
             "name": "@tiptap/extension-text",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1343,9 +1285,9 @@
         },
         {
             "name": "@tiptap/extension-underline",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1353,9 +1295,10 @@
         },
         {
             "name": "@tiptap/pm",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
-                "^2.7.1"
+                "^2.7.1",
+                "^2.11.5"
             ],
             "location": [
                 "node_modules"
@@ -1363,7 +1306,7 @@
         },
         {
             "name": "@tiptap/react",
-            "version": "2.11.5",
+            "version": "2.11.7",
             "as": [
                 "^2.7.1"
             ],
@@ -1382,53 +1325,11 @@
             ]
         },
         {
-            "name": "@types/extend",
-            "version": "3.0.4",
-            "as": [
-                "^3.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@types/hast",
-            "version": "2.3.10",
-            "as": [
-                "^2.0.0"
-            ],
-            "location": [
-                "node_modules/hastscript/node_modules",
-                "node_modules/rehype-parse/node_modules",
-                "node_modules/rehype-remark/node_modules",
-                "node_modules/remark-rehype/node_modules",
-                "node_modules/rehype-stringify/node_modules",
-                "node_modules/hast-util-to-parse5/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules",
-                "node_modules/rehype-stringify/node_modules/hast-util-to-html/node_modules",
-                "node_modules/hast-util-from-parse5/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules",
-                "node_modules/hast-util-parse-selector/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-is-body-ok-link/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules",
-                "node_modules/hast-util-to-text/node_modules",
-                "node_modules/hast-util-to-text/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-raw/node_modules",
-                "node_modules/rehype-minify-whitespace/node_modules",
-                "node_modules/rehype-minify-whitespace/node_modules/hast-util-is-element/node_modules",
-                "node_modules/rehype-minify-whitespace/node_modules/hast-util-embedded/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-is-body-ok-link/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-embedded/node_modules/hast-util-is-element/node_modules"
-            ]
-        },
-        {
             "name": "@types/hast",
             "version": "3.0.4",
             "as": [
-                "^3.0.4",
-                "^3.0.0"
+                "^3.0.0",
+                "^3.0.4"
             ],
             "location": [
                 "node_modules"
@@ -1452,33 +1353,6 @@
             ],
             "location": [
                 "node_modules"
-            ]
-        },
-        {
-            "name": "@types/mdast",
-            "version": "3.0.15",
-            "as": [
-                "^3.0.0"
-            ],
-            "location": [
-                "node_modules/remark-parse/node_modules",
-                "node_modules/rehype-remark/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules",
-                "node_modules/remark-stringify/node_modules",
-                "node_modules/mdast-util-find-and-replace/node_modules",
-                "node_modules/remark-rehype/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules",
-                "node_modules/mdast-util-to-string/node_modules",
-                "node_modules/mdast-util-phrasing/node_modules",
-                "node_modules/remark-gfm/node_modules",
-                "node_modules/mdast-util-from-markdown/node_modules",
-                "node_modules/mdast-util-gfm-strikethrough/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules",
-                "node_modules/mdast-util-gfm-task-list-item/node_modules",
-                "node_modules/mdast-util-gfm-footnote/node_modules",
-                "node_modules/mdast-util-gfm-table/node_modules",
-                "node_modules/mdast-util-definitions/node_modules",
-                "node_modules/mdast-util-gfm-autolink-literal/node_modules"
             ]
         },
         {
@@ -1512,20 +1386,11 @@
             ]
         },
         {
-            "name": "@types/parse5",
-            "version": "6.0.3",
-            "as": [
-                "^6.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
             "name": "@types/react",
-            "version": "19.0.10",
+            "version": "19.1.2",
             "as": [
-                "^19.0.10"
+                "^19.0.10",
+                "^19.1.2"
             ],
             "location": [
                 "node_modules"
@@ -1533,9 +1398,10 @@
         },
         {
             "name": "@types/react-dom",
-            "version": "19.0.4",
+            "version": "19.1.2",
             "as": [
-                "^19.0.4"
+                "^19.0.4",
+                "^19.1.2"
             ],
             "location": [
                 "node_modules"
@@ -1543,124 +1409,10 @@
         },
         {
             "name": "@types/unist",
-            "version": "2.0.11",
-            "as": [
-                "^2",
-                "^2.0.0"
-            ],
-            "location": [
-                "node_modules/remark-parse/node_modules/@types/mdast/node_modules",
-                "node_modules/hastscript/node_modules/@types/hast/node_modules",
-                "node_modules/rehype-parse/node_modules/@types/hast/node_modules",
-                "node_modules/rehype-remark/node_modules/@types/hast/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/unist-util-is/node_modules",
-                "node_modules/vfile-location/node_modules",
-                "node_modules/hast-util-from-parse5/node_modules",
-                "node_modules/remark-rehype/node_modules/@types/hast/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/unist-util-visit/node_modules",
-                "node_modules/rehype-stringify/node_modules/@types/hast/node_modules",
-                "node_modules/remark-stringify/node_modules/@types/mdast/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/@types/mdast/node_modules",
-                "node_modules/hast-util-from-parse5/node_modules/vfile/node_modules",
-                "node_modules/hast-util-to-parse5/node_modules/@types/hast/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/@types/hast/node_modules",
-                "node_modules/hast-util-from-parse5/node_modules/@types/hast/node_modules",
-                "node_modules/rehype-stringify/node_modules/hast-util-to-html/node_modules/@types/hast/node_modules",
-                "node_modules/mdast-util-find-and-replace/node_modules/@types/mdast/node_modules",
-                "node_modules/rehype-remark/node_modules/@types/mdast/node_modules",
-                "node_modules/rehype-stringify/node_modules/hast-util-to-html/node_modules",
-                "node_modules/remark-rehype/node_modules/@types/mdast/node_modules",
-                "node_modules/hast-util-from-parse5/node_modules/vfile/node_modules/vfile-message/node_modules",
-                "node_modules/unified/node_modules",
-                "node_modules/unified/node_modules/vfile/node_modules",
-                "node_modules/hast-util-from-parse5/node_modules/vfile/node_modules/unist-util-stringify-position/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/unist-util-visit/node_modules",
-                "node_modules/unified/node_modules/vfile/node_modules/vfile-message/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules",
-                "node_modules/unified/node_modules/vfile/node_modules/unist-util-stringify-position/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/@types/mdast/node_modules",
-                "node_modules/hast-util-from-parse5/node_modules/vfile/node_modules/vfile-message/node_modules/unist-util-stringify-position/node_modules",
-                "node_modules/mdast-util-to-string/node_modules/@types/mdast/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/hast-util-to-text/node_modules",
-                "node_modules/unist-util-find-after/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/@types/hast/node_modules",
-                "node_modules/hast-util-parse-selector/node_modules/@types/hast/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules/unist-util-is/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-is-body-ok-link/node_modules/@types/hast/node_modules",
-                "node_modules/unified/node_modules/vfile/node_modules/vfile-message/node_modules/unist-util-stringify-position/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/unist-util-visit/node_modules/unist-util-is/node_modules",
-                "node_modules/hast-util-raw/node_modules/vfile/node_modules",
-                "node_modules/hast-util-raw/node_modules/unist-util-visit/node_modules",
-                "node_modules/hast-util-raw/node_modules/unist-util-position/node_modules",
-                "node_modules/mdast-util-phrasing/node_modules/@types/mdast/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/unist-util-visit/node_modules/unist-util-is/node_modules",
-                "node_modules/mdast-util-definitions/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/@types/hast/node_modules",
-                "node_modules/remark-gfm/node_modules/@types/mdast/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/hast-util-to-text/node_modules/@types/hast/node_modules",
-                "node_modules/hast-util-to-text/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-raw/node_modules/vfile/node_modules/vfile-message/node_modules",
-                "node_modules/mdast-util-phrasing/node_modules/unist-util-is/node_modules",
-                "node_modules/vfile-location/node_modules/vfile/node_modules",
-                "node_modules/hast-util-to-text/node_modules/hast-util-is-element/node_modules/@types/hast/node_modules",
-                "node_modules/unist-util-find-after/node_modules/unist-util-is/node_modules",
-                "node_modules/hast-util-raw/node_modules/vfile/node_modules/unist-util-stringify-position/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules/unist-util-is/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules",
-                "node_modules/hast-util-raw/node_modules/unist-util-visit/node_modules/unist-util-is/node_modules",
-                "node_modules/vfile-location/node_modules/vfile/node_modules/vfile-message/node_modules",
-                "node_modules/hast-util-raw/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/vfile-location/node_modules/vfile/node_modules/unist-util-stringify-position/node_modules",
-                "node_modules/vfile-location/node_modules/vfile/node_modules/vfile-message/node_modules/unist-util-stringify-position/node_modules",
-                "node_modules/hast-util-raw/node_modules/vfile/node_modules/vfile-message/node_modules/unist-util-stringify-position/node_modules",
-                "node_modules/hast-util-raw/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules/unist-util-is/node_modules",
-                "node_modules/hast-util-raw/node_modules/@types/hast/node_modules",
-                "node_modules/rehype-minify-whitespace/node_modules/@types/hast/node_modules",
-                "node_modules/mdast-util-from-markdown/node_modules/@types/mdast/node_modules",
-                "node_modules/rehype-minify-whitespace/node_modules/hast-util-is-element/node_modules",
-                "node_modules/rehype-minify-whitespace/node_modules/unist-util-is/node_modules",
-                "node_modules/mdast-util-gfm-strikethrough/node_modules/@types/mdast/node_modules",
-                "node_modules/mdast-util-find-and-replace/node_modules/unist-util-is/node_modules",
-                "node_modules/mdast-util-from-markdown/node_modules",
-                "node_modules/mdast-util-from-markdown/node_modules/unist-util-stringify-position/node_modules",
-                "node_modules/rehype-minify-whitespace/node_modules/hast-util-is-element/node_modules/@types/hast/node_modules",
-                "node_modules/mdast-util-gfm-task-list-item/node_modules/@types/mdast/node_modules",
-                "node_modules/mdast-util-find-and-replace/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/unist-util-position/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules/@types/mdast/node_modules",
-                "node_modules/mdast-util-gfm-footnote/node_modules/@types/mdast/node_modules",
-                "node_modules/mdast-util-definitions/node_modules/unist-util-visit/node_modules",
-                "node_modules/mdast-util-gfm-table/node_modules/@types/mdast/node_modules",
-                "node_modules/mdast-util-definitions/node_modules/@types/mdast/node_modules",
-                "node_modules/mdast-util-definitions/node_modules/unist-util-visit/node_modules/unist-util-is/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules/unist-util-visit/node_modules",
-                "node_modules/mdast-util-definitions/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules/unist-util-visit/node_modules/unist-util-is/node_modules",
-                "node_modules/mdast-util-definitions/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules/unist-util-is/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/mdast-util-find-and-replace/node_modules/unist-util-visit-parents/node_modules/unist-util-is/node_modules",
-                "node_modules/mdast-util-gfm-autolink-literal/node_modules/@types/mdast/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules/unist-util-is/node_modules",
-                "node_modules/rehype-minify-whitespace/node_modules/hast-util-embedded/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-is-body-ok-link/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-embedded/node_modules/hast-util-is-element/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-embedded/node_modules/hast-util-is-element/node_modules/@types/hast/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-is-body-ok-link/node_modules/hast-util-is-element/node_modules/@types/hast/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-is-element/node_modules/@types/hast/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/hast-util-phrasing/node_modules/hast-util-is-element/node_modules/@types/hast/node_modules",
-                "node_modules/rehype-minify-whitespace/node_modules/hast-util-embedded/node_modules/hast-util-is-element/node_modules/@types/hast/node_modules"
-            ]
-        },
-        {
-            "name": "@types/unist",
             "version": "3.0.3",
             "as": [
-                "*",
-                "^3.0.0"
+                "^3.0.0",
+                "*"
             ],
             "location": [
                 "node_modules"
@@ -1818,7 +1570,7 @@
         },
         {
             "name": "decode-named-character-reference",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "as": [
                 "^1.0.0"
             ],
@@ -1850,17 +1602,8 @@
             "name": "devlop",
             "version": "1.1.0",
             "as": [
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "diff",
-            "version": "5.2.0",
-            "as": [
-                "^5.0.0"
+                "^1.0.0",
+                "^1.1.0"
             ],
             "location": [
                 "node_modules"
@@ -1877,30 +1620,11 @@
             ]
         },
         {
-            "name": "emoji-regex-xs",
-            "version": "1.0.0",
-            "as": [
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
             "name": "entities",
             "version": "4.5.0",
             "as": [
+                "^4.5.0",
                 "^4.4.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "eruda",
-            "version": "3.4.1",
-            "as": [
-                "^3.4.1"
             ],
             "location": [
                 "node_modules"
@@ -1998,9 +1722,19 @@
         },
         {
             "name": "hast-util-from-dom",
-            "version": "4.2.0",
+            "version": "5.0.1",
             "as": [
-                "^4.2.0"
+                "^5.0.1"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "hast-util-from-html",
+            "version": "2.0.3",
+            "as": [
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2008,9 +1742,9 @@
         },
         {
             "name": "hast-util-from-parse5",
-            "version": "7.1.2",
+            "version": "8.0.3",
             "as": [
-                "^7.0.0"
+                "^8.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2058,9 +1792,9 @@
         },
         {
             "name": "hast-util-parse-selector",
-            "version": "3.1.1",
+            "version": "4.0.0",
             "as": [
-                "^3.0.0"
+                "^4.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2077,30 +1811,10 @@
             ]
         },
         {
-            "name": "hast-util-raw",
-            "version": "7.2.3",
-            "as": [
-                "^7.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
             "name": "hast-util-to-html",
-            "version": "8.0.4",
+            "version": "9.0.5",
             "as": [
-                "^8.0.0"
-            ],
-            "location": [
-                "node_modules/rehype-stringify/node_modules"
-            ]
-        },
-        {
-            "name": "hast-util-to-html",
-            "version": "9.0.4",
-            "as": [
-                "^9.0.4"
+                "^9.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2108,19 +1822,9 @@
         },
         {
             "name": "hast-util-to-mdast",
-            "version": "8.4.1",
+            "version": "10.1.2",
             "as": [
-                "^8.3.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "hast-util-to-parse5",
-            "version": "7.1.0",
-            "as": [
-                "^7.0.0"
+                "^10.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2128,9 +1832,9 @@
         },
         {
             "name": "hast-util-to-text",
-            "version": "3.1.2",
+            "version": "4.0.2",
             "as": [
-                "^3.0.0"
+                "^4.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2148,9 +1852,9 @@
         },
         {
             "name": "hastscript",
-            "version": "7.2.0",
+            "version": "9.0.1",
             "as": [
-                "^7.0.0"
+                "^9.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2188,19 +1892,9 @@
         },
         {
             "name": "immutable",
-            "version": "5.0.3",
+            "version": "5.1.1",
             "as": [
                 "^5.0.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "is-buffer",
-            "version": "2.0.5",
-            "as": [
-                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2227,22 +1921,12 @@
             ]
         },
         {
-            "name": "kleur",
-            "version": "4.1.5",
-            "as": [
-                "^4.0.3"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
             "name": "lib0",
-            "version": "0.2.99",
+            "version": "0.2.104",
             "as": [
-                "^0.2.42",
+                "^0.2.99",
                 "^0.2.85",
-                "^0.2.99"
+                "^0.2.100"
             ],
             "location": [
                 "node_modules"
@@ -2310,9 +1994,10 @@
         },
         {
             "name": "marked",
-            "version": "15.0.7",
+            "version": "15.0.8",
             "as": [
-                "^15.0.7"
+                "^15.0.7",
+                "^15.0.8"
             ],
             "location": [
                 "node_modules"
@@ -2339,20 +2024,10 @@
             ]
         },
         {
-            "name": "mdast-util-definitions",
-            "version": "5.1.2",
-            "as": [
-                "^5.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
             "name": "mdast-util-find-and-replace",
-            "version": "2.2.2",
+            "version": "3.0.2",
             "as": [
-                "^2.0.0"
+                "^3.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2360,16 +2035,6 @@
         },
         {
             "name": "mdast-util-from-markdown",
-            "version": "1.3.1",
-            "as": [
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "mdast-util-gfm",
             "version": "2.0.2",
             "as": [
                 "^2.0.0"
@@ -2379,58 +2044,8 @@
             ]
         },
         {
-            "name": "mdast-util-gfm-autolink-literal",
-            "version": "1.0.3",
-            "as": [
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "mdast-util-gfm-footnote",
-            "version": "1.0.2",
-            "as": [
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "mdast-util-gfm-strikethrough",
-            "version": "1.0.3",
-            "as": [
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "mdast-util-gfm-table",
-            "version": "1.0.7",
-            "as": [
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "mdast-util-gfm-task-list-item",
-            "version": "1.0.2",
-            "as": [
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "mdast-util-phrasing",
-            "version": "3.0.1",
+            "name": "mdast-util-gfm",
+            "version": "3.1.0",
             "as": [
                 "^3.0.0"
             ],
@@ -2439,13 +2054,63 @@
             ]
         },
         {
-            "name": "mdast-util-to-hast",
-            "version": "12.3.0",
+            "name": "mdast-util-gfm-autolink-literal",
+            "version": "2.0.1",
             "as": [
-                "^12.1.0"
+                "^2.0.0"
             ],
             "location": [
-                "node_modules/remark-rehype/node_modules"
+                "node_modules"
+            ]
+        },
+        {
+            "name": "mdast-util-gfm-footnote",
+            "version": "2.1.0",
+            "as": [
+                "^2.0.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "mdast-util-gfm-strikethrough",
+            "version": "2.0.0",
+            "as": [
+                "^2.0.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "mdast-util-gfm-table",
+            "version": "2.0.0",
+            "as": [
+                "^2.0.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "mdast-util-gfm-task-list-item",
+            "version": "2.0.0",
+            "as": [
+                "^2.0.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "mdast-util-phrasing",
+            "version": "4.1.0",
+            "as": [
+                "^4.0.0"
+            ],
+            "location": [
+                "node_modules"
             ]
         },
         {
@@ -2460,10 +2125,9 @@
         },
         {
             "name": "mdast-util-to-markdown",
-            "version": "1.5.0",
+            "version": "2.1.2",
             "as": [
-                "^1.0.0",
-                "^1.3.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2471,10 +2135,9 @@
         },
         {
             "name": "mdast-util-to-string",
-            "version": "3.2.0",
+            "version": "4.0.0",
             "as": [
-                "^3.1.0",
-                "^3.0.0"
+                "^4.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2492,9 +2155,9 @@
         },
         {
             "name": "micromark",
-            "version": "3.2.0",
+            "version": "4.0.2",
             "as": [
-                "^3.0.0"
+                "^4.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2502,17 +2165,6 @@
         },
         {
             "name": "micromark-core-commonmark",
-            "version": "1.1.0",
-            "as": [
-                "^1.0.0",
-                "^1.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "micromark-extension-gfm",
             "version": "2.0.3",
             "as": [
                 "^2.0.0"
@@ -2522,10 +2174,20 @@
             ]
         },
         {
-            "name": "micromark-extension-gfm-autolink-literal",
-            "version": "1.0.5",
+            "name": "micromark-extension-gfm",
+            "version": "3.0.0",
             "as": [
-                "^1.0.0"
+                "^3.0.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "micromark-extension-gfm-autolink-literal",
+            "version": "2.1.0",
+            "as": [
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2533,9 +2195,9 @@
         },
         {
             "name": "micromark-extension-gfm-footnote",
-            "version": "1.1.2",
+            "version": "2.1.0",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2543,9 +2205,9 @@
         },
         {
             "name": "micromark-extension-gfm-strikethrough",
-            "version": "1.0.7",
+            "version": "2.1.0",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2553,9 +2215,9 @@
         },
         {
             "name": "micromark-extension-gfm-table",
-            "version": "1.0.7",
+            "version": "2.1.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2563,9 +2225,9 @@
         },
         {
             "name": "micromark-extension-gfm-tagfilter",
-            "version": "1.0.2",
+            "version": "2.0.0",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2573,9 +2235,9 @@
         },
         {
             "name": "micromark-extension-gfm-task-list-item",
-            "version": "1.0.5",
+            "version": "2.1.0",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2583,9 +2245,9 @@
         },
         {
             "name": "micromark-factory-destination",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2593,9 +2255,9 @@
         },
         {
             "name": "micromark-factory-label",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2603,9 +2265,9 @@
         },
         {
             "name": "micromark-factory-space",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2613,9 +2275,9 @@
         },
         {
             "name": "micromark-factory-title",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2623,39 +2285,12 @@
         },
         {
             "name": "micromark-factory-whitespace",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
-            ]
-        },
-        {
-            "name": "micromark-util-character",
-            "version": "1.2.0",
-            "as": [
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/micromark-util-sanitize-uri/node_modules",
-                "node_modules/micromark/node_modules",
-                "node_modules/micromark/node_modules/micromark-util-sanitize-uri/node_modules",
-                "node_modules/mdast-util-gfm-autolink-literal/node_modules",
-                "node_modules/micromark-factory-whitespace/node_modules",
-                "node_modules/micromark-extension-gfm-autolink-literal/node_modules",
-                "node_modules/micromark-extension-gfm-footnote/node_modules",
-                "node_modules/micromark-core-commonmark/node_modules",
-                "node_modules/micromark-factory-label/node_modules",
-                "node_modules/micromark-extension-gfm-table/node_modules",
-                "node_modules/micromark-extension-gfm-task-list-item/node_modules",
-                "node_modules/micromark-factory-space/node_modules",
-                "node_modules/micromark-util-decode-string/node_modules",
-                "node_modules/micromark-util-classify-character/node_modules",
-                "node_modules/micromark-extension-gfm-footnote/node_modules/micromark-util-sanitize-uri/node_modules",
-                "node_modules/micromark-factory-title/node_modules",
-                "node_modules/micromark-extension-gfm-autolink-literal/node_modules/micromark-util-sanitize-uri/node_modules",
-                "node_modules/micromark-factory-destination/node_modules"
             ]
         },
         {
@@ -2670,9 +2305,9 @@
         },
         {
             "name": "micromark-util-chunked",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2680,9 +2315,9 @@
         },
         {
             "name": "micromark-util-classify-character",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2690,9 +2325,9 @@
         },
         {
             "name": "micromark-util-combine-extensions",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2700,9 +2335,9 @@
         },
         {
             "name": "micromark-util-decode-numeric-character-reference",
-            "version": "1.1.0",
+            "version": "2.0.2",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2710,9 +2345,9 @@
         },
         {
             "name": "micromark-util-decode-string",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2730,9 +2365,9 @@
         },
         {
             "name": "micromark-util-html-tag-name",
-            "version": "1.2.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2740,9 +2375,9 @@
         },
         {
             "name": "micromark-util-normalize-identifier",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2750,26 +2385,12 @@
         },
         {
             "name": "micromark-util-resolve-all",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
-            ]
-        },
-        {
-            "name": "micromark-util-sanitize-uri",
-            "version": "1.2.0",
-            "as": [
-                "^1.1.0",
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules",
-                "node_modules/micromark/node_modules",
-                "node_modules/micromark-extension-gfm-autolink-literal/node_modules",
-                "node_modules/micromark-extension-gfm-footnote/node_modules"
             ]
         },
         {
@@ -2784,61 +2405,12 @@
         },
         {
             "name": "micromark-util-subtokenize",
-            "version": "1.1.0",
+            "version": "2.1.0",
             "as": [
-                "^1.0.0"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
-            ]
-        },
-        {
-            "name": "micromark-util-symbol",
-            "version": "1.1.0",
-            "as": [
-                "^1.0.0"
-            ],
-            "location": [
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/micromark-util-sanitize-uri/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/micromark-util-sanitize-uri/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark/node_modules",
-                "node_modules/micromark/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark/node_modules/micromark-util-sanitize-uri/node_modules",
-                "node_modules/micromark/node_modules/micromark-util-sanitize-uri/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-util-chunked/node_modules",
-                "node_modules/micromark-util-decode-numeric-character-reference/node_modules",
-                "node_modules/micromark-util-decode-string/node_modules",
-                "node_modules/mdast-util-from-markdown/node_modules",
-                "node_modules/micromark-factory-whitespace/node_modules",
-                "node_modules/micromark-util-normalize-identifier/node_modules",
-                "node_modules/micromark-core-commonmark/node_modules",
-                "node_modules/micromark-extension-gfm-autolink-literal/node_modules",
-                "node_modules/micromark-extension-gfm-footnote/node_modules",
-                "node_modules/micromark-factory-label/node_modules",
-                "node_modules/micromark-core-commonmark/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-strikethrough/node_modules",
-                "node_modules/micromark-extension-gfm-table/node_modules",
-                "node_modules/micromark-extension-gfm-task-list-item/node_modules",
-                "node_modules/micromark-factory-whitespace/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-footnote/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-table/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-footnote/node_modules/micromark-util-sanitize-uri/node_modules",
-                "node_modules/micromark-factory-space/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-autolink-literal/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-factory-label/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-util-decode-string/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-util-classify-character/node_modules",
-                "node_modules/micromark-util-classify-character/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-factory-title/node_modules",
-                "node_modules/micromark-util-subtokenize/node_modules",
-                "node_modules/mdast-util-gfm-autolink-literal/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-autolink-literal/node_modules/micromark-util-sanitize-uri/node_modules",
-                "node_modules/micromark-extension-gfm-task-list-item/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-autolink-literal/node_modules/micromark-util-sanitize-uri/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-factory-destination/node_modules",
-                "node_modules/micromark-factory-title/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-footnote/node_modules/micromark-util-sanitize-uri/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-factory-destination/node_modules/micromark-util-character/node_modules"
             ]
         },
         {
@@ -2853,66 +2425,9 @@
         },
         {
             "name": "micromark-util-types",
-            "version": "1.1.0",
-            "as": [
-                "^1.0.0",
-                "^1.0.1"
-            ],
-            "location": [
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/micromark-util-sanitize-uri/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm/node_modules",
-                "node_modules/micromark/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark/node_modules",
-                "node_modules/micromark/node_modules/micromark-util-sanitize-uri/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-table/node_modules",
-                "node_modules/micromark-factory-whitespace/node_modules",
-                "node_modules/mdast-util-from-markdown/node_modules",
-                "node_modules/micromark-extension-gfm-autolink-literal/node_modules",
-                "node_modules/micromark-extension-gfm-task-list-item/node_modules",
-                "node_modules/micromark-core-commonmark/node_modules",
-                "node_modules/micromark-extension-gfm-footnote/node_modules",
-                "node_modules/micromark-factory-label/node_modules",
-                "node_modules/micromark-util-resolve-all/node_modules",
-                "node_modules/mdast-util-gfm-autolink-literal/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-factory-space/node_modules",
-                "node_modules/micromark-util-classify-character/node_modules",
-                "node_modules/micromark-factory-whitespace/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-tagfilter/node_modules",
-                "node_modules/micromark-util-subtokenize/node_modules",
-                "node_modules/micromark-extension-gfm-autolink-literal/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-core-commonmark/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-footnote/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-strikethrough/node_modules",
-                "node_modules/micromark-factory-label/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-factory-destination/node_modules",
-                "node_modules/micromark-extension-gfm-table/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-task-list-item/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-factory-title/node_modules",
-                "node_modules/micromark-factory-space/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-util-decode-string/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-util-combine-extensions/node_modules",
-                "node_modules/micromark-util-classify-character/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-factory-title/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-footnote/node_modules/micromark-util-sanitize-uri/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-extension-gfm-autolink-literal/node_modules/micromark-util-sanitize-uri/node_modules/micromark-util-character/node_modules",
-                "node_modules/micromark-factory-destination/node_modules/micromark-util-character/node_modules"
-            ]
-        },
-        {
-            "name": "micromark-util-types",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "as": [
                 "^2.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "mri",
-            "version": "1.2.0",
-            "as": [
-                "^1.1.0"
             ],
             "location": [
                 "node_modules"
@@ -2923,16 +2438,6 @@
             "version": "2.1.3",
             "as": [
                 "^2.1.3"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "oniguruma-to-es",
-            "version": "2.3.0",
-            "as": [
-                "^2.2.0"
             ],
             "location": [
                 "node_modules"
@@ -2950,9 +2455,9 @@
         },
         {
             "name": "parse5",
-            "version": "6.0.1",
+            "version": "7.2.1",
             "as": [
-                "^6.0.0"
+                "^7.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2960,9 +2465,9 @@
         },
         {
             "name": "property-information",
-            "version": "6.5.0",
+            "version": "7.0.0",
             "as": [
-                "^6.0.0"
+                "^7.0.0"
             ],
             "location": [
                 "node_modules"
@@ -2990,7 +2495,7 @@
         },
         {
             "name": "prosemirror-commands",
-            "version": "1.6.2",
+            "version": "1.7.1",
             "as": [
                 "^1.6.2",
                 "^1.0.0"
@@ -3021,9 +2526,9 @@
         },
         {
             "name": "prosemirror-highlight",
-            "version": "0.9.0",
+            "version": "0.13.0",
             "as": [
-                "^0.9.0"
+                "^0.13.0"
             ],
             "location": [
                 "node_modules"
@@ -3042,7 +2547,7 @@
         },
         {
             "name": "prosemirror-inputrules",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "as": [
                 "^1.4.0"
             ],
@@ -3063,7 +2568,7 @@
         },
         {
             "name": "prosemirror-markdown",
-            "version": "1.13.1",
+            "version": "1.13.2",
             "as": [
                 "^1.13.1"
             ],
@@ -3083,14 +2588,14 @@
         },
         {
             "name": "prosemirror-model",
-            "version": "1.24.1",
+            "version": "1.25.0",
             "as": [
-                "^1.23.0",
-                "^1.21.0",
                 "^1.24.1",
+                "^1.21.0",
+                "^1.25.0",
                 "^1.0.0",
-                "^1.20.0",
-                "^1.19.0"
+                "^1.23.0",
+                "^1.20.0"
             ],
             "location": [
                 "node_modules"
@@ -3098,7 +2603,7 @@
         },
         {
             "name": "prosemirror-schema-basic",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "as": [
                 "^1.2.3"
             ],
@@ -3108,7 +2613,7 @@
         },
         {
             "name": "prosemirror-schema-list",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "as": [
                 "^1.4.1"
             ],
@@ -3130,10 +2635,9 @@
         },
         {
             "name": "prosemirror-tables",
-            "version": "1.6.4",
+            "version": "1.7.0",
             "as": [
-                "^1.6.1",
-                "^1.6.3"
+                "^1.6.4"
             ],
             "location": [
                 "node_modules"
@@ -3151,9 +2655,10 @@
         },
         {
             "name": "prosemirror-transform",
-            "version": "1.10.2",
+            "version": "1.10.3",
             "as": [
                 "^1.10.2",
+                "^1.10.3",
                 "^1.1.0",
                 "^1.0.0",
                 "^1.7.3"
@@ -3164,15 +2669,15 @@
         },
         {
             "name": "prosemirror-view",
-            "version": "1.38.0",
+            "version": "1.39.1",
             "as": [
-                "^1.38.0",
+                "^1.38.1",
+                "^1.39.1",
                 "^1.1.0",
-                "^1.37.2",
                 "^1.27.0",
                 "^1.37.0",
-                "^1.0.0",
-                "^1.31.0"
+                "^1.31.0",
+                "^1.0.0"
             ],
             "location": [
                 "node_modules"
@@ -3190,9 +2695,10 @@
         },
         {
             "name": "react",
-            "version": "19.0.0",
+            "version": "19.1.0",
             "as": [
-                "^19.0.0"
+                "^19.0.0",
+                "^19.1.0"
             ],
             "location": [
                 "node_modules"
@@ -3200,9 +2706,10 @@
         },
         {
             "name": "react-dom",
-            "version": "19.0.0",
+            "version": "19.1.0",
             "as": [
-                "^19.0.0"
+                "^19.0.0",
+                "^19.1.0"
             ],
             "location": [
                 "node_modules"
@@ -3210,7 +2717,7 @@
         },
         {
             "name": "react-icons",
-            "version": "5.4.0",
+            "version": "5.5.0",
             "as": [
                 "^5.2.1"
             ],
@@ -3220,7 +2727,7 @@
         },
         {
             "name": "react-number-format",
-            "version": "5.4.3",
+            "version": "5.4.4",
             "as": [
                 "^5.4.3"
             ],
@@ -3261,9 +2768,9 @@
         },
         {
             "name": "react-textarea-autosize",
-            "version": "8.5.6",
+            "version": "8.5.9",
             "as": [
-                "8.5.6"
+                "8.5.9"
             ],
             "location": [
                 "node_modules"
@@ -3290,40 +2797,10 @@
             ]
         },
         {
-            "name": "regex",
-            "version": "5.1.1",
-            "as": [
-                "^5.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "regex-recursion",
-            "version": "5.1.1",
-            "as": [
-                "^5.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "regex-utilities",
-            "version": "2.3.0",
-            "as": [
-                "^2.3.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
             "name": "rehype-format",
             "version": "5.0.1",
             "as": [
-                "^5.0.0"
+                "^5.0.1"
             ],
             "location": [
                 "node_modules"
@@ -3331,9 +2808,9 @@
         },
         {
             "name": "rehype-minify-whitespace",
-            "version": "5.0.1",
+            "version": "6.0.2",
             "as": [
-                "^5.0.0"
+                "^6.0.0"
             ],
             "location": [
                 "node_modules"
@@ -3341,9 +2818,9 @@
         },
         {
             "name": "rehype-parse",
-            "version": "8.0.5",
+            "version": "9.0.1",
             "as": [
-                "^8.0.4"
+                "^9.0.1"
             ],
             "location": [
                 "node_modules"
@@ -3351,9 +2828,9 @@
         },
         {
             "name": "rehype-remark",
-            "version": "9.1.2",
+            "version": "10.0.1",
             "as": [
-                "^9.1.2"
+                "^10.0.0"
             ],
             "location": [
                 "node_modules"
@@ -3361,27 +2838,7 @@
         },
         {
             "name": "rehype-stringify",
-            "version": "9.0.4",
-            "as": [
-                "^9.0.3"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "remark-gfm",
-            "version": "3.0.1",
-            "as": [
-                "^3.0.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "remark-parse",
-            "version": "10.0.2",
+            "version": "10.0.1",
             "as": [
                 "^10.0.1"
             ],
@@ -3390,10 +2847,30 @@
             ]
         },
         {
-            "name": "remark-rehype",
-            "version": "10.1.0",
+            "name": "remark-gfm",
+            "version": "4.0.1",
             "as": [
-                "^10.1.0"
+                "^4.0.1"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "remark-parse",
+            "version": "11.0.0",
+            "as": [
+                "^11.0.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "remark-rehype",
+            "version": "11.1.2",
+            "as": [
+                "^11.1.1"
             ],
             "location": [
                 "node_modules"
@@ -3401,9 +2878,9 @@
         },
         {
             "name": "remark-stringify",
-            "version": "10.0.3",
+            "version": "11.0.0",
             "as": [
-                "^10.0.2"
+                "^11.0.0"
             ],
             "location": [
                 "node_modules"
@@ -3420,20 +2897,11 @@
             ]
         },
         {
-            "name": "sade",
-            "version": "1.8.1",
-            "as": [
-                "^1.7.3"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
             "name": "sass",
-            "version": "1.85.0",
+            "version": "1.86.3",
             "as": [
-                "^1.85.0"
+                "^1.85.0",
+                "^1.86.3"
             ],
             "location": [
                 "node_modules"
@@ -3441,19 +2909,9 @@
         },
         {
             "name": "scheduler",
-            "version": "0.25.0",
+            "version": "0.26.0",
             "as": [
-                "^0.25.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "shiki",
-            "version": "1.29.2",
-            "as": [
-                "^1.22.0"
+                "^0.26.0"
             ],
             "location": [
                 "node_modules"
@@ -3563,9 +3021,9 @@
             "name": "tslib",
             "version": "2.8.1",
             "as": [
+                "^2.6.2",
                 "^2.1.0",
-                "^2.0.0",
-                "^2.6.2"
+                "^2.0.0"
             ],
             "location": [
                 "node_modules"
@@ -3573,7 +3031,7 @@
         },
         {
             "name": "type-fest",
-            "version": "4.35.0",
+            "version": "4.40.0",
             "as": [
                 "^4.27.0"
             ],
@@ -3594,10 +3052,10 @@
         },
         {
             "name": "unified",
-            "version": "10.1.2",
+            "version": "11.0.5",
             "as": [
-                "^10.1.2",
-                "^10.0.0"
+                "^11.0.5",
+                "^11.0.0"
             ],
             "location": [
                 "node_modules"
@@ -3605,47 +3063,12 @@
         },
         {
             "name": "unist-util-find-after",
-            "version": "4.0.1",
-            "as": [
-                "^4.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "unist-util-generated",
-            "version": "2.0.1",
-            "as": [
-                "^2.0.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "unist-util-is",
-            "version": "5.2.1",
+            "version": "5.0.0",
             "as": [
                 "^5.0.0"
             ],
             "location": [
-                "node_modules/hast-util-to-mdast/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/unist-util-visit/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/unist-util-visit/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/mdast-util-phrasing/node_modules",
-                "node_modules/unist-util-find-after/node_modules",
-                "node_modules/hast-util-raw/node_modules/unist-util-visit/node_modules",
-                "node_modules/hast-util-raw/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/rehype-minify-whitespace/node_modules",
-                "node_modules/mdast-util-find-and-replace/node_modules",
-                "node_modules/mdast-util-definitions/node_modules/unist-util-visit/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules/unist-util-visit/node_modules",
-                "node_modules/mdast-util-definitions/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/mdast-util-find-and-replace/node_modules/unist-util-visit-parents/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules/unist-util-visit/node_modules/unist-util-visit-parents/node_modules"
+                "node_modules"
             ]
         },
         {
@@ -3660,41 +3083,12 @@
         },
         {
             "name": "unist-util-position",
-            "version": "4.0.4",
-            "as": [
-                "^4.0.0"
-            ],
-            "location": [
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules",
-                "node_modules/hast-util-raw/node_modules"
-            ]
-        },
-        {
-            "name": "unist-util-position",
             "version": "5.0.0",
             "as": [
                 "^5.0.0"
             ],
             "location": [
                 "node_modules"
-            ]
-        },
-        {
-            "name": "unist-util-stringify-position",
-            "version": "3.0.3",
-            "as": [
-                "^3.0.0"
-            ],
-            "location": [
-                "node_modules/hast-util-from-parse5/node_modules/vfile/node_modules",
-                "node_modules/unified/node_modules/vfile/node_modules",
-                "node_modules/hast-util-from-parse5/node_modules/vfile/node_modules/vfile-message/node_modules",
-                "node_modules/unified/node_modules/vfile/node_modules/vfile-message/node_modules",
-                "node_modules/hast-util-raw/node_modules/vfile/node_modules",
-                "node_modules/vfile-location/node_modules/vfile/node_modules",
-                "node_modules/vfile-location/node_modules/vfile/node_modules/vfile-message/node_modules",
-                "node_modules/hast-util-raw/node_modules/vfile/node_modules/vfile-message/node_modules",
-                "node_modules/mdast-util-from-markdown/node_modules"
             ]
         },
         {
@@ -3709,42 +3103,12 @@
         },
         {
             "name": "unist-util-visit",
-            "version": "4.1.2",
-            "as": [
-                "^4.0.0"
-            ],
-            "location": [
-                "node_modules/hast-util-to-mdast/node_modules",
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules",
-                "node_modules/hast-util-raw/node_modules",
-                "node_modules/mdast-util-definitions/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules"
-            ]
-        },
-        {
-            "name": "unist-util-visit",
             "version": "5.0.0",
             "as": [
                 "^5.0.0"
             ],
             "location": [
                 "node_modules"
-            ]
-        },
-        {
-            "name": "unist-util-visit-parents",
-            "version": "5.1.3",
-            "as": [
-                "^5.1.1",
-                "^5.0.0"
-            ],
-            "location": [
-                "node_modules/remark-rehype/node_modules/mdast-util-to-hast/node_modules/unist-util-visit/node_modules",
-                "node_modules/hast-util-to-mdast/node_modules/unist-util-visit/node_modules",
-                "node_modules/hast-util-raw/node_modules/unist-util-visit/node_modules",
-                "node_modules/mdast-util-find-and-replace/node_modules",
-                "node_modules/mdast-util-definitions/node_modules/unist-util-visit/node_modules",
-                "node_modules/mdast-util-to-markdown/node_modules/unist-util-visit/node_modules"
             ]
         },
         {
@@ -3809,7 +3173,7 @@
         },
         {
             "name": "use-sync-external-store",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "as": [
                 "^1"
             ],
@@ -3838,29 +3202,6 @@
             ]
         },
         {
-            "name": "uvu",
-            "version": "0.5.6",
-            "as": [
-                "^0.5.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "vfile",
-            "version": "5.3.7",
-            "as": [
-                "^5.0.0"
-            ],
-            "location": [
-                "node_modules/hast-util-from-parse5/node_modules",
-                "node_modules/unified/node_modules",
-                "node_modules/hast-util-raw/node_modules",
-                "node_modules/vfile-location/node_modules"
-            ]
-        },
-        {
             "name": "vfile",
             "version": "6.0.3",
             "as": [
@@ -3872,25 +3213,12 @@
         },
         {
             "name": "vfile-location",
-            "version": "4.1.0",
+            "version": "5.0.3",
             "as": [
-                "^4.0.0"
+                "^5.0.0"
             ],
             "location": [
                 "node_modules"
-            ]
-        },
-        {
-            "name": "vfile-message",
-            "version": "3.1.4",
-            "as": [
-                "^3.0.0"
-            ],
-            "location": [
-                "node_modules/hast-util-from-parse5/node_modules/vfile/node_modules",
-                "node_modules/unified/node_modules/vfile/node_modules",
-                "node_modules/hast-util-raw/node_modules/vfile/node_modules",
-                "node_modules/vfile-location/node_modules/vfile/node_modules"
             ]
         },
         {
@@ -3925,9 +3253,10 @@
         },
         {
             "name": "winbox",
-            "version": "0.2.82",
+            "version": "0.2.731",
             "as": [
-                "^0.2.82"
+                "^0.2.82",
+                "^0.2.731"
             ],
             "location": [
                 "node_modules"
@@ -3935,9 +3264,9 @@
         },
         {
             "name": "y-prosemirror",
-            "version": "1.2.13",
+            "version": "1.3.0",
             "as": [
-                "1.2.13"
+                "1.3.0"
             ],
             "location": [
                 "node_modules"
@@ -3955,7 +3284,7 @@
         },
         {
             "name": "yjs",
-            "version": "13.6.23",
+            "version": "13.6.24",
             "as": [
                 "^13.6.15"
             ],
