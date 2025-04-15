@@ -5,7 +5,7 @@ You can use a native `fetch` to get some data. It's very useful to go around COR
 ## Method
 
 ```typescript
-core_fetch: (
+export default function core_fetch: (
   url: string,
   options?: {
     headers?: Record<string, string>;
@@ -20,8 +20,7 @@ core_fetch: (
     statusMessage: string;
     body: Uint8Array;
   }>;
-
-core_fetch: (
+export default function core_fetch: (
   url: string,
   options?: {
     headers?: Record<string, string>;
@@ -37,13 +36,20 @@ core_fetch: (
     statusMessage: string;
     body: string;
   }>;
+
+export function core_fetch2(request: Request): Promise<Response>;
+export function core_fetch2(url: string | URL, options?: RequestInit): Promise<Response>;
 ```
+
+[Request on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Request)
+
+[Response on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Response)
 
 ## Example
 
 ```javascript
 import fs from "fs";
-import core_fetch from "core_fetch";
+import core_fetch, { core_fetch2 } from "core_fetch";
 
 // define a data file to cache some information
 const cacheFile = "data/cache.json";
@@ -60,6 +66,16 @@ const json = JSON.parse(data);
 
 // cache it for later and/or offline use
 await fs.writeFile(cacheFile, json);
+
+// stream the response
+const response = await core_fetch2("https://stream.com");
+const reader = response.body.getReader();
+let finished = false;
+while(!finished) {
+  const { done, value } = await reader.read();
+  console.log(value);
+  finished = done;
+}
 
 return json;
 ```

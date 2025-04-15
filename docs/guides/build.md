@@ -2,7 +2,7 @@
 
 ## Requirements
 
-*   Go `1.23.1`
+*   Go >=`1.23.1`
 *   NodeJS `>=20`
 
 ## Clone the repository
@@ -21,7 +21,7 @@ npm install
 
 ## Build the core
 
-Go into the `core/build` directory and on a `UNIX` system (MacOS or Linux), use the make file.
+Go into the `core/build` directory and on a `UNIX`-like system (MacOS/Linux), use the `make` file.
 
 ```shellscript
 make macos-x86_64-shared
@@ -47,7 +47,7 @@ All the setups to build for Android, iOS, MacOS, Windows and WASM are available 
 
 ### Recommended IDEs
 
-*   Default build (NodeJS): [Visual Studio Code](https://code.visualstudio.com)
+*   Development (NodeJS): [Visual Studio Code](https://code.visualstudio.com)
 *   Android: [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds\&gad_source=1\&gbraid=0AAAAAC-IOZl50u1ca81uhob7aKXcSKZvQ\&gclid=CjwKCAiAzvC9BhADEiwAEhtlN5biKroCXF8aFzVR6dbrItH5AJ4dNaBIKZSkqsGtxHuoM2v5InjcmBoCZ5IQAvD_BwE)
 *   Apple: [Xcode](https://developer.apple.com/xcode/)
 *   Windows: [Visual Studio](https://visualstudio.microsoft.com)

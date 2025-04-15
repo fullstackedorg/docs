@@ -42,4 +42,4 @@ Example:
 
 Try it out
 
-[![Open in FullStacked](https://share.fullstacked.org/open-in-fullstacked.svg)](https://share.fullstacked.org?git=https://github.com/fullstackedorg/demo.git)
+![BlockNote image](https://share.fullstacked.org/open-in-fullstacked.svg)

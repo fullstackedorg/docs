@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
-import eruda from "eruda";
 import { FileList } from "./app/file-list";
 import { Editor } from "./app/editor";
 import { Images } from "./app/images";
 import * as UI from "@fullstacked/ui";
 import fs from "fs";
 import { DeployButton } from "./app/deploy";
-import { Preview } from "./app/preview";
-
 const docsDirectory = "docs";
 
-eruda.init();
 UI.init();
 
 function App() {

@@ -1,6 +1,10 @@
 # Debugging
 
-## MacOS, iOS and iPadOS
+## MacOS
+
+Right-click > Inspect Element
+
+## iOS and iPadOS
 
 > Make sure you have `Show features for web developers` checked in Safari on your Apple computer. <https://developer.apple.com/documentation/safari-developer-tools/enabling-developer-features>
 
@@ -20,7 +24,7 @@
 
 ## Windows
 
-Right-click > inspect
+Right-click > Inspect Element
 
 ## Eruda
 
