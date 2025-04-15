@@ -5,15 +5,16 @@ If you ever need to modify some style or content based off the current OS runnin
 ## Exported Members
 
 ```typescript
-// defined with the current
-default: string
+// defined with the current platform
+export default: string
 
-enum Platform {
+export enum Platform {
   NODE    = "node",
   APPLE   = "apple",
   ANDROID = "android",
-  WINDOWS = "windows"
-  WASM    = "wasm"
+  WINDOWS = "windows",
+  WASM    = "wasm",
+  LINUX   = "linux"
 }
 ```
 

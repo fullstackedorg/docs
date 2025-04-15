@@ -81,6 +81,12 @@ The adapter is implemented for every platform supported. It implements a few key
 
 ### Platform-Specific Implementations
 
+*   Linux
+
+    *   Adapter: [C++](https://cplusplus.com)
+    *   WebView: [WebKitGTK](https://webkitgtk.org)
+    *   Bridge: [script_message_handler](https://webkitgtk.org/reference/webkitgtk/stable/method.UserContentManager.register_script_message_handler.html)
+
 *   Apple
 
     *   Adapter: [Swift](https://developer.apple.com/swift/)

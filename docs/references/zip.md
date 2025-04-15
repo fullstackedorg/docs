@@ -5,20 +5,20 @@ Utilities to zip and unzip files and directories. You can always zip and unzip a
 ## Methods
 
 ```typescript
-type FileEntries: {
+type FileEntries = {
   [filePath: string] : {
     isDir: boolean,
     contenst: string | Uint8Array
   }
 };
 
-function zip(in: string | FileEntries) : Promise<Uint8Array>;
-function zip(in: string | FileEntries, out: string) : Promise<Boolean>;
-function zip(in: string, out: null | undefined, skip: string[]) : Promise<Uint8Array>;
-function zip(in: string, out: string, skip: string[]) : Promise<Boolean>;
+export function zip(in: string | FileEntries) : Promise<Uint8Array>;
+export function zip(in: string | FileEntries, out: string) : Promise<Boolean>;
+export function zip(in: string, out: null | undefined, skip: string[]) : Promise<Uint8Array>;
+export function zip(in: string, out: string, skip: string[]) : Promise<Boolean>;
 
-function unzip(in: string | FileEntries) : Promise<FileEntries>;
-function unzip(in: string | FileEntries, out: string) : Promise<Boolean>;
+export function unzip(in: string | FileEntries) : Promise<FileEntries>;
+export function unzip(in: string | FileEntries, out: string) : Promise<Boolean>;
 ```
 
 ## Example
