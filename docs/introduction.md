@@ -141,7 +141,7 @@ The adapter is implemented for every platform supported. It implements a few key
 
 * NodeJS
 
-  * Adapter: [JavaScript](https://nodejs.org/en) with [node-ffi-rs](https://github.com/zhangyuang/node-ffi-rs)
+  * Adapter: [JavaScript](https://nodejs.org/en) with [node-addon-api](https://github.com/nodejs/node-addon-api)
 
   * WebView: Default Browser
 
@@ -149,7 +149,7 @@ The adapter is implemented for every platform supported. It implements a few key
 
 * Electron
 
-  * Adapter: [JavaScript](https://nodejs.org/en) with [node-ffi-rs](https://github.com/zhangyuang/node-ffi-rs)
+  * Adapter: [JavaScript](https://nodejs.org/en) with [node-addon-api](https://github.com/nodejs/node-addon-api) (uses NodeJS implementation)
 
   * WebView: [BrowserWindow](https://www.electronjs.org/docs/latest/api/browser-window) (Chromium)
 
