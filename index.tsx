@@ -3,12 +3,9 @@ import { createRoot } from "react-dom/client";
 import { FileList } from "./app/file-list";
 import { Editor } from "./app/editor";
 import { Images } from "./app/images";
-import * as UI from "@fullstacked/ui";
 import fs from "fs";
 import { DeployButton } from "./app/deploy";
 const docsDirectory = "docs";
-
-UI.init();
 
 function App() {
     const [files, setFiles] = useState([] as string[]);
