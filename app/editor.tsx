@@ -8,7 +8,6 @@ import fs from "fs";
 import { BlockNoteView } from "@blocknote/mantine";
 import "@blocknote/mantine/style.css";
 import { Block, filterSuggestionItems } from "@blocknote/core";
-import { insertQuote, schema } from "./blockquote/quote";
 import { Preview } from "./preview";
 
 export function Editor(props: {
@@ -21,7 +20,7 @@ export function Editor(props: {
     const [order, setOrder] = useState(props.order);
     const [title, setTitle] = useState(props.title);
 
-    const editor = useCreateBlockNote({ schema });
+    const editor = useCreateBlockNote();
 
     useEffect(() => {
         if (!props.file) {
@@ -73,7 +72,7 @@ export function Editor(props: {
                 <button onClick={() => Preview(props.file)}>Preview</button>
             </div>
 
-            <BlockNoteView
+             <BlockNoteView
                 editor={editor}
                 onChange={() => {
                     save(props.file, [...editor.document], (b) =>
@@ -81,20 +80,7 @@ export function Editor(props: {
                     );
                 }}
                 slashMenu={false}
-            >
-                <SuggestionMenuController
-                    triggerCharacter={"/"}
-                    getItems={async (query) =>
-                        filterSuggestionItems(
-                            [
-                                ...getDefaultReactSlashMenuItems(editor),
-                                insertQuote(editor),
-                            ],
-                            query,
-                        )
-                    }
-                />
-            </BlockNoteView>
+            />
         </div>
     );
 }
@@ -103,7 +89,7 @@ const debouncers = new Map<string, ReturnType<typeof setTimeout>>();
 function save(
     file: string,
     blocks: Block<any>[],
-    toMd: (arg: Block<any>[]) => Promise<string>,
+    toMd: (arg: any[]) => string,
 ) {
     let d = debouncers.get(file);
     if (d) {

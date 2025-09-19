@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { FileList } from "./app/file-list";
 import { Editor } from "./app/editor";
-import { Images } from "./app/images";
+// import { Images } from "./app/images";
 import fs from "fs";
-import { DeployButton } from "./app/deploy";
+// import { DeployButton } from "./app/deploy";
 const docsDirectory = "docs";
 
 function App() {
@@ -82,6 +82,6 @@ export async function getTitles() {
 }
 
 const container = document.createElement("div");
-document.body.append(Images(), DeployButton());
+// document.body.append(Images(), DeployButton());
 document.body.append(container);
 createRoot(container).render(<App />);

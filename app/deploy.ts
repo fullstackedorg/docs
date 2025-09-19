@@ -17,12 +17,12 @@ export function DeployButton() {
         label: "Token",
     });
 
-    loadValue(siteAccessValueFile).then(v => {
-        if(!v) return;
+    loadValue(siteAccessValueFile).then((v) => {
+        if (!v) return;
         const [siteId, token] = v.split(":");
         siteIdInput.input.value = siteId;
         tokenInput.input.value = token;
-    })
+    });
 
     const button = Button({
         text: "Deploy",
@@ -31,7 +31,10 @@ export function DeployButton() {
     button.onclick = async () => {
         button.disabled = true;
         await Deploy(siteIdInput.input.value, tokenInput.input.value);
-        saveValue(siteAccessValueFile, siteIdInput.input.value + ":" + tokenInput.input.value)
+        saveValue(
+            siteAccessValueFile,
+            siteIdInput.input.value + ":" + tokenInput.input.value,
+        );
         button.disabled = false;
     };
 
