@@ -7,7 +7,8 @@ import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 const authValueFile = "img-auth.txt";
 
 export function Images() {
-    const form = document.createElement("form");
+    const form = document.createElement("div");
+    form.classList.add("form")
 
     const inputAuth = InputText({
         label: "Auth",

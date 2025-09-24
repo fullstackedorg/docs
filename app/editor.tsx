@@ -3,11 +3,7 @@ import { Preview } from "./preview";
 import fs from "fs";
 import { createCodeMirrorView } from "@fullstacked/codemirror-view";
 import { oneDark } from "@codemirror/theme-one-dark";
-
-const cmView = createCodeMirrorView({
-    language: "markdown",
-    extensions: [oneDark],
-});
+import { EditorView } from "codemirror";
 
 export function Editor(props: {
     file: string;
@@ -22,7 +18,7 @@ export function Editor(props: {
 
     useEffect(() => {
         let cmView: ReturnType<typeof createCodeMirrorView>;
-        
+
         if (!props.file) {
             setOrder(null);
         } else {
@@ -32,13 +28,13 @@ export function Editor(props: {
                 cmView = createCodeMirrorView({
                     contents: c,
                     language: "markdown",
-                    extensions: [oneDark],
+                    extensions: [oneDark, EditorView.lineWrapping],
                 });
                 cmView.addUpdateListener((contents) =>
                     save(props.file, contents),
                 );
                 const container = document.querySelector("#editor");
-                Array.from(container.children).forEach(c => c.remove());
+                Array.from(container.children).forEach((c) => c.remove());
                 document.querySelector("#editor").append(cmView.element);
             });
         }
@@ -50,7 +46,7 @@ export function Editor(props: {
 
     return (
         <div>
-            <div>
+            <div className="form">
                 <div className="input-text">
                     <label>Order</label>
                     <input
@@ -65,7 +61,7 @@ export function Editor(props: {
                 </button>
             </div>
 
-            <div>
+            <div className="form">
                 <div className="input-text">
                     <label>Title</label>
                     <input

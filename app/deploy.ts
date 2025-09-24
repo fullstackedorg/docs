@@ -7,7 +7,8 @@ import { renderSite } from "./render";
 const siteAccessValueFile = "site-access.txt";
 
 export function DeployButton() {
-    const container = document.createElement("container");
+    const container = document.createElement("div");
+    container.classList.add("form");
 
     const siteIdInput = InputText({
         label: "Site ID",

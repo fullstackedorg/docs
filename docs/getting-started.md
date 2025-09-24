@@ -6,7 +6,7 @@ Once you have install FullStacked, it is now time to create your first project. 
 
 Locate the `+` icon to create add a new project.
 
-![BlockNote image](https://files.fullstacked.org/IMG_0525.png)
+![Create New Project](https://files.fullstacked.org/IMG_0525.png)
 
 For this first project, select `Create empty project`.
 
