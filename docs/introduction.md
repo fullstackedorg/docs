@@ -2,7 +2,7 @@
 
 Create, run and share projects built with web technologies in a fully cross-platform, local-first environment.
 
-![BlockNote image](https://files.fullstacked.org/IMG_0521.jpeg)
+![FullStacked](https://files.fullstacked.org/IMG_0521.jpeg)
 
 ## Motivation
 
@@ -60,8 +60,7 @@ There are 4 key components in FullStacked
 
     * WebView2 (Edge/Chromium) for Windows
 
-  * Some even argue it's better than native rendering.\
-    <https://javascript.plainenglish.io/i-replaced-my-native-ios-app-with-a-cross-platform-web-app-and-no-one-noticed-1653901ce244?gi=e8cbda006b4b>
+  * [Some even argue it's better than native rendering.](https://javascript.plainenglish.io/i-replaced-my-native-ios-app-with-a-cross-platform-web-app-and-no-one-noticed-1653901ce244)
 
 * Adapter
 
@@ -77,7 +76,7 @@ There are 4 key components in FullStacked
 
 Here’s a little schema of how the components are nested in one another.
 
-![BlockNote image](https://files.fullstacked.org/fullstacked-key-components.png)
+![FullStacked Components](https://files.fullstacked.org/fullstacked-key-components.png)
 
 The adapter is implemented for every platform supported. It implements a few key elements:
 

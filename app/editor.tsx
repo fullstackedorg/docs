@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
-import {
-    getDefaultReactSlashMenuItems,
-    SuggestionMenuController,
-    useCreateBlockNote,
-} from "@blocknote/react";
-import fs from "fs";
-import { BlockNoteView } from "@blocknote/mantine";
-import "@blocknote/mantine/style.css";
-import { Block, filterSuggestionItems } from "@blocknote/core";
+import React, { useEffect, useState, createRef } from "react";
 import { Preview } from "./preview";
+import fs from "fs";
+import { createCodeMirrorView } from "@fullstacked/codemirror-view";
+import { oneDark } from "@codemirror/theme-one-dark";
+
+const cmView = createCodeMirrorView({
+    language: "markdown",
+    extensions: [oneDark],
+});
 
 export function Editor(props: {
     file: string;
@@ -19,23 +18,34 @@ export function Editor(props: {
 }) {
     const [order, setOrder] = useState(props.order);
     const [title, setTitle] = useState(props.title);
-
-    const editor = useCreateBlockNote();
+    const editorRef = createRef<HTMLDivElement>();
 
     useEffect(() => {
+        let cmView: ReturnType<typeof createCodeMirrorView>;
+        
         if (!props.file) {
             setOrder(null);
-            editor.replaceBlocks(editor.document, []);
         } else {
             setTitle(props.title);
             setOrder(props.order);
-            fs.readFile(props.file, { encoding: "utf8" }).then(async (c) => {
-                editor.replaceBlocks(
-                    editor.document,
-                    await editor.tryParseMarkdownToBlocks(c),
+            fs.readFile(props.file, { encoding: "utf8" }).then((c) => {
+                cmView = createCodeMirrorView({
+                    contents: c,
+                    language: "markdown",
+                    extensions: [oneDark],
+                });
+                cmView.addUpdateListener((contents) =>
+                    save(props.file, contents),
                 );
+                const container = document.querySelector("#editor");
+                Array.from(container.children).forEach(c => c.remove());
+                document.querySelector("#editor").append(cmView.element);
             });
         }
+
+        return () => {
+            cmView?.remove();
+        };
     }, [props.file]);
 
     return (
@@ -72,33 +82,19 @@ export function Editor(props: {
                 <button onClick={() => Preview(props.file)}>Preview</button>
             </div>
 
-             <BlockNoteView
-                editor={editor}
-                onChange={() => {
-                    save(props.file, [...editor.document], (b) =>
-                        editor.blocksToMarkdownLossy(b),
-                    );
-                }}
-                slashMenu={false}
-            />
+            <div id="editor" />
         </div>
     );
 }
 
 const debouncers = new Map<string, ReturnType<typeof setTimeout>>();
-function save(
-    file: string,
-    blocks: Block<any>[],
-    toMd: (arg: any[]) => string,
-) {
+function save(file: string, contents: string) {
     let d = debouncers.get(file);
     if (d) {
         clearTimeout(d);
     }
-
     d = setTimeout(async () => {
-        const md = await toMd(blocks);
-        fs.writeFile(file, md);
+        fs.writeFile(file, contents);
         debouncers.delete(file);
     }, 1000);
     debouncers.set(file, d);

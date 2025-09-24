@@ -1,18 +1,16 @@
 {
     "dependencies": {
         "@aws-sdk/client-s3": "^3.758.0",
-        "@blocknote/core": "^0.39.0",
-        "@blocknote/mantine": "^0.39.0",
-        "@blocknote/react": "^0.39.0",
+        "@codemirror/theme-one-dark": "^6.1.3",
+        "@fullstacked/codemirror-view": "github.com:fullstackedorg/codemirror-view",
         "@fullstacked/ui": "github.com:fullstackedorg/ui",
-        "@tiptap/extensions": "^3.4.4",
         "highlight.js": "^11.11.1",
         "marked": "^15.0.7",
         "marked-gfm-heading-id": "^4.1.1",
         "marked-highlight": "^2.2.1",
         "react": "^19.1.1",
         "react-dom": "^19.1.1",
-        "sass": "^1.85.0",
+        "sass": "^1.93.2",
         "slugify": "^1.6.6",
         "winbox": "^0.2.82"
     },
