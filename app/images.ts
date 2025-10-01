@@ -8,7 +8,7 @@ const authValueFile = "img-auth.txt";
 
 export function Images() {
     const form = document.createElement("div");
-    form.classList.add("form")
+    form.classList.add("form");
 
     const inputAuth = InputText({
         label: "Auth",
@@ -45,7 +45,7 @@ export function Images() {
                 inputText.input.value = "https://files.fullstacked.org/" + key;
                 console.log(`Uploaded ${i + 1} of ${files.length}`);
             } catch (e) {
-                console.log(`Failed upload ${i + 1} [${file.name}] ${e}`)
+                console.log(`Failed upload ${i + 1} [${file.name}] ${e}`);
             }
         }
 

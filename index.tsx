@@ -7,7 +7,7 @@ import fs from "fs";
 import { DeployButton } from "./app/deploy";
 const docsDirectory = "docs";
 
-document.title = "FullStacked Docs"
+document.title = "FullStacked Docs";
 
 function App() {
     const [files, setFiles] = useState([] as string[]);
