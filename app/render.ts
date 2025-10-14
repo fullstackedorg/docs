@@ -169,8 +169,8 @@ function generateNav(
     active: string,
     titles: { [path: string]: string },
 ) {
-    // remove last element (privacy-policy)
-    files = files.slice(0, -1);
+    // remove last 2 elements (privacy-policy and license)
+    files = files.slice(0, -2);
     const nav = document.createElement("nav");
     let sectionName: string;
     let list = document.createElement("ul");

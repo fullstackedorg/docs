@@ -21,5 +21,6 @@
     "docs/guides/user-mode.md": "User Mode",
     "docs/guides/build.md": "Build from source",
     "docs/guides/prompt.md": "Prompt",
-    "docs/guides/ai-agent.md": "AI Agent"
+    "docs/guides/ai-agent.md": "AI Agent",
+    "docs/license.md": "License"
 }
