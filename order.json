@@ -11,6 +11,8 @@
     "docs/guides/packages.md",
     "docs/guides/git.md",
     "docs/guides/user-mode.md",
+    "docs/guides/kiosk.md",
+    "docs/guides/vscode.md",
     "docs/guides/open-in-fullstacked.md",
     "docs/guides/import-export.md",
     "docs/guides/debugging.md",
@@ -19,6 +21,8 @@
     "docs/references/fs.md",
     "docs/references/fetch.md",
     "docs/references/zip.md",
+    "docs/references/ai.md",
+    "docs/references/connect.md",
     "docs/privacy-policy.md",
     "docs/license.md"
 ]

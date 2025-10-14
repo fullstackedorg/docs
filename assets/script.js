@@ -1,6 +1,6 @@
-function toggleNav(forceClose = false){
+function toggleNav(forceClose = false) {
     const nav = document.querySelector("nav");
-    if(forceClose || nav.classList.contains("open")){
+    if (forceClose || nav.classList.contains("open")) {
         mobileMenu.classList.remove("open");
         nav.classList.remove("open");
         navOverlay.classList.remove("open");
@@ -13,11 +13,12 @@ function toggleNav(forceClose = false){
 
 const mobileMenu = document.querySelector(".mobile-menu");
 mobileMenu.addEventListener("click", () => {
-    toggleNav()
+    toggleNav();
 });
-
 
 const navOverlay = document.querySelector(".nav-overlay");
 navOverlay.addEventListener("click", () => {
-    toggleNav(true)
-})
+    toggleNav(true);
+});
+
+document.querySelector("nav li.active")?.scrollIntoView();

@@ -22,5 +22,9 @@
     "docs/guides/build.md": "Build from source",
     "docs/guides/prompt.md": "Prompt",
     "docs/guides/ai-agent.md": "AI Agent",
-    "docs/license.md": "License"
+    "docs/license.md": "License",
+    "docs/guides/kiosk.md": "Kiosk",
+    "docs/references/ai.md": "AI",
+    "docs/references/connect.md": "Connect",
+    "docs/guides/vscode.md": "VS Code Setup"
 }

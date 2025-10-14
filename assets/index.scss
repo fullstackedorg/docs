@@ -98,11 +98,15 @@ header {
         }
 
         svg {
-            height: 20px;
             width: auto;
-
-            @media (max-width: b.$small) {
-                display: none;
+            &:first-child {
+                height: 50px;
+            }
+            &:last-child {
+                height: 20px;
+                @media (max-width: b.$medium) {
+                    display: none;
+                }
             }
         }
     }
@@ -282,7 +286,15 @@ footer {
     padding: s.$large s.$small s.$medium;
     text-align: center;
     font-size: t.$small;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
     > div {
         display: inline-block;
+        &:last-child {
+            display: inline-flex;
+            gap: 10px;
+        }
     }
 }

@@ -6,25 +6,21 @@ Create, run and share projects built with web technologies in a fully cross-plat
 
 ## Motivation
 
-Creating and developing applications is a lot of fun, the internet is filled with libraries and components we can build with to quickly make great apps. Everything goes so smoothly when working on our machine, but the moment we want our app to run on another device that’s when the fun starts to fade away...
+Building applications is inherently rewarding; the modern development landscape provides an abundance of libraries and components that enable rapid, efficient iteration. Running these applications locally on our development machines is typically a smooth, predictable experience. The real point of friction, however, emerges when the goal shifts from local execution to reliable deployment and operation on any other device.
 
-The two main ways to make your app accessible beyond your own machine are:
+Currently, making an application available beyond its origin machine primarily involves two well-defined distribution channels:
 
-* To distribute the app on App Marketplaces.
-
-  * Apple App Store, Google Play Store, Microsoft Store, Meta Store, etc.
-
-* To deploy the app on the publicly accessible Web.
-
-  * With a server (AWS, Azure, Google Cloud, Self-Hosted, etc.)
-
-  * Using a web hosting service (CloudFlare, Vercel, Netlify, etc.)
-
-While these solutions are great to make your app accessible to the general public, they can become insecure and costly for projects you intend to use solely or with a distinct group of people. Developer program fees, days-long app reviews, complexe user management, data transfer fees can all feel counterproductive when your goal is simply to build and run your projects on your own and known people devices. So why can’t we just let others run our app the same way we do on our local machine? What if we could `npm start` anywhere? FullStacked exists to fulfill this use case.
+* App Marketplaces:
+    * Apple App Store, Google Play Store, Microsoft Store, Meta Store, etc.
+* Public Web Deployment:
+    * With a server (AWS, Azure, Google Cloud, Self-Hosted, etc.)
+    * Using a web hosting service (CloudFlare, Vercel, Netlify, etc.)
+      
+While indispensable for broad consumer access, these approaches introduce considerable overhead for projects with more limited scope. For applications intended for personal use or a specific group, navigating developer program costs, arduous review cycles, complex permissioning, and data transfer fees often presents a disproportionate burden. This often leads to a fundamental frustration: if development is so efficient, why can’t sharing be equally straightforward? What if the ease of npm start could extend to anywhere? FullStacked is designed precisely to solve this challenge.
 
 ## How it works
 
-> This section explains in-depth how FullStacked runs local-first web-like projects anywhere. If you are looking for help on how to build a project inside FullStacked, go to the Getting Started page or the Guides section.
+> This section explains in-depth how FullStacked can run local-first projects anywhere with web technologies. If you are looking for help on how to build a project inside FullStacked, go to the Getting Started page or the Guides section.
 
 There are 4 key components in FullStacked
 
@@ -44,7 +40,9 @@ There are 4 key components in FullStacked
 
     * JavaScript Packages management (similar to npm)
 
-    * JavaScript Code Bundling ([esbuild](https://github.com/evanw/esbuild))
+    * Code Bundling ([esbuild](https://github.com/evanw/esbuild))
+   
+    * TypeScript LSP ([typescript-go](https://github.com/microsoft/typescript-go))
 
     * ZIP Archiving
 

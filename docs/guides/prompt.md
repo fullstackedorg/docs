@@ -9,7 +9,9 @@ Open it with the prompt icon when in a project or with the keyboard shortcut :
 
 `cmd` / `ctrl` + `shift` + `p`
 
-![BlockNote image](https://files.fullstacked.org/IMG_0530.png)![BlockNote image](https://files.fullstacked.org/Screenshot-2025-04-03-at-4.06.37-PM.png)
+![Prompt Open](https://files.fullstacked.org/IMG_0530.png)
+
+![Prompt Typing](https://files.fullstacked.org/Screenshot-2025-04-03-at-4.06.37-PM.png)
 
 ## Commands
 
