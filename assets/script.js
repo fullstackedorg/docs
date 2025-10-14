@@ -21,4 +21,17 @@ navOverlay.addEventListener("click", () => {
     toggleNav(true);
 });
 
-document.querySelector("nav li.active")?.scrollIntoView();
+const activeNavItem = document.querySelector("nav li.active");
+if (activeNavItem) {
+    const bb = activeNavItem.getBoundingClientRect();
+    const isVisible =
+        bb.top >= 0 &&
+        bb.left >= 0 &&
+        bb.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+        bb.right <= (window.innerWidth || document.documentElement.clientWidth);
+
+    if (!isVisible) {
+        activeNavItem.scrollIntoView();
+    }
+}
