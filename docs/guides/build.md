@@ -2,48 +2,61 @@
 
 ## Requirements
 
-*   Go >=`1.23.1`
+*   Go >=`1.25`
 *   NodeJS `>=20`
 
 ## Clone the repository
 
-```shellscript
+Clone and enter the directory
+
+```
 git clone https://github.com/fullstackedorg/fullstacked.git
+cd fullstacked
+```
+
+Checkout the submodules
+
+```
+git submodule update --init
 ```
 
 ## Install npm dependencies
 
-From the root directory of the repository, run `npm install`.
+From the root directory of the repository, install the dependencies.
 
-```shellscript
+```
 npm install
 ```
 
 ## Build the core
 
-Go into the `core/build` directory and on a `UNIX`-like system (MacOS/Linux), use the `make` file.
+Go into the `core/build` directory and on a `UNIX`-like system (MacOS/Linux), use the `make` file to build the core a shared library, then return to the root directory.
 
-```shellscript
-make macos-x86_64-shared
+```
+cd core/build
+make macos-amr64-shared
+cd ../../
 ```
 
 On Window, use the `.bat` file
 
-```shellscript
+```
+cd core/build
 ./windows.bat
+cd ../../
 ```
 
 ## Running FullStacked
 
 From the root directory of the repository, run `npm start`. Your browser should then open with FullStacked running.
 
-```shellscript
+```
 npm start
 ```
 
 ## Build for a platform
 
-All the setups to build for Android, iOS, MacOS, Windows and WASM are available in the `platform` directory. Make sure to build the core for the specific platform beforehand, and you should be able to find everything you need organized in each directory.
+All the setups to build for specific platforms are available in the `platform` directory. Make sure to build the core for the specific platform beforehand, and you should be able to find everything you need organized in each directory.
 
 ### Recommended IDEs
 
