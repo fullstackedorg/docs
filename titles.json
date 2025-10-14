@@ -14,7 +14,7 @@
     "docs/references/fs.md": "Files System (fs)",
     "docs/references/fetch.md": "Fetch (core_fetch)",
     "docs/privacy-policy.md": "Privacy Policy",
-    "docs/references/platform.md": "Platform",
+    "docs/references/platform.md": "Platform (platform)",
     "docs/references/archive.md": "Archive",
     "docs/references/zip.md": "ZIP (archive)",
     "docs/guides/terminal.md": "Using the terminal",
@@ -24,7 +24,7 @@
     "docs/guides/ai-agent.md": "AI Agent",
     "docs/license.md": "License",
     "docs/guides/kiosk.md": "Kiosk",
-    "docs/references/ai.md": "AI",
-    "docs/references/connect.md": "Connect",
+    "docs/references/ai.md": "AI (ai)",
+    "docs/references/connect.md": "Connect (connect)",
     "docs/guides/vscode.md": "VS Code Setup"
 }
