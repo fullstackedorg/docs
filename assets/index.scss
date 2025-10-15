@@ -92,11 +92,6 @@ header {
         gap: s.$small;
         opacity: 1;
 
-        img {
-            height: 50px;
-            width: auto;
-        }
-
         svg {
             width: auto;
             &:first-child {
@@ -156,6 +151,10 @@ header {
             }
         }
     }
+}
+
+img {
+    border-radius: 10px;
 }
 
 nav {
