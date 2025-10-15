@@ -2,7 +2,7 @@
 
 Create, run and share projects built with web technologies in a fully cross-platform, local-first environment.
 
-![FullStacked](https://files.fullstacked.org/IMG_0521.jpeg)
+![FullStacked](https://files.fullstacked.org/fullstacked.jpg)
 
 ## Motivation
 
