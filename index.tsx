@@ -5,6 +5,9 @@ import { Editor } from "./app/editor";
 import { Images } from "./app/images";
 import fs from "fs";
 import { DeployButton } from "./app/deploy";
+import eruda from "eruda";
+eruda.init();
+
 const docsDirectory = "docs";
 
 document.title = "FullStacked Docs";
@@ -80,7 +83,9 @@ async function getDocsFiles(): Promise<string[]> {
 }
 
 export async function getTitles() {
-    return JSON.parse(await fs.readFile("titles.json", { encoding: "utf8" }));
+    return JSON.parse(
+        await fs.readFile("titles.json", { encoding: "utf8" }),
+    ) as Record<string, string>;
 }
 const main = document.createElement("main");
 const container = document.createElement("div");
