@@ -6,9 +6,9 @@ Create, run and share projects built with web technologies in a fully cross-plat
 
 ## Motivation
 
-Building applications is inherently rewarding; the modern development landscape provides an abundance of libraries and components that enable rapid, efficient iteration. Running these applications locally on our development machines is typically a smooth, predictable experience. The real point of friction, however, emerges when the goal shifts from local execution to reliable deployment and operation on any other device.
+Building applications is such a rewarding experience; the modern development landscape provides an abundance of libraries and components that enable rapid, efficient iteration. Running these applications locally on our development machines is typically a smooth, predictable experience. The real point of friction, however, emerges when the goal shifts from local execution to reliable deployment and operation on any other device.
 
-Currently, making an application available beyond its origin machine primarily involves two well-defined distribution channels:
+Currently, making an application available beyond our machine primarily involves two well-defined distribution channels:
 
 * App Marketplaces:
     * Apple App Store, Google Play Store, Microsoft Store, Meta Store, etc.
@@ -16,7 +16,7 @@ Currently, making an application available beyond its origin machine primarily i
     * With a server (AWS, Azure, Google Cloud, Self-Hosted, etc.)
     * Using a web hosting service (CloudFlare, Vercel, Netlify, etc.)
       
-While indispensable for broad consumer access, these approaches introduce considerable overhead for projects with more limited scope. For applications intended for personal use or a specific group, navigating developer program costs, arduous review cycles, complex permissioning, and data transfer fees often presents a disproportionate burden. This often leads to a fundamental frustration: if development is so efficient, why can’t sharing be equally straightforward? What if the ease of npm start could extend to anywhere? FullStacked is designed precisely to solve this challenge.
+While indispensable for broad consumer access, these approaches introduce considerable overhead for projects with more limited scope. For applications intended for personal use or a specific group, navigating developer program costs, arduous review cycles, intricate permissioning, complex pricing and hidden fees often presents a disproportionate burden. This often leads to a fundamental frustration: if development is so efficient, why can’t sharing be equally straightforward? What if the ease of npm start could extend to anywhere? FullStacked is designed precisely to solve this challenge.
 
 ## How it works
 
@@ -24,9 +24,9 @@ While indispensable for broad consumer access, these approaches introduce consid
 
 There are 4 key components in FullStacked
 
-* Core
+1. Core
 
-  * Built with GO and compiled to a C library.
+  * Built with GO.
 
   * Access to native functionalities.
 
@@ -46,7 +46,7 @@ There are 4 key components in FullStacked
 
     * ZIP Archiving
 
-* WebView
+2. WebView
 
   * Instead of trying to use OS-specific native UI systems. FullStacked leverages the use of what has been rendering user interfaces for years: the web browser.
 
@@ -56,17 +56,17 @@ There are 4 key components in FullStacked
 
     * WebView (Chromium) for Android
 
-    * WebView2 (Edge/Chromium) for Windows
+    * WebView2 (Edge) for Windows
 
   * [Some even argue it's better than native rendering.](https://javascript.plainenglish.io/i-replaced-my-native-ios-app-with-a-cross-platform-web-app-and-no-one-noticed-1653901ce244)
 
-* Adapter
+3. Adapter
 
   * OS-specific code that binds the WebView and the Core.
 
   * Manages the instances of WebViews spawned for the different projects running.
 
-* Bridge
+4. Bridge
 
   * A piece of JavaScript code included in every JavaScript bundle ran by spawned WebViews.
 
@@ -78,11 +78,11 @@ Here’s a little schema of how the components are nested in one another.
 
 The adapter is implemented for every platform supported. It implements a few key elements:
 
-* Loading the Core C library binary and implementing the foreign function interface with it
+* Loading the Core library and implementing the foreign function interface
 
   * Implementing the “call”: a function that returns a value
 
-  * Implementing the “callback”: a function passed to the Core allowing it to communicate with the WebView at any given moment.
+  * Implementing the “callback”: a function passed to the Core allowing it to communicate with the WebViews at any given moment.
 
 * Handles the WebViews spawning and management
 

@@ -48,7 +48,7 @@ function App() {
     };
 
     return (
-        <main>
+        <div id="editor-container">
             <FileList
                 files={files}
                 activeFile={activeFile}
@@ -61,7 +61,7 @@ function App() {
                 changeOrderTo={changeOrder}
                 updateTitleTo={updateTitle}
             />
-        </main>
+        </div>
     );
 }
 
@@ -82,8 +82,8 @@ async function getDocsFiles(): Promise<string[]> {
 export async function getTitles() {
     return JSON.parse(await fs.readFile("titles.json", { encoding: "utf8" }));
 }
-
+const main = document.createElement("main");
 const container = document.createElement("div");
-document.body.append(Images(), DeployButton());
-document.body.append(container);
+main.append(Images(), DeployButton(), container);
+document.body.append(main);
 createRoot(container).render(<App />);

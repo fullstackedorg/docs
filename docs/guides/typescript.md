@@ -9,7 +9,9 @@ Nowadays, there are very few reasons **not** to use TypeScript (TS). It allows t
 
 As you code, autocompletions and type errors will appear to help you out.
 
-![BlockNote image](https://files.fullstacked.org/Screenshot-2025-02-23-at-10.12.36-AM.png)![BlockNote image](https://files.fullstacked.org/Screenshot-2025-02-23-at-10.13.26-AM.png)![BlockNote image](https://files.fullstacked.org/Screenshot-2025-02-23-at-10.13.38-AM.png)
+![TypeScript autocomplete](https://files.fullstacked.org/Screenshot-2025-02-23-at-10.12.36-AM.png)
+![TypeScript error](https://files.fullstacked.org/Screenshot-2025-02-23-at-10.13.26-AM.png)
+![TypeScript error 2](https://files.fullstacked.org/Screenshot-2025-02-23-at-10.13.38-AM.png)
 
 ## Example
 

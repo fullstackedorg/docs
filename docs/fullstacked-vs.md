@@ -14,4 +14,4 @@ Those frameworks are designed to pack your JavaScript code with a webview and a 
 
 ## vs Replit, StackBlitz, Codespaces, CodeSandbox
 
-Those development tools are IDEs intended to essentially make coding more accessible. This is also part of FullStacked goals, but FullStacked has also the goal to provide a place to run your projects. While some of those tools provides offline features, they are still for the most part working with a remote server. FullStacked has and will always have an offline-first/local-first approach.
+Those development tools are IDEs intended to essentially make coding more accessible. This is also part of FullStacked goals. Also, while some of those tools provides offline features, they are still for the most part working with a remote server. FullStacked has and will always have an offline-first/local-first approach.
