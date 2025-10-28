@@ -86,6 +86,8 @@ header {
     margin: 0 auto;
     pointer-events: all;
 
+    
+
     #logo {
         display: flex;
         align-items: center;
@@ -300,6 +302,8 @@ footer {
 
 #search-input {
     position: relative;
+    width: 100%;
+    max-width: 350px;
 
     button {
         display: none;
@@ -314,13 +318,13 @@ footer {
 #search-results {
     position: fixed;
     left: 0;
-    transform: translateX(calc(50vw - 50%));
     display: none;
     justify-content: center;
     height: 600px;
     max-height: calc(100vh - 100px);
     width: 100%;
-    max-width: 450px;
+    align-items: flex-start;
+    padding: s.$small;
 
     &.show {
         display: flex;
@@ -330,6 +334,7 @@ footer {
         background-color: c.$blue-dark;
         display: flex;
         width: 100%;
+        max-width: 600px;
         flex-direction: column;
         border-radius: s.$small;
         list-style-type: none;
@@ -337,7 +342,8 @@ footer {
         border: 1px solid c.$gray-dark;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         overflow: auto;
-        height: max-content;
+        max-height: 100%;
+        margin: 0;
 
         > li {
             border-radius: s.$small;
@@ -349,14 +355,26 @@ footer {
             }
             h4 {
                 margin: 0;
-                padding: 0;
+                padding: 0 0 s.$x-small;
                 text-transform: capitalize;
+                span {
+                    display: inline-flex;
+                    align-items: center;
+                    color: c.$blue;
+                    svg {
+                        height: 14px;
+                        width: auto;
+                        padding: 0 s.$x-small;
+                    }
+                }
             }
             p {
                 display: -webkit-box;
                 -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
+                opacity: 0.7;
+                font-size: t.$medium;
             }
             &:hover {
                 background-color: c.$gray-dark;

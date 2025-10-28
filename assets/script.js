@@ -45,6 +45,11 @@ fetch(window.contentSearchURL || "/search.json")
         });
     });
 
+const breadcumbArrow = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 18C8 18.26 8.1 18.51 8.29 18.71C8.48 18.91 8.74 19 9 19C9.26 19 9.51 18.9 9.71 18.71L15.71 12.71C16.1 12.32 16.1 11.69 15.71 11.3L9.71 5.29C9.32 4.9 8.68 4.9 8.29 5.29C8.1 5.49 8 5.74 8 6V18Z" fill="currentColor"/>
+</svg>
+`;
+
 const searchInputContainer = document.querySelector("#search-input");
 const searchInput = searchInputContainer.querySelector("input");
 const searchInputResultsContainer =
@@ -61,6 +66,8 @@ const searchInputOnChange = (e) => {
         if (document.activeElement === searchInput) {
             if (value) {
                 renderSearchResult(fuse.search(value), e.key);
+            } else {
+                searchInputResultsContainer.classList.remove("show");
             }
         } else {
             searchInputResultsContainer.classList.remove("show");
@@ -86,9 +93,12 @@ function renderSearchResult(results, key) {
         resultsList.append(
             ...results.map(({ item: { title, contents, url } }) => {
                 const item = document.createElement("li");
-                const breadcrumbs = url.split("/").slice(1, -1).join(">");
+                const breadcrumbs = url
+                    .split("/")
+                    .slice(1, -1)
+                    .join(breadcumbArrow);
                 item.innerHTML = `<a href="${url}">
-            <h4>${breadcrumbs ? breadcrumbs + " > " : ""}${title}</h4>
+            <h4>${breadcrumbs ? `<span>${breadcrumbs} ${breadcumbArrow}</span>` : ""}${title}</h4>
             <p>${contents}<p>
         </a>`;
                 return item;
