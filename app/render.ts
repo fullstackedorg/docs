@@ -98,7 +98,7 @@ export async function renderSite(page: string = null): Promise<{
             contentSearch.push({
                 title: stripMarkdown(title),
                 url: "/" + dir,
-                contents: stripMarkdown(contents),
+                contents: stripMarkdown(contents.replace(title, "")).trim(),
             });
         }
 

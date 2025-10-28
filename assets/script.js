@@ -41,29 +41,64 @@ fetch(window.contentSearchURL || "/search.json")
     .then((res) => res.json())
     .then((contentSearch) => {
         fuse = new Fuse(contentSearch, {
-            includeScore: true,
             keys: ["title", "contents"],
         });
     });
 
 const searchInputContainer = document.querySelector("#search-input");
-const searchInputResults = searchInputContainer.querySelector("div");
 const searchInput = searchInputContainer.querySelector("input");
-const searchInputOnChange = () => {
+const searchInputOnChange = (e) => {
     const value = searchInput.value;
     if (value) {
         searchInputClearButton.style.display = "inline-flex";
     } else {
         searchInputClearButton.style.display = "none";
     }
-    searchInputResults.innerText = value;
 
-    console.log(fuse.search(value));
+    setTimeout(() => {
+        if (document.activeElement === searchInput) {
+            if (value) {
+                renderSearchResult(fuse.search(value), e.key);
+            }
+        } else {
+            searchInputResults.classList.remove("show");
+        }
+    }, 100);
 };
 searchInput.onkeyup = searchInputOnChange;
 searchInput.onchange = searchInputOnChange;
+searchInput.onfocus = searchInputOnChange;
+searchInput.onblur = searchInputOnChange;
 const searchInputClearButton = searchInputContainer.querySelector("button");
 searchInputClearButton.onclick = () => {
     searchInput.value = "";
     searchInputOnChange();
+    searchInput.focus();
 };
+let searchInputResults = searchInputContainer.querySelector("ul");
+function renderSearchResult(results, key) {
+    const resultsList = document.createElement("ul");
+    resultsList.classList.add("show");
+    if (results.length) {
+        resultsList.append(
+            ...results.map(({ item: { title, contents, url } }) => {
+                const item = document.createElement("li");
+                const breadcrumbs = url.split("/").slice(1, -1).join(">");
+                item.innerHTML = `<a href="${url}">
+            <h4>${breadcrumbs ? breadcrumbs + " > " : ""}${title}</h4>
+            <p>${contents}<p>
+        </a>`;
+                return item;
+            }),
+        );
+
+        if (key === "Enter") {
+            window.location.href = results.at(0).url;
+        }
+    } else {
+        resultsList.innerHTML = `<b>No Results</b>`;
+    }
+
+    searchInputResults.replaceWith(resultsList);
+    searchInputResults = resultsList;
+}
