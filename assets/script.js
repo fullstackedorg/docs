@@ -35,3 +35,24 @@ if (activeNavItem) {
         activeNavItem.scrollIntoView();
     }
 }
+
+
+const searchInputContainer = document.querySelector("#search-input");
+const searchInputResults = searchInputContainer.querySelector("div");
+const searchInput = searchInputContainer.querySelector("input");
+const searchInputOnChange = () => {
+    const value = searchInput.value;
+    if (value) {
+        searchInputClearButton.style.display = "inline-flex";
+    } else {
+        searchInputClearButton.style.display = "none";
+    }
+    searchInputResults.innerText = value;
+};
+searchInput.onkeyup = searchInputOnChange;
+searchInput.onchange = searchInputOnChange;
+const searchInputClearButton = searchInputContainer.querySelector("button");
+searchInputClearButton.onclick = () => {
+    searchInput.value = "";
+    searchInputOnChange();
+}

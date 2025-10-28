@@ -6,7 +6,6 @@ import hljs from "highlight.js";
 import { getOrder, getTitles } from "..";
 import { gfmHeadingId } from "marked-gfm-heading-id";
 import { Button } from "@fullstacked/ui";
-import { stripMarkdown } from "./strip";
 
 export async function renderStyle(minified = false) {
     const scss = await fs.readFile("/assets/index.scss", { encoding: "utf8" });
@@ -43,11 +42,6 @@ export async function renderSite(page: string = null): Promise<{
         contents: string;
     };
 }> {
-    const searchData: {
-        url: string;
-        title: string;
-        contents: string;
-    }[] = [];
     const files: Awaited<ReturnType<typeof renderSite>> = {};
 
     const script = await fs.readFile("/assets/script.js", { encoding: "utf8" });
@@ -89,12 +83,6 @@ export async function renderSite(page: string = null): Promise<{
                 isDir: true,
             };
         }
-
-        searchData.push({
-            url: dir,
-            title: titles[f],
-            contents: stripMarkdown(contents),
-        });
 
         const links = document.createElement("ul");
         contents.match(/#{2,3}.*/g)?.forEach((item) => {
@@ -159,8 +147,6 @@ export async function renderSite(page: string = null): Promise<{
         };
     });
     await Promise.all(renderPromises);
-
-    console.log(searchData);
 
     return files;
 }

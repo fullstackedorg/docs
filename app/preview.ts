@@ -4,7 +4,6 @@ import "winbox/dist/css/winbox.min.css";
 
 export async function Preview(page: string) {
     const site = await renderSite(page);
-    console.log(site);
     const renderedPageKey = Object.keys(site).find((p) =>
         p.endsWith("index.html"),
     );
