@@ -47,6 +47,8 @@ fetch(window.contentSearchURL || "/search.json")
 
 const searchInputContainer = document.querySelector("#search-input");
 const searchInput = searchInputContainer.querySelector("input");
+const searchInputResultsContainer =
+    searchInputContainer.querySelector("#search-results");
 const searchInputOnChange = (e) => {
     const value = searchInput.value;
     if (value) {
@@ -61,7 +63,7 @@ const searchInputOnChange = (e) => {
                 renderSearchResult(fuse.search(value), e.key);
             }
         } else {
-            searchInputResults.classList.remove("show");
+            searchInputResultsContainer.classList.remove("show");
         }
     }, 100);
 };
@@ -75,10 +77,11 @@ searchInputClearButton.onclick = () => {
     searchInputOnChange();
     searchInput.focus();
 };
+
 let searchInputResults = searchInputContainer.querySelector("ul");
 function renderSearchResult(results, key) {
     const resultsList = document.createElement("ul");
-    resultsList.classList.add("show");
+    searchInputResultsContainer.classList.add("show");
     if (results.length) {
         resultsList.append(
             ...results.map(({ item: { title, contents, url } }) => {
