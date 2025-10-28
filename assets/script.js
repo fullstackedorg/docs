@@ -36,6 +36,15 @@ if (activeNavItem) {
     }
 }
 
+let fuse = null;
+fetch(window.contentSearchURL || "/search.json")
+    .then((res) => res.json())
+    .then((contentSearch) => {
+        fuse = new Fuse(contentSearch, {
+            includeScore: true,
+            keys: ["title", "contents"],
+        });
+    });
 
 const searchInputContainer = document.querySelector("#search-input");
 const searchInputResults = searchInputContainer.querySelector("div");
@@ -48,6 +57,8 @@ const searchInputOnChange = () => {
         searchInputClearButton.style.display = "none";
     }
     searchInputResults.innerText = value;
+
+    console.log(fuse.search(value));
 };
 searchInput.onkeyup = searchInputOnChange;
 searchInput.onchange = searchInputOnChange;
@@ -55,4 +66,4 @@ const searchInputClearButton = searchInputContainer.querySelector("button");
 searchInputClearButton.onclick = () => {
     searchInput.value = "";
     searchInputOnChange();
-}
+};
