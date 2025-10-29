@@ -4,13 +4,13 @@ The editor supports the use of packages (node_modules). You can install pacakges
 
 ## Installing packages from npmjs
 
-This is the default behaviour.
+The default behaviour of the `install` command is to install from npmjs. 
 
 ```
 npm i react
 ```
 
-You can always install specific version or tag.
+Specifying a version is also allowed.
 
 ```
 npm i react@18 react-dom@18
@@ -26,7 +26,7 @@ Use the `http` clone url to install from a git repository.
 npm i https://github.com/fullstackedorg/ui.git
 ```
 
-You can lock to a commit, a branch or none. If none, it will always install the latest commit of the default branch.
+Lock to a commit, a branch or none. If none, it will always install the latest commit of the default branch.
 
 Locking to a commit
 
