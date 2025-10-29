@@ -51,10 +51,17 @@ const breadcumbArrow = `<svg width="24" height="24" viewBox="0 0 24 24" fill="no
 `;
 
 const searchInputContainer = document.querySelector("#search-input");
+searchInputContainer.onclick = (e) => {
+    if(e.target !== searchInput) {
+        searchInput.blur();
+    }
+}
 const searchInput = searchInputContainer.querySelector("input");
 const searchInputResultsContainer =
     searchInputContainer.querySelector("#search-results");
 const searchInputOnChange = (e) => {
+    toggleNav(true);
+    searchInputContainer.classList.add("show");
     const value = searchInput.value;
     if (value) {
         searchInputClearButton.style.display = "inline-flex";
@@ -68,9 +75,13 @@ const searchInputOnChange = (e) => {
                 renderSearchResult(fuse.search(value), e.key);
             } else {
                 searchInputResultsContainer.classList.remove("show");
+                if (e.key === "Enter") {
+                    searchInput.blur();
+                }
             }
         } else {
             searchInputResultsContainer.classList.remove("show");
+            searchInputContainer.classList.remove("show");
         }
     }, 100);
 };
@@ -104,9 +115,8 @@ function renderSearchResult(results, key) {
                 return item;
             }),
         );
-
         if (key === "Enter") {
-            window.location.href = results.at(0).url;
+            window.location.href = results.at(0).item.url;
         }
     } else {
         resultsList.innerHTML = `<b>No Results</b>`;
@@ -115,3 +125,8 @@ function renderSearchResult(results, key) {
     searchInputResults.replaceWith(resultsList);
     searchInputResults = resultsList;
 }
+
+document.querySelector("#mobile-search").onclick = () => {
+    searchInputContainer.classList.add("show");
+    searchInput.focus();
+};

@@ -144,7 +144,7 @@ export async function renderSite(page: string = null): Promise<{
                 "{{ SCRIPT }}",
                 page
                     ? `<script>${script}</script>`
-                    : `<script src="/script.js"></script>`,
+                    : `<script src="/fuse.js"></script><script src="/script.js"></script>`,
             );
 
         if (prev) {
@@ -170,6 +170,11 @@ export async function renderSite(page: string = null): Promise<{
     files["search.json"] = {
         docsFile: null,
         contents: JSON.stringify(contentSearch),
+        isDir: false,
+    };
+    files["fuse.js"] = {
+        docsFile: null,
+        contents: await fs.readFile("assets/fuse.js", { encoding: "utf8" }),
         isDir: false,
     };
 
