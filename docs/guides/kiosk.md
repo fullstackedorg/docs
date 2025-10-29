@@ -4,9 +4,9 @@ Platform supporting the kiosk mode:
 - Linux (both GTK and Qt)
 - Windows
 
-If you would like to run your project as a fullscreen interface, through the `--kiosk` flag, you can do so. 
+To directly run a project in fullscreen, use the `--kiosk` flag.
 
-Run your app in kiosk mode by giving the project id as argument
+Beforehand, the project needs to have been build at least once through the FullStacked Editor. Then, take not of the project id and use it the command line next to the `--kiosk` flag.
 
 ## Linux
 

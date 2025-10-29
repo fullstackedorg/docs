@@ -10,19 +10,19 @@ Create, run and share projects built with web technologies in a fully cross-plat
 
 Building applications is such a rewarding experience; the modern development landscape provides an abundance of libraries and components that enable rapid, efficient iteration. Running these applications locally on our development machines is typically a smooth, predictable experience. The real point of friction, however, emerges when the goal shifts from local execution to reliable deployment and operation on any other device.
 
-Currently, making an application available beyond our machine primarily involves two well-defined distribution channels:
+Currently, making an application available beyond our machine is possible through two well-defined distribution channels:
 
 * App Marketplaces:
-    * Apple App Store, Google Play Store, Microsoft Store, Meta Store, etc.
+    * Apple App Store, Google Play Store, Microsoft Store, etc.
 * Public Web Deployment:
     * With a server (AWS, Azure, Google Cloud, Self-Hosted, etc.)
     * Using a web hosting service (CloudFlare, Vercel, Netlify, etc.)
       
-While indispensable for broad consumer access, these approaches introduce considerable overhead for projects with more limited scope. For applications intended for personal use or a specific group, navigating developer program costs, arduous review cycles, intricate permissioning, complex pricing and hidden fees often presents a disproportionate burden. This often leads to a fundamental frustration: if development is so efficient, why can’t sharing be equally straightforward? What if the ease of npm start could extend to anywhere? FullStacked is designed precisely to solve this challenge.
+While indispensable for broad consumer access, these approaches introduce considerable overhead for projects with more limited scope. For applications intended for personal use or a specific group, navigating developer program costs, arduous review cycles, intricate permissioning, complex pricing and hidden fees often presents a disproportionate burden. This often leads to a fundamental frustration: if development is so efficient, why can’t sharing be equally straightforward? What if the ease of `npm start` could extend to anywhere? FullStacked is designed precisely to solve this challenge.
 
 ## How it works
 
-> This section explains in-depth how FullStacked can run local-first projects anywhere with web technologies. If you are looking for help on how to build a project inside FullStacked, go to the Getting Started page or the Guides section.
+> This section explains in-depth how FullStacked can run local-first projects anywhere with web technologies. If you are looking for help on how to build a project inside FullStacked, go to the Getting Started or the Guides section.
 
 There are 4 key components in FullStacked
 
@@ -148,7 +148,7 @@ The adapter is implemented for every platform supported. It implements a few key
 
 * Electron
 
-  * Adapter: [JavaScript](https://nodejs.org/en) with [node-addon-api](https://github.com/nodejs/node-addon-api) (uses NodeJS implementation)
+  * Adapter: [JavaScript](https://nodejs.org/en) with [node-addon-api](https://github.com/nodejs/node-addon-api)
 
   * WebView: [BrowserWindow](https://www.electronjs.org/docs/latest/api/browser-window) (Chromium)
 

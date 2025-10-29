@@ -35,11 +35,15 @@ After joining the testing program, update directly on [Google Play](https://play
 Use with Debian 13 (Trixie) / Ubuntu 25.04 (Plucky) or up.
 
 Download the `.deb` package from the [download page](https://fullstacked.org/download). Select which GUI backend you want (GTK or Qt) and make sure to pick the right architecture for your machine (x64 or arm64).
+
 ```
 curl -o fullstacked.deb https://files.fullstacked.org/linux-builds/x64/0.12.0/fullstacked-0.12.0-1317-linux-x64-gtk.deb
 ```
-Then install using `apt`
+
+Then install using `apt` and run once using the command line, then the app icon should be available in Applications.
+
 ```
-sudo apt install ./fullstacked.deb
+sudo apt install ./fullstacked.deb -y
+fullstacked
 ```
 

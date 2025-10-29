@@ -1,6 +1,6 @@
 # Platform
 
-If you ever need to modify some style or content based off the current OS running behind, the `platform` module can be very handy.
+The current platform identifier is always available from the `platform` module encoded as a simple string.
 
 ## Exported Members
 
@@ -9,12 +9,15 @@ If you ever need to modify some style or content based off the current OS runnin
 export default: string
 
 export enum Platform {
-  NODE    = "node",
-  APPLE   = "apple",
-  ANDROID = "android",
-  WINDOWS = "windows",
-  WASM    = "wasm",
-  LINUX   = "linux"
+    NODE = "node",
+    APPLE = "apple",
+    ANDROID = "android",
+    DOCKER = "docker",
+    WINDOWS = "windows",
+    WASM = "wasm",
+    LINUX_GTK = "linux-gtk",
+    LINUX_QT = "linux-qt",
+    ELECTRON = "electron"
 }
 ```
 
@@ -23,7 +26,7 @@ export enum Platform {
 ```typescript
 import platform, { Platform } from "platform";
 
-if(platform === Platform.APPLE) {
-  console.log("You are on the APPLE platform.");
+if (platform === Platform.APPLE) {
+    console.log("You are on the APPLE platform.");
 }
 ```

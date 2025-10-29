@@ -2,10 +2,14 @@
 
 ## Requirements
 
-*   Go >=`1.25`
-*   NodeJS `>=20`
+*   [Go](https://go.dev) `>=1.25`
+*   [NodeJS](https://nodejs.org) `>=20`
 
-## Clone the repository
+### Windows Requirements
+
+* [llvm-mingw](https://github.com/mstorsjo/llvm-mingw) `=20250613`
+
+## Running
 
 Clone and enter the directory
 
@@ -20,47 +24,20 @@ Checkout the submodules
 git submodule update --init
 ```
 
-## Install npm dependencies
-
-From the root directory of the repository, install the dependencies.
+Install the dependencies and start.
 
 ```
 npm install
-```
-
-## Build the core
-
-Go into the `core/build` directory and on a `UNIX`-like system (MacOS/Linux), use the `make` file to build the core a shared library, then return to the root directory.
-
-```
-cd core/build
-make macos-amr64-shared
-cd ../../
-```
-
-On Window, use the `.bat` file
-
-```
-cd core/build
-./windows.bat
-cd ../../
-```
-
-## Running FullStacked
-
-From the root directory of the repository, run `npm start`. Your browser should then open with FullStacked running.
-
-```
 npm start
 ```
 
 ## Build for a platform
 
-All the setups to build for specific platforms are available in the `platform` directory. Make sure to build the core for the specific platform beforehand, and you should be able to find everything you need organized in each directory.
+Building as the native app is a bit more tedious. All the setups for specific platforms are available in the `platform` directory. Make sure to build the core for the specific platform beforehand in the `core/build` directory, and you should be able to find everything you need organized in each directory.
 
 ### Recommended IDEs
 
 *   Development (NodeJS): [Visual Studio Code](https://code.visualstudio.com)
-*   Android: [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds\&gad_source=1\&gbraid=0AAAAAC-IOZl50u1ca81uhob7aKXcSKZvQ\&gclid=CjwKCAiAzvC9BhADEiwAEhtlN5biKroCXF8aFzVR6dbrItH5AJ4dNaBIKZSkqsGtxHuoM2v5InjcmBoCZ5IQAvD_BwE)
-*   Apple: [Xcode](https://developer.apple.com/xcode/)
+*   Android: [Android Studio](https://developer.android.com/studio)
+*   Apple: [Xcode](https://developer.apple.com/xcode)
 *   Windows: [Visual Studio](https://visualstudio.microsoft.com)
