@@ -114,18 +114,36 @@ header {
         svg {
             height: 40px;
             width: auto;
+            @media (max-width: b.$medium) {
+                height: 24px;
+            }
+        }
+
+        .desktop {
+            @media (max-width: b.$medium) {
+                display: none;
+            }
+        }
+
+        .mobile {
+            display: none;
+            @media (max-width: b.$medium) {
+                display: flex;
+            }
         }
 
         .mobile-menu {
             display: none;
             height: 100%;
             flex-direction: column;
-            gap: s.$small;
-            width: 40px;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 24px;
+            height: 20px;
             cursor: pointer;
 
             > div {
-                height: 4px;
+                height: 3px;
                 width: 100%;
                 border-radius: 2px;
                 background-color: c.$light;
@@ -294,6 +312,110 @@ footer {
         &:last-child {
             display: inline-flex;
             gap: 10px;
+        }
+    }
+}
+
+#search-input {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+
+    button {
+        display: none;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        height: 20px;
+        width: 20px;
+        @media (max-width: b.$medium) {
+            right: 15px;
+            top: 15px;
+        }
+    }
+
+    @media (max-width: b.$medium) {
+        position: fixed;
+        z-index: 10;
+        background-color: c.$overlay;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        max-width: unset;
+        padding: 10px;
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
+}
+
+#search-results {
+    position: fixed;
+    left: 0;
+    display: none;
+    justify-content: center;
+    height: 600px;
+    max-height: calc(100vh - 100px);
+    width: 100%;
+    align-items: flex-start;
+    padding: s.$small;
+
+    &.show {
+        display: flex;
+    }
+
+    ul {
+        background-color: c.$blue-dark;
+        display: flex;
+        width: 100%;
+        max-width: 600px;
+        flex-direction: column;
+        border-radius: s.$small;
+        list-style-type: none;
+        padding: s.$small;
+        border: 1px solid c.$gray-dark;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        overflow: auto;
+        max-height: 100%;
+        margin: 0;
+
+        > li {
+            border-radius: s.$small;
+            padding: s.$small;
+            a {
+                text-decoration: none;
+                display: block;
+                opacity: 1 !important;
+            }
+            h4 {
+                margin: 0;
+                padding: 0 0 s.$x-small;
+                text-transform: capitalize;
+                span {
+                    display: inline-flex;
+                    align-items: center;
+                    color: c.$blue;
+                    svg {
+                        height: 14px;
+                        width: auto;
+                        padding: 0 s.$x-small;
+                    }
+                }
+            }
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                opacity: 0.7;
+                font-size: t.$medium;
+            }
+            &:hover {
+                background-color: c.$gray-dark;
+            }
         }
     }
 }

@@ -1,4 +1,6 @@
-# FullStacked - Code, Run, Share. Anywhere.
+# Introduction
+
+**Code, Run, Share. Anywhere.**
 
 Create, run and share projects built with web technologies in a fully cross-platform, local-first environment.
 

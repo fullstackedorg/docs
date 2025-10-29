@@ -6,13 +6,14 @@ import hljs from "highlight.js";
 import { getOrder, getTitles } from "..";
 import { gfmHeadingId } from "marked-gfm-heading-id";
 import { Button } from "@fullstacked/ui";
+import { stripMarkdown } from "./strip";
 
 export async function renderStyle(minified = false) {
     const scss = await fs.readFile("/assets/index.scss", { encoding: "utf8" });
     const { css } = await sass.compileStringAsync(scss, {
         style: minified ? "compressed" : "expanded",
         importer: {
-            load: async (url) => {
+            load: async (url: URL) => {
                 const path = url.pathname.startsWith("/node_modules")
                     ? url.pathname
                     : "/assets" + url.pathname;
@@ -25,7 +26,7 @@ export async function renderStyle(minified = false) {
                     contents,
                 };
             },
-            canonicalize: (path) => {
+            canonicalize: (path: string) => {
                 return new URL(path, window.location.href);
             },
         },
@@ -38,6 +39,7 @@ const docsDir = "docs";
 
 export async function renderSite(page: string = null): Promise<{
     [filePath: string]: {
+        docsFile: string;
         isDir: boolean;
         contents: string;
     };
@@ -46,12 +48,14 @@ export async function renderSite(page: string = null): Promise<{
 
     const script = await fs.readFile("/assets/script.js", { encoding: "utf8" });
     files["script.js"] = {
+        docsFile: null,
         isDir: false,
         contents: script,
     };
 
     const css = await renderStyle(page ? false : true);
     files["index.css"] = {
+        docsFile: null,
         isDir: false,
         contents: css,
     };
@@ -64,9 +68,13 @@ export async function renderSite(page: string = null): Promise<{
 
     const order = await getOrder();
 
-    const renderPromises = order.map(async (f, i) => {
-        if (page && f !== page) return;
+    const contentSearch: {
+        title: string;
+        url: string;
+        contents: string;
+    }[] = [];
 
+    const renderPromises = order.map(async (f, i) => {
         const contents = await fs.readFile(f, { encoding: "utf8" });
         const path =
             i === 0
@@ -79,9 +87,19 @@ export async function renderSite(page: string = null): Promise<{
         const dir = path.split("/").slice(0, -1).join("/");
         if (dir) {
             files[dir] = {
+                docsFile: null,
                 contents: null,
                 isDir: true,
             };
+        }
+
+        const title = contents.match(/#.*/g)?.at(0);
+        if (title) {
+            contentSearch.push({
+                title: stripMarkdown(title),
+                url: "/" + dir,
+                contents: stripMarkdown(contents.replace(title, "")).trim(),
+            });
         }
 
         const links = document.createElement("ul");
@@ -125,8 +143,8 @@ export async function renderSite(page: string = null): Promise<{
             .replace(
                 "{{ SCRIPT }}",
                 page
-                    ? `<script>${script}</script`
-                    : `<script src="/script.js"></script>`,
+                    ? `<script>${script}</script>`
+                    : `<script src="/fuse.js"></script><script src="/script.js"></script>`,
             );
 
         if (prev) {
@@ -142,11 +160,23 @@ export async function renderSite(page: string = null): Promise<{
         }
 
         files[path] = {
+            docsFile: f,
             contents: html,
             isDir: false,
         };
     });
     await Promise.all(renderPromises);
+
+    files["search.json"] = {
+        docsFile: null,
+        contents: JSON.stringify(contentSearch),
+        isDir: false,
+    };
+    files["fuse.js"] = {
+        docsFile: null,
+        contents: await fs.readFile("assets/fuse.js", { encoding: "utf8" }),
+        isDir: false,
+    };
 
     return files;
 }

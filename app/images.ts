@@ -108,7 +108,7 @@ function fetchFixture() {
             body,
         });
         const generateResponse = () => {
-            const blob = new Blob([r.body]);
+            const blob = new Blob([r.body as Uint8Array<ArrayBuffer>]);
             const response: Response = {
                 url: request.url,
                 redirected: false,
@@ -122,7 +122,7 @@ function fetchFixture() {
                 clone: generateResponse,
                 blob: async () => blob,
                 arrayBuffer: blob.arrayBuffer,
-                bytes: async () => r.body,
+                bytes: async () => r.body as Uint8Array<ArrayBuffer>,
                 text: async () => new TextDecoder().decode(r.body),
                 json: async () => JSON.parse(new TextDecoder().decode(r.body)),
                 formData: async () => null,
