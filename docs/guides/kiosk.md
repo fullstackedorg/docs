@@ -6,7 +6,7 @@ Platform supporting the kiosk mode:
 
 To directly run a project in fullscreen, use the `--kiosk` flag.
 
-Beforehand, the project needs to have been build at least once through the FullStacked Editor. Then, take not of the project id and use it the command line next to the `--kiosk` flag.
+The project has to be built at least once beforehand through the FullStacked Editor. Then, take note of the project identifier and use it the command line as argument to the `--kiosk` flag.
 
 ## Linux
 
@@ -16,6 +16,8 @@ fullstacked --kiosk org.fullstacked.demo
 
 ## Windows
 
-```
+Run directly in a command prompt or from a `.bat` file.
 
+```
+start shell:AppsFolder\Charles-PhilippeLepage.FullStackedEditor_yejxxbedrqpcg!App --kiosk org.fullstacked.demo
 ```
