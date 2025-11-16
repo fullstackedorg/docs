@@ -25,5 +25,7 @@
     "docs/license.md": "License",
     "docs/guides/kiosk.md": "Kiosk",
     "docs/references/connect.md": "Connect (connect)",
-    "docs/guides/vscode.md": "VS Code Setup"
+    "docs/guides/vscode.md": "VS Code Setup",
+    "docs/guides/stye.md": "Styling with s.ts",
+    "docs/references/style.md": "Style (style)"
 }
