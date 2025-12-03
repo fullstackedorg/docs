@@ -65,8 +65,8 @@
             "name": "@aws-crypto/util",
             "version": "5.2.0",
             "as": [
-                "5.2.0",
-                "^5.2.0"
+                "^5.2.0",
+                "5.2.0"
             ],
             "location": [
                 "node_modules"
@@ -74,10 +74,10 @@
         },
         {
             "name": "@aws-sdk/client-s3",
-            "version": "3.895.0",
+            "version": "3.943.0",
             "as": [
                 "^3.758.0",
-                "^3.895.0"
+                "^3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -85,9 +85,9 @@
         },
         {
             "name": "@aws-sdk/client-sso",
-            "version": "3.895.0",
+            "version": "3.943.0",
             "as": [
-                "3.895.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -95,9 +95,9 @@
         },
         {
             "name": "@aws-sdk/core",
-            "version": "3.894.0",
+            "version": "3.943.0",
             "as": [
-                "3.894.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -105,9 +105,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-env",
-            "version": "3.894.0",
+            "version": "3.943.0",
             "as": [
-                "3.894.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -115,9 +115,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-http",
-            "version": "3.894.0",
+            "version": "3.943.0",
             "as": [
-                "3.894.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -125,9 +125,19 @@
         },
         {
             "name": "@aws-sdk/credential-provider-ini",
-            "version": "3.895.0",
+            "version": "3.943.0",
             "as": [
-                "3.895.0"
+                "3.943.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@aws-sdk/credential-provider-login",
+            "version": "3.943.0",
+            "as": [
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -135,9 +145,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-node",
-            "version": "3.895.0",
+            "version": "3.943.0",
             "as": [
-                "3.895.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -145,9 +155,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-process",
-            "version": "3.894.0",
+            "version": "3.943.0",
             "as": [
-                "3.894.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -155,9 +165,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-sso",
-            "version": "3.895.0",
+            "version": "3.943.0",
             "as": [
-                "3.895.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -165,9 +175,9 @@
         },
         {
             "name": "@aws-sdk/credential-provider-web-identity",
-            "version": "3.895.0",
+            "version": "3.943.0",
             "as": [
-                "3.895.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -175,9 +185,9 @@
         },
         {
             "name": "@aws-sdk/middleware-bucket-endpoint",
-            "version": "3.893.0",
+            "version": "3.936.0",
             "as": [
-                "3.893.0"
+                "3.936.0"
             ],
             "location": [
                 "node_modules"
@@ -185,9 +195,9 @@
         },
         {
             "name": "@aws-sdk/middleware-expect-continue",
-            "version": "3.893.0",
+            "version": "3.936.0",
             "as": [
-                "3.893.0"
+                "3.936.0"
             ],
             "location": [
                 "node_modules"
@@ -195,9 +205,9 @@
         },
         {
             "name": "@aws-sdk/middleware-flexible-checksums",
-            "version": "3.894.0",
+            "version": "3.943.0",
             "as": [
-                "3.894.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -205,9 +215,9 @@
         },
         {
             "name": "@aws-sdk/middleware-host-header",
-            "version": "3.893.0",
+            "version": "3.936.0",
             "as": [
-                "3.893.0"
+                "3.936.0"
             ],
             "location": [
                 "node_modules"
@@ -215,9 +225,9 @@
         },
         {
             "name": "@aws-sdk/middleware-location-constraint",
-            "version": "3.893.0",
+            "version": "3.936.0",
             "as": [
-                "3.893.0"
+                "3.936.0"
             ],
             "location": [
                 "node_modules"
@@ -225,9 +235,9 @@
         },
         {
             "name": "@aws-sdk/middleware-logger",
-            "version": "3.893.0",
+            "version": "3.936.0",
             "as": [
-                "3.893.0"
+                "3.936.0"
             ],
             "location": [
                 "node_modules"
@@ -235,9 +245,9 @@
         },
         {
             "name": "@aws-sdk/middleware-recursion-detection",
-            "version": "3.893.0",
+            "version": "3.936.0",
             "as": [
-                "3.893.0"
+                "3.936.0"
             ],
             "location": [
                 "node_modules"
@@ -245,9 +255,9 @@
         },
         {
             "name": "@aws-sdk/middleware-sdk-s3",
-            "version": "3.894.0",
+            "version": "3.943.0",
             "as": [
-                "3.894.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -255,9 +265,9 @@
         },
         {
             "name": "@aws-sdk/middleware-ssec",
-            "version": "3.893.0",
+            "version": "3.936.0",
             "as": [
-                "3.893.0"
+                "3.936.0"
             ],
             "location": [
                 "node_modules"
@@ -265,9 +275,9 @@
         },
         {
             "name": "@aws-sdk/middleware-user-agent",
-            "version": "3.895.0",
+            "version": "3.943.0",
             "as": [
-                "3.895.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -275,9 +285,9 @@
         },
         {
             "name": "@aws-sdk/nested-clients",
-            "version": "3.895.0",
+            "version": "3.943.0",
             "as": [
-                "3.895.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -285,9 +295,9 @@
         },
         {
             "name": "@aws-sdk/region-config-resolver",
-            "version": "3.893.0",
+            "version": "3.936.0",
             "as": [
-                "3.893.0"
+                "3.936.0"
             ],
             "location": [
                 "node_modules"
@@ -295,9 +305,9 @@
         },
         {
             "name": "@aws-sdk/signature-v4-multi-region",
-            "version": "3.894.0",
+            "version": "3.943.0",
             "as": [
-                "3.894.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -305,9 +315,9 @@
         },
         {
             "name": "@aws-sdk/token-providers",
-            "version": "3.895.0",
+            "version": "3.943.0",
             "as": [
-                "3.895.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -315,9 +325,9 @@
         },
         {
             "name": "@aws-sdk/types",
-            "version": "3.893.0",
+            "version": "3.936.0",
             "as": [
-                "3.893.0",
+                "3.936.0",
                 "^3.222.0"
             ],
             "location": [
@@ -336,9 +346,9 @@
         },
         {
             "name": "@aws-sdk/util-endpoints",
-            "version": "3.895.0",
+            "version": "3.936.0",
             "as": [
-                "3.895.0"
+                "3.936.0"
             ],
             "location": [
                 "node_modules"
@@ -356,9 +366,9 @@
         },
         {
             "name": "@aws-sdk/util-user-agent-browser",
-            "version": "3.893.0",
+            "version": "3.936.0",
             "as": [
-                "3.893.0"
+                "3.936.0"
             ],
             "location": [
                 "node_modules"
@@ -366,9 +376,9 @@
         },
         {
             "name": "@aws-sdk/util-user-agent-node",
-            "version": "3.895.0",
+            "version": "3.943.0",
             "as": [
-                "3.895.0"
+                "3.943.0"
             ],
             "location": [
                 "node_modules"
@@ -376,9 +386,9 @@
         },
         {
             "name": "@aws-sdk/xml-builder",
-            "version": "3.894.0",
+            "version": "3.930.0",
             "as": [
-                "3.894.0"
+                "3.930.0"
             ],
             "location": [
                 "node_modules"
@@ -386,9 +396,9 @@
         },
         {
             "name": "@aws/lambda-invoke-store",
-            "version": "0.0.1",
+            "version": "0.2.2",
             "as": [
-                "^0.0.1"
+                "^0.2.0"
             ],
             "location": [
                 "node_modules"
@@ -396,7 +406,7 @@
         },
         {
             "name": "@codemirror/autocomplete",
-            "version": "6.18.7",
+            "version": "6.20.0",
             "as": [
                 "^6.0.0",
                 "^6.7.1",
@@ -408,7 +418,7 @@
         },
         {
             "name": "@codemirror/commands",
-            "version": "6.8.1",
+            "version": "6.10.0",
             "as": [
                 "^6.0.0"
             ],
@@ -421,8 +431,8 @@
             "version": "6.3.1",
             "as": [
                 "^6.3.1",
-                "^6.0.0",
-                "^6.2.0"
+                "^6.2.0",
+                "^6.0.0"
             ],
             "location": [
                 "node_modules"
@@ -440,7 +450,7 @@
         },
         {
             "name": "@codemirror/lang-html",
-            "version": "6.4.10",
+            "version": "6.4.11",
             "as": [
                 "^6.4.9",
                 "^6.0.0"
@@ -482,7 +492,7 @@
         },
         {
             "name": "@codemirror/lang-markdown",
-            "version": "6.3.4",
+            "version": "6.5.0",
             "as": [
                 "^6.3.3"
             ],
@@ -515,9 +525,9 @@
             "version": "6.11.3",
             "as": [
                 "^6.0.0",
-                "^6.4.0",
                 "^6.6.0",
                 "^6.3.0",
+                "^6.4.0",
                 "^6.8.0"
             ],
             "location": [
@@ -526,7 +536,7 @@
         },
         {
             "name": "@codemirror/lint",
-            "version": "6.8.5",
+            "version": "6.9.2",
             "as": [
                 "^6.0.0"
             ],
@@ -569,7 +579,7 @@
         },
         {
             "name": "@codemirror/view",
-            "version": "6.38.3",
+            "version": "6.38.8",
             "as": [
                 "^6.38.1",
                 "^6.0.0",
@@ -596,9 +606,9 @@
         {
             "name": "@fullstacked/ui",
             "version": "0.0.1",
-            "git": "default",
+            "git": "commit",
             "as": [
-                "github.com:fullstackedorg/ui"
+                "github.com:fullstackedorg/ui#74e1492ab7dc48dcc14497cd9b478c632813e3a7"
             ],
             "location": [
                 "node_modules"
@@ -606,12 +616,13 @@
         },
         {
             "name": "@lezer/common",
-            "version": "1.2.3",
+            "version": "1.4.0",
             "as": [
-                "^1.0.0",
-                "^1.1.0",
                 "^1.0.2",
+                "^1.0.0",
+                "^1.3.0",
                 "^1.2.1",
+                "^1.1.0",
                 "^1.2.0"
             ],
             "location": [
@@ -622,8 +633,8 @@
             "name": "@lezer/css",
             "version": "1.3.0",
             "as": [
-                "^1.1.0",
-                "^1.1.7"
+                "^1.1.7",
+                "^1.1.0"
             ],
             "location": [
                 "node_modules"
@@ -641,7 +652,7 @@
         },
         {
             "name": "@lezer/highlight",
-            "version": "1.2.1",
+            "version": "1.2.3",
             "as": [
                 "^1.0.0",
                 "^1.1.3"
@@ -652,9 +663,9 @@
         },
         {
             "name": "@lezer/html",
-            "version": "1.3.10",
+            "version": "1.3.12",
             "as": [
-                "^1.3.0"
+                "^1.3.12"
             ],
             "location": [
                 "node_modules"
@@ -682,10 +693,10 @@
         },
         {
             "name": "@lezer/lr",
-            "version": "1.4.2",
+            "version": "1.4.4",
             "as": [
-                "^1.0.0",
                 "^1.3.1",
+                "^1.0.0",
                 "^1.3.0"
             ],
             "location": [
@@ -694,7 +705,7 @@
         },
         {
             "name": "@lezer/markdown",
-            "version": "1.4.3",
+            "version": "1.6.0",
             "as": [
                 "^1.0.0"
             ],
@@ -734,9 +745,9 @@
         },
         {
             "name": "@smithy/abort-controller",
-            "version": "4.1.1",
+            "version": "4.2.5",
             "as": [
-                "^4.1.1"
+                "^4.2.5"
             ],
             "location": [
                 "node_modules"
@@ -744,9 +755,9 @@
         },
         {
             "name": "@smithy/chunked-blob-reader",
-            "version": "5.1.0",
+            "version": "5.2.0",
             "as": [
-                "^5.1.0"
+                "^5.2.0"
             ],
             "location": [
                 "node_modules"
@@ -754,67 +765,6 @@
         },
         {
             "name": "@smithy/chunked-blob-reader-native",
-            "version": "4.1.0",
-            "as": [
-                "^4.1.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/config-resolver",
-            "version": "4.2.2",
-            "as": [
-                "^4.2.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/core",
-            "version": "3.12.0",
-            "as": [
-                "^3.11.1",
-                "^3.12.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/credential-provider-imds",
-            "version": "4.1.2",
-            "as": [
-                "^4.1.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/eventstream-codec",
-            "version": "4.1.1",
-            "as": [
-                "^4.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/eventstream-serde-browser",
-            "version": "4.1.1",
-            "as": [
-                "^4.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/eventstream-serde-config-resolver",
             "version": "4.2.1",
             "as": [
                 "^4.2.1"
@@ -824,10 +774,71 @@
             ]
         },
         {
-            "name": "@smithy/eventstream-serde-node",
-            "version": "4.1.1",
+            "name": "@smithy/config-resolver",
+            "version": "4.4.3",
             "as": [
-                "^4.1.1"
+                "^4.4.3"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/core",
+            "version": "3.18.6",
+            "as": [
+                "^3.18.5",
+                "^3.18.6"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/credential-provider-imds",
+            "version": "4.2.5",
+            "as": [
+                "^4.2.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/eventstream-codec",
+            "version": "4.2.5",
+            "as": [
+                "^4.2.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/eventstream-serde-browser",
+            "version": "4.2.5",
+            "as": [
+                "^4.2.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/eventstream-serde-config-resolver",
+            "version": "4.3.5",
+            "as": [
+                "^4.3.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/eventstream-serde-node",
+            "version": "4.2.5",
+            "as": [
+                "^4.2.5"
             ],
             "location": [
                 "node_modules"
@@ -835,9 +846,9 @@
         },
         {
             "name": "@smithy/eventstream-serde-universal",
-            "version": "4.1.1",
+            "version": "4.2.5",
             "as": [
-                "^4.1.1"
+                "^4.2.5"
             ],
             "location": [
                 "node_modules"
@@ -845,9 +856,9 @@
         },
         {
             "name": "@smithy/fetch-http-handler",
-            "version": "5.2.1",
+            "version": "5.3.6",
             "as": [
-                "^5.2.1"
+                "^5.3.6"
             ],
             "location": [
                 "node_modules"
@@ -855,9 +866,9 @@
         },
         {
             "name": "@smithy/hash-blob-browser",
-            "version": "4.1.1",
+            "version": "4.2.6",
             "as": [
-                "^4.1.1"
+                "^4.2.6"
             ],
             "location": [
                 "node_modules"
@@ -865,9 +876,9 @@
         },
         {
             "name": "@smithy/hash-node",
-            "version": "4.1.1",
+            "version": "4.2.5",
             "as": [
-                "^4.1.1"
+                "^4.2.5"
             ],
             "location": [
                 "node_modules"
@@ -875,9 +886,9 @@
         },
         {
             "name": "@smithy/hash-stream-node",
-            "version": "4.1.1",
+            "version": "4.2.5",
             "as": [
-                "^4.1.1"
+                "^4.2.5"
             ],
             "location": [
                 "node_modules"
@@ -885,9 +896,9 @@
         },
         {
             "name": "@smithy/invalid-dependency",
-            "version": "4.1.1",
+            "version": "4.2.5",
             "as": [
-                "^4.1.1"
+                "^4.2.5"
             ],
             "location": [
                 "node_modules"
@@ -900,154 +911,13 @@
                 "^2.2.0"
             ],
             "location": [
+                "node_modules/@aws-crypto/sha256-browser/node_modules/@smithy/util-utf8/node_modules/@smithy/util-buffer-from/node_modules",
                 "node_modules/@aws-crypto/util/node_modules/@smithy/util-utf8/node_modules/@smithy/util-buffer-from/node_modules",
-                "node_modules/@aws-crypto/sha1-browser/node_modules/@smithy/util-utf8/node_modules/@smithy/util-buffer-from/node_modules",
-                "node_modules/@aws-crypto/sha256-browser/node_modules/@smithy/util-utf8/node_modules/@smithy/util-buffer-from/node_modules"
+                "node_modules/@aws-crypto/sha1-browser/node_modules/@smithy/util-utf8/node_modules/@smithy/util-buffer-from/node_modules"
             ]
         },
         {
             "name": "@smithy/is-array-buffer",
-            "version": "4.1.0",
-            "as": [
-                "^4.1.0"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/md5-js",
-            "version": "4.1.1",
-            "as": [
-                "^4.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/middleware-content-length",
-            "version": "4.1.1",
-            "as": [
-                "^4.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/middleware-endpoint",
-            "version": "4.2.4",
-            "as": [
-                "^4.2.3",
-                "^4.2.4"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/middleware-retry",
-            "version": "4.3.0",
-            "as": [
-                "^4.2.4"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/middleware-serde",
-            "version": "4.1.1",
-            "as": [
-                "^4.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/middleware-stack",
-            "version": "4.1.1",
-            "as": [
-                "^4.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/node-config-provider",
-            "version": "4.2.2",
-            "as": [
-                "^4.2.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/node-http-handler",
-            "version": "4.2.1",
-            "as": [
-                "^4.2.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/property-provider",
-            "version": "4.1.1",
-            "as": [
-                "^4.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/protocol-http",
-            "version": "5.2.1",
-            "as": [
-                "^5.2.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/querystring-builder",
-            "version": "4.1.1",
-            "as": [
-                "^4.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/querystring-parser",
-            "version": "4.1.1",
-            "as": [
-                "^4.1.1"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/service-error-classification",
-            "version": "4.1.2",
-            "as": [
-                "^4.1.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@smithy/shared-ini-file-loader",
             "version": "4.2.0",
             "as": [
                 "^4.2.0"
@@ -1057,10 +927,151 @@
             ]
         },
         {
-            "name": "@smithy/signature-v4",
-            "version": "5.2.1",
+            "name": "@smithy/md5-js",
+            "version": "4.2.5",
             "as": [
-                "^5.2.1"
+                "^4.2.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/middleware-content-length",
+            "version": "4.2.5",
+            "as": [
+                "^4.2.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/middleware-endpoint",
+            "version": "4.3.13",
+            "as": [
+                "^4.3.12",
+                "^4.3.13"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/middleware-retry",
+            "version": "4.4.13",
+            "as": [
+                "^4.4.12"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/middleware-serde",
+            "version": "4.2.6",
+            "as": [
+                "^4.2.6"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/middleware-stack",
+            "version": "4.2.5",
+            "as": [
+                "^4.2.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/node-config-provider",
+            "version": "4.3.5",
+            "as": [
+                "^4.3.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/node-http-handler",
+            "version": "4.4.5",
+            "as": [
+                "^4.4.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/property-provider",
+            "version": "4.2.5",
+            "as": [
+                "^4.2.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/protocol-http",
+            "version": "5.3.5",
+            "as": [
+                "^5.3.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/querystring-builder",
+            "version": "4.2.5",
+            "as": [
+                "^4.2.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/querystring-parser",
+            "version": "4.2.5",
+            "as": [
+                "^4.2.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/service-error-classification",
+            "version": "4.2.5",
+            "as": [
+                "^4.2.5"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/shared-ini-file-loader",
+            "version": "4.4.0",
+            "as": [
+                "^4.4.0"
+            ],
+            "location": [
+                "node_modules"
+            ]
+        },
+        {
+            "name": "@smithy/signature-v4",
+            "version": "5.3.5",
+            "as": [
+                "^5.3.5"
             ],
             "location": [
                 "node_modules"
@@ -1068,10 +1079,10 @@
         },
         {
             "name": "@smithy/smithy-client",
-            "version": "4.6.4",
+            "version": "4.9.9",
             "as": [
-                "^4.6.3",
-                "^4.6.4"
+                "^4.9.8",
+                "^4.9.9"
             ],
             "location": [
                 "node_modules"
@@ -1079,9 +1090,9 @@
         },
         {
             "name": "@smithy/types",
-            "version": "4.5.0",
+            "version": "4.9.0",
             "as": [
-                "^4.5.0"
+                "^4.9.0"
             ],
             "location": [
                 "node_modules"
@@ -1089,9 +1100,9 @@
         },
         {
             "name": "@smithy/url-parser",
-            "version": "4.1.1",
+            "version": "4.2.5",
             "as": [
-                "^4.1.1"
+                "^4.2.5"
             ],
             "location": [
                 "node_modules"
@@ -1099,9 +1110,9 @@
         },
         {
             "name": "@smithy/util-base64",
-            "version": "4.1.0",
+            "version": "4.3.0",
             "as": [
-                "^4.1.0"
+                "^4.3.0"
             ],
             "location": [
                 "node_modules"
@@ -1109,9 +1120,9 @@
         },
         {
             "name": "@smithy/util-body-length-browser",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "as": [
-                "^4.1.0"
+                "^4.2.0"
             ],
             "location": [
                 "node_modules"
@@ -1119,9 +1130,9 @@
         },
         {
             "name": "@smithy/util-body-length-node",
-            "version": "4.1.0",
+            "version": "4.2.1",
             "as": [
-                "^4.1.0"
+                "^4.2.1"
             ],
             "location": [
                 "node_modules"
@@ -1134,16 +1145,16 @@
                 "^2.2.0"
             ],
             "location": [
+                "node_modules/@aws-crypto/sha256-browser/node_modules/@smithy/util-utf8/node_modules",
                 "node_modules/@aws-crypto/util/node_modules/@smithy/util-utf8/node_modules",
-                "node_modules/@aws-crypto/sha1-browser/node_modules/@smithy/util-utf8/node_modules",
-                "node_modules/@aws-crypto/sha256-browser/node_modules/@smithy/util-utf8/node_modules"
+                "node_modules/@aws-crypto/sha1-browser/node_modules/@smithy/util-utf8/node_modules"
             ]
         },
         {
             "name": "@smithy/util-buffer-from",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "as": [
-                "^4.1.0"
+                "^4.2.0"
             ],
             "location": [
                 "node_modules"
@@ -1151,9 +1162,9 @@
         },
         {
             "name": "@smithy/util-config-provider",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "as": [
-                "^4.1.0"
+                "^4.2.0"
             ],
             "location": [
                 "node_modules"
@@ -1161,9 +1172,9 @@
         },
         {
             "name": "@smithy/util-defaults-mode-browser",
-            "version": "4.1.4",
+            "version": "4.3.12",
             "as": [
-                "^4.1.3"
+                "^4.3.11"
             ],
             "location": [
                 "node_modules"
@@ -1171,9 +1182,9 @@
         },
         {
             "name": "@smithy/util-defaults-mode-node",
-            "version": "4.1.4",
+            "version": "4.2.15",
             "as": [
-                "^4.1.3"
+                "^4.2.14"
             ],
             "location": [
                 "node_modules"
@@ -1181,9 +1192,9 @@
         },
         {
             "name": "@smithy/util-endpoints",
-            "version": "3.1.2",
+            "version": "3.2.5",
             "as": [
-                "^3.1.2"
+                "^3.2.5"
             ],
             "location": [
                 "node_modules"
@@ -1191,9 +1202,9 @@
         },
         {
             "name": "@smithy/util-hex-encoding",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "as": [
-                "^4.1.0"
+                "^4.2.0"
             ],
             "location": [
                 "node_modules"
@@ -1201,9 +1212,9 @@
         },
         {
             "name": "@smithy/util-middleware",
-            "version": "4.1.1",
+            "version": "4.2.5",
             "as": [
-                "^4.1.1"
+                "^4.2.5"
             ],
             "location": [
                 "node_modules"
@@ -1211,9 +1222,9 @@
         },
         {
             "name": "@smithy/util-retry",
-            "version": "4.1.2",
+            "version": "4.2.5",
             "as": [
-                "^4.1.2"
+                "^4.2.5"
             ],
             "location": [
                 "node_modules"
@@ -1221,9 +1232,9 @@
         },
         {
             "name": "@smithy/util-stream",
-            "version": "4.3.2",
+            "version": "4.5.6",
             "as": [
-                "^4.3.2"
+                "^4.5.6"
             ],
             "location": [
                 "node_modules"
@@ -1231,9 +1242,9 @@
         },
         {
             "name": "@smithy/util-uri-escape",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "as": [
-                "^4.1.0"
+                "^4.2.0"
             ],
             "location": [
                 "node_modules"
@@ -1247,15 +1258,15 @@
             ],
             "location": [
                 "node_modules/@aws-crypto/util/node_modules",
-                "node_modules/@aws-crypto/sha1-browser/node_modules",
-                "node_modules/@aws-crypto/sha256-browser/node_modules"
+                "node_modules/@aws-crypto/sha256-browser/node_modules",
+                "node_modules/@aws-crypto/sha1-browser/node_modules"
             ]
         },
         {
             "name": "@smithy/util-utf8",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "as": [
-                "^4.1.0"
+                "^4.2.0"
             ],
             "location": [
                 "node_modules"
@@ -1263,9 +1274,9 @@
         },
         {
             "name": "@smithy/util-waiter",
-            "version": "4.1.1",
+            "version": "4.2.5",
             "as": [
-                "^4.1.1"
+                "^4.2.5"
             ],
             "location": [
                 "node_modules"
@@ -1273,9 +1284,9 @@
         },
         {
             "name": "@smithy/uuid",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "as": [
-                "^1.0.0"
+                "^1.1.0"
             ],
             "location": [
                 "node_modules"
@@ -1283,10 +1294,10 @@
         },
         {
             "name": "@types/react",
-            "version": "19.1.13",
+            "version": "19.2.7",
             "as": [
                 "^19.0.10",
-                "^19.1.13"
+                "^19.2.7"
             ],
             "location": [
                 "node_modules"
@@ -1294,20 +1305,10 @@
         },
         {
             "name": "@types/react-dom",
-            "version": "19.1.9",
+            "version": "19.2.3",
             "as": [
                 "^19.0.4",
-                "^19.1.9"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "@types/uuid",
-            "version": "9.0.8",
-            "as": [
-                "^9.0.1"
+                "^19.2.3"
             ],
             "location": [
                 "node_modules"
@@ -1315,7 +1316,7 @@
         },
         {
             "name": "bowser",
-            "version": "2.12.1",
+            "version": "2.13.1",
             "as": [
                 "^2.11.0"
             ],
@@ -1356,9 +1357,9 @@
         },
         {
             "name": "csstype",
-            "version": "3.1.3",
+            "version": "3.2.3",
             "as": [
-                "^3.0.2"
+                "^3.2.2"
             ],
             "location": [
                 "node_modules"
@@ -1406,7 +1407,7 @@
         },
         {
             "name": "immutable",
-            "version": "5.1.3",
+            "version": "5.1.4",
             "as": [
                 "^5.0.2"
             ],
@@ -1427,10 +1428,10 @@
         },
         {
             "name": "marked-gfm-heading-id",
-            "version": "4.1.2",
+            "version": "4.1.3",
             "as": [
                 "^4.1.1",
-                "^4.1.2"
+                "^4.1.3"
             ],
             "location": [
                 "node_modules"
@@ -1438,10 +1439,10 @@
         },
         {
             "name": "marked-highlight",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "as": [
                 "^2.2.1",
-                "^2.2.2"
+                "^2.2.3"
             ],
             "location": [
                 "node_modules"
@@ -1449,7 +1450,7 @@
         },
         {
             "name": "prettier",
-            "version": "3.6.2",
+            "version": "3.7.4",
             "as": [
                 "^3.6.2"
             ],
@@ -1459,9 +1460,10 @@
         },
         {
             "name": "react",
-            "version": "19.1.1",
+            "version": "19.2.1",
             "as": [
-                "^19.1.1"
+                "^19.1.1",
+                "^19.2.1"
             ],
             "location": [
                 "node_modules"
@@ -1469,9 +1471,10 @@
         },
         {
             "name": "react-dom",
-            "version": "19.1.1",
+            "version": "19.2.1",
             "as": [
-                "^19.1.1"
+                "^19.1.1",
+                "^19.2.1"
             ],
             "location": [
                 "node_modules"
@@ -1489,9 +1492,10 @@
         },
         {
             "name": "sass",
-            "version": "1.93.2",
+            "version": "1.94.2",
             "as": [
-                "^1.93.2"
+                "^1.93.2",
+                "^1.94.2"
             ],
             "location": [
                 "node_modules"
@@ -1499,9 +1503,9 @@
         },
         {
             "name": "scheduler",
-            "version": "0.26.0",
+            "version": "0.27.0",
             "as": [
-                "^0.26.0"
+                "^0.27.0"
             ],
             "location": [
                 "node_modules"
@@ -1539,7 +1543,7 @@
         },
         {
             "name": "style-mod",
-            "version": "4.1.2",
+            "version": "4.1.3",
             "as": [
                 "^4.1.0",
                 "^4.0.0"
@@ -1553,16 +1557,6 @@
             "version": "2.8.1",
             "as": [
                 "^2.6.2"
-            ],
-            "location": [
-                "node_modules"
-            ]
-        },
-        {
-            "name": "uuid",
-            "version": "9.0.1",
-            "as": [
-                "^9.0.1"
             ],
             "location": [
                 "node_modules"
