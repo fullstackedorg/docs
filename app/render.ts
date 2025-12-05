@@ -19,17 +19,17 @@ export async function renderStyle(minified = false) {
                     : "/assets" + url.pathname;
 
                 const contents = await fs.readFile(path, {
-                    encoding: "utf8",
+                    encoding: "utf8"
                 });
                 return {
                     syntax: "scss",
-                    contents,
+                    contents
                 };
             },
             canonicalize: (path: string) => {
-                return new URL(path, window.location.href);
-            },
-        },
+                return new URL(path, "http://localhost");
+            }
+        }
     });
 
     return css;
@@ -50,20 +50,20 @@ export async function renderSite(page: string = null): Promise<{
     files["script.js"] = {
         docsFile: null,
         isDir: false,
-        contents: script,
+        contents: script
     };
 
     const css = await renderStyle(page ? false : true);
     files["index.css"] = {
         docsFile: null,
         isDir: false,
-        contents: css,
+        contents: css
     };
 
     const titles = await getTitles();
 
     const docTemplate = await fs.readFile("/assets/doc-template.html", {
-        encoding: "utf8",
+        encoding: "utf8"
     });
 
     const order = await getOrder();
@@ -89,7 +89,7 @@ export async function renderSite(page: string = null): Promise<{
             files[dir] = {
                 docsFile: null,
                 contents: null,
-                isDir: true,
+                isDir: true
             };
         }
 
@@ -98,7 +98,7 @@ export async function renderSite(page: string = null): Promise<{
             contentSearch.push({
                 title: stripMarkdown(title),
                 url: "/" + dir,
-                contents: stripMarkdown(contents.replace(title, "")).trim(),
+                contents: stripMarkdown(contents.replace(title, "")).trim()
             });
         }
 
@@ -120,11 +120,11 @@ export async function renderSite(page: string = null): Promise<{
             .replace("{{ NAV }}", nav)
             .replace(
                 "{{ PREV }}",
-                prev ? createButton(prev[0], prev[1], false) : "<div></div>",
+                prev ? createButton(prev[0], prev[1], false) : "<div></div>"
             )
             .replace(
                 "{{ NEXT }}",
-                next ? createButton(next[0], next[1], true) : "<div></div>",
+                next ? createButton(next[0], next[1], true) : "<div></div>"
             )
             .replace("{{ PAGE }}", f)
             .replace("{{ PAGE }}", f)
@@ -132,19 +132,19 @@ export async function renderSite(page: string = null): Promise<{
                 "{{ ANALYTICS }}",
                 page
                     ? ""
-                    : `<script defer data-domain="docs.fullstacked.org" src="https://plausible.cplepage.com/js/script.js"></script>`,
+                    : `<script defer data-domain="docs.fullstacked.org" src="https://plausible.cplepage.com/js/script.js"></script>`
             )
             .replace(
                 "{{ STYLE }}",
                 page
                     ? `<style>${css}</style>`
-                    : `<link rel="stylesheet" href="/index.css" />`,
+                    : `<link rel="stylesheet" href="/index.css" />`
             )
             .replace(
                 "{{ SCRIPT }}",
                 page
                     ? `<script>${script}</script>`
-                    : `<script src="/fuse.js"></script><script src="/script.js"></script>`,
+                    : `<script src="/fuse.js"></script><script src="/script.js"></script>`
             );
 
         if (prev) {
@@ -162,7 +162,7 @@ export async function renderSite(page: string = null): Promise<{
         files[path] = {
             docsFile: f,
             contents: html,
-            isDir: false,
+            isDir: false
         };
     });
     await Promise.all(renderPromises);
@@ -170,12 +170,12 @@ export async function renderSite(page: string = null): Promise<{
     files["search.json"] = {
         docsFile: null,
         contents: JSON.stringify(contentSearch),
-        isDir: false,
+        isDir: false
     };
     files["fuse.js"] = {
         docsFile: null,
         contents: await fs.readFile("assets/fuse.js", { encoding: "utf8" }),
-        isDir: false,
+        isDir: false
     };
 
     return files;
@@ -189,15 +189,15 @@ const marked = new Marked(
         highlight(code, lang) {
             const language = hljs.getLanguage(lang) ? lang : "plaintext";
             return hljs.highlight(code, { language }).value;
-        },
-    }),
+        }
+    })
 );
 marked.use(gfmHeadingId());
 
 function generateNav(
     files: string[],
     active: string,
-    titles: { [path: string]: string },
+    titles: { [path: string]: string }
 ) {
     // remove last 2 elements (privacy-policy and license)
     files = files.slice(0, -2);
@@ -254,7 +254,7 @@ function generateNav(
     return {
         prev: activeIndex > 0 ? links[activeIndex - 1] : null,
         next: activeIndex < files.length - 1 ? links[activeIndex + 1] : null,
-        nav: nav.outerHTML,
+        nav: nav.outerHTML
     };
 }
 
@@ -263,7 +263,7 @@ function createButton(name: string, url: string, next: boolean) {
     a.href = url;
     const button = Button({
         text: name,
-        style: "text",
+        style: "text"
     });
 
     a.append(button);
